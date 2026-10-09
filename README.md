@@ -11,7 +11,7 @@ In `index.html`, each project card (Dashboard 1/2/3) has commented-out lines to 
 4. Edit the `<h3>` title and description, and delete the "Coming soon" badge.
 
 ## Contact
-Replace `your-email@example.com` in the Contact section.
+Replace `bmondal0000@gmail.com` in the Contact section.
 
 ## Publish on GitHub Pages
 Push to a GitHub repo, then Settings > Pages > deploy from the `main` branch root.
