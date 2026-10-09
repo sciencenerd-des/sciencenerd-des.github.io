@@ -5,10 +5,10 @@ Static single-page site (`index.html` + `style.css`). No build step. Open `index
 ## Add a Tableau dashboard
 In `index.html`, each project card (Dashboard 1/2/3) has commented-out lines to enable:
 
-1. **Screenshot:** save an image as `images/dashboard-N.png`, then in the card replace the `<span>Dashboard N - coming soon</span>` with the (uncommented) `<img ...>` line and remove the `placeholder` class from the `thumb` div.
+1. **Screenshot:** save an image as `images/dashboard-N.png`, then in the card replace the `<span>Preview coming soon</span>` with the (uncommented) `<img ...>` line and remove the `placeholder` class from the `thumb` div.
 2. **Link:** publish the workbook to Tableau Public, copy its URL, uncomment the `<a class="btn small" ...>` line and replace `TABLEAU_PUBLIC_LINK_N`.
 3. **Optional embed:** in Tableau Public click Share > Embed code, and paste the code inside the `thumb` div instead of the image (use `<iframe>` sized by CSS).
-4. Edit the `<h3>` title and description, and delete the "Coming soon" badge.
+4. Delete the "link coming soon" badge once the link is live.
 
 ## Contact
 Replace `bmondal0000@gmail.com` in the Contact section.

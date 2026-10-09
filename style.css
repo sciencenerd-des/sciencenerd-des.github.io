@@ -370,3 +370,11 @@ footer a:hover { color: var(--accent); }
   .trend { stroke-dashoffset: 0; }
   .point { opacity: 1; }
 }
+
+/* Technique tags on project cards */
+.tags { list-style: none; margin: 0 0 0.75rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.tags li {
+  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.02em;
+  padding: 0.15rem 0.5rem; border-radius: 6px;
+  color: var(--accent); background: var(--accent-soft);
+}
