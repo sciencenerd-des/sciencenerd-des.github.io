@@ -3,87 +3,183 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biswajit Mondal | Data Analyst</title>
-<meta name="description" content="Portfolio of Biswajit Mondal, data analyst.">
+<title>Biswajit Mondal | Freelance Tableau and Power BI Dashboard Developer</title>
+<meta name="description" content="Freelance data analyst in Kolkata, India. Tableau and Power BI dashboards built on clean data, plus data cleaning, reporting automation and analysis with SQL, Python, Excel and R.">
+<meta name="theme-color" content="#1E2A38">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Biswajit Mondal, freelance Tableau and Power BI developer">
+<meta property="og:description" content="Tableau and Power BI dashboards, built on clean data.">
+<meta property="og:url" content="https://sciencenerd-des.github.io/">
+<meta property="og:image" content="https://sciencenerd-des.github.io/images/india-d1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Biswajit Mondal","jobTitle":"Freelance Data Analyst","email":"mailto:bmondal0000@gmail.com","url":"https://sciencenerd-des.github.io/","image":"https://sciencenerd-des.github.io/images/avatar.jpg","address":{"@type":"PostalAddress","addressLocality":"Kolkata","addressCountry":"IN"},"sameAs":["https://github.com/sciencenerd-des"],"knowsAbout":["Tableau","Power BI","SQL","Python","Excel","R","Data visualization","Dashboard design"]}
+</script>
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="#top">Biswajit Mondal</a>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<a class="skip" href="#work">Skip to dashboards</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="me" href="#top">
+      <img src="images/avatar.jpg" alt="" width="40" height="40">
+      <span><b>Biswajit Mondal</b><small>Freelance data analyst, Kolkata</small></span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#work">Dashboards</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a class="btn-hot" href="mailto:bmondal0000@gmail.com?subject=Project%20enquiry">Email me</a>
+    </nav>
+  </div>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <p class="eyebrow">Hello, I'm</p>
-    <h1>Biswajit Mondal</h1>
-    <p class="title">Data Analyst</p>
-    <div class="cta">
-      <a class="btn" href="#projects">View projects</a>
-      <a class="btn ghost" href="#contact">Get in touch</a>
+  <section class="wrap hero">
+    <div>
+      <p class="status"><span aria-hidden="true"></span>Taking new projects</p>
+      <h1>Tableau and Power BI dashboards, built on clean data.</h1>
+    </div>
+    <p class="lede">I clean the data with SQL, Python and Excel, then build dashboards your team can filter, trust and use every week.</p>
+  </section>
+
+  <!-- Tableau Story: each story point is one dashboard from a real workbook. Data lives in script.js (STORIES). -->
+  <section id="work" class="wrap work" aria-labelledby="story-title">
+    <div class="story-head">
+      <h2 id="story-title">Five findings from my Tableau workbooks</h2>
+      <p id="story-count" aria-live="polite">1 of 5</p>
+    </div>
+
+    <div class="story-nav" role="tablist" aria-label="Story points" id="story-nav">
+      <button class="pt" role="tab" id="pt-0" aria-selected="true" aria-controls="stage" tabindex="0"><i></i>India imported more than it exported in every month from 2022 to 2026</button>
+      <button class="pt" role="tab" id="pt-1" aria-selected="false" aria-controls="stage" tabindex="-1"><i></i>The US buys the most from India; China sells it the most</button>
+      <button class="pt" role="tab" id="pt-2" aria-selected="false" aria-controls="stage" tabindex="-1"><i></i>Himalayan expedition success rose from about 25% to about 70% in a century</button>
+      <button class="pt" role="tab" id="pt-3" aria-selected="false" aria-controls="stage" tabindex="-1"><i></i>The climber fatality rate fell below 1%, while Everest drew 2,329 expeditions</button>
+      <button class="pt" role="tab" id="pt-4" aria-selected="false" aria-controls="stage" tabindex="-1"><i></i>A six-bedroom Seattle Airbnb lists for over six times a one-bedroom</button>
+    </div>
+
+    <div class="stage" id="stage" role="tabpanel" aria-labelledby="pt-0">
+      <button type="button" class="shot" id="shot" aria-label="Open this dashboard at full size">
+        <img id="shot-img" src="images/india-d1.jpg" width="1600" height="1280" alt="India trade overview dashboard: export, import and trade balance totals, a 2024 line of monthly exports and imports, and monthly trade balance bars from 2022 to 2026, all in deficit.">
+      </button>
+      <div class="info">
+        <p class="wb" id="s-wb">India trade workbook, dashboard 1 of 2</p>
+        <h3 id="s-title">Trade overview</h3>
+        <p class="q" id="s-q">Where does India's trade deficit come from?</p>
+        <div class="bans">
+          <p><b id="s-b1">Every month</b><span id="s-b1l">in deficit since January 2022</span></p>
+          <p><b id="s-b2">&minus;$274B</b><span id="s-b2l">2024 balance: $443B exports, $717B imports</span></p>
+        </div>
+        <ul id="s-notes">
+          <li>KPI tiles for exports, imports and balance</li>
+          <li>Dual-axis line of monthly exports and imports</li>
+          <li>Monthly balance bars, 2022 to 2026</li>
+        </ul>
+        <div class="ctrl">
+          <button type="button" id="prev" aria-label="Previous story point"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4 6 10l6 6"/></svg></button>
+          <button type="button" id="next" aria-label="Next story point"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 4 6 6-6 6"/></svg></button>
+          <button type="button" class="full" id="full">Full size</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="more">
+      <!-- To finish an in-progress card: see README.md. -->
+      <article class="card wip">
+        <p class="kicker">In progress</p>
+        <h3>Video game sales by genre and platform</h3>
+        <p>Four decades of global sales: genre mix, platform share and regional splits.</p>
+      </article>
+      <article class="card wip">
+        <p class="kicker">In progress</p>
+        <h3>E-commerce orders, delivery and reviews</h3>
+        <p>Order trends, state Pareto, freight burden and how delivery delays move review scores.</p>
+      </article>
+      <article class="card">
+        <p class="kicker">Code on GitHub</p>
+        <h3>Growth analytics dashboard</h3>
+        <p>Funnel, retention cohorts and CAC vs LTV on a Python star-schema pipeline, with a Power BI model.</p>
+        <a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Project_1" target="_blank" rel="noopener">View the code</a>
+      </article>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>I'm a data analyst with a background in engineering, financial auditing, and AI-driven analytics. I specialize in transforming complex datasets into actionable insights through data cleaning, statistical analysis, interactive dashboards, and compelling visualizations. Proficient in Python, SQL, Excel, Power BI, Tableau, and R, I combine analytical thinking with automation and AI-powered workflows to solve real-world business problems. My focus is on delivering accurate, insightful, and decision-ready analysis that helps businesses work smarter and grow.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="chips">
-      <li>Python</li><li>SQL</li><li>Excel</li><li>Power BI</li><li>Tableau</li><li>R</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="grid">
-      <!-- To publish a dashboard: see README.md. Replace the placeholder block, title, text and link of each card. -->
-      <article class="card">
-        <div class="thumb placeholder">
-          <!-- <img src="images/dashboard-1.png" alt="Dashboard 1 screenshot"> -->
-          <span>Dashboard 1 - coming soon</span>
-        </div>
-        <h3>Dashboard 1</h3>
-        <p>Description coming soon.</p>
-        <!-- <a class="btn small" href="TABLEAU_PUBLIC_LINK_1" target="_blank" rel="noopener">View on Tableau Public</a> -->
-        <span class="badge">Coming soon</span>
-      </article>
-      <article class="card">
-        <div class="thumb placeholder">
-          <!-- <img src="images/dashboard-2.png" alt="Dashboard 2 screenshot"> -->
-          <span>Dashboard 2 - coming soon</span>
-        </div>
-        <h3>Dashboard 2</h3>
-        <p>Description coming soon.</p>
-        <!-- <a class="btn small" href="TABLEAU_PUBLIC_LINK_2" target="_blank" rel="noopener">View on Tableau Public</a> -->
-        <span class="badge">Coming soon</span>
-      </article>
-      <article class="card">
-        <div class="thumb placeholder">
-          <!-- <img src="images/dashboard-3.png" alt="Dashboard 3 screenshot"> -->
-          <span>Dashboard 3 - coming soon</span>
-        </div>
-        <h3>Dashboard 3</h3>
-        <p>Description coming soon.</p>
-        <!-- <a class="btn small" href="TABLEAU_PUBLIC_LINK_3" target="_blank" rel="noopener">View on Tableau Public</a> -->
-        <span class="badge">Coming soon</span>
-      </article>
+  <section id="services" class="band" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="services-title">What you can hire me for</h2>
+        <p>Six kinds of work, and the tools I reach for in each. A filled dot is the main tool; a ring means I also use it.</p>
+      </div>
+      <div class="mx-scroll">
+        <table class="mx" id="mx">
+          <caption class="sr">Services by tool</caption>
+          <thead><tr><th scope="col">Service</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Want to work together? Email me at <a href="mailto:bmondal0000@gmail.com">bmondal0000@gmail.com</a>.</p>
+  <section id="process" class="wrap sec" aria-labelledby="process-title">
+    <div class="sec-head">
+      <h2 id="process-title">How a dashboard project runs</h2>
+      <p>A typical single dashboard takes about two weeks. You see a working draft by day five.</p>
+    </div>
+    <figure class="gantt-box">
+      <figcaption class="sr">Project steps by working day, and what you get from each</figcaption>
+      <ol class="gantt" id="gantt"></ol>
+      <div class="g-axis" id="g-axis" aria-hidden="true"></div>
+    </figure>
+  </section>
+
+  <section id="about" class="band" aria-labelledby="about-title">
+    <div class="wrap split">
+      <div class="about">
+        <h2 id="about-title">About me</h2>
+        <p>I'm a data analyst with a background in engineering, financial auditing, and AI-driven analytics. I specialize in transforming complex datasets into actionable insights through data cleaning, statistical analysis, interactive dashboards, and compelling visualizations. Proficient in Python, SQL, Excel, Power BI, Tableau, and R, I combine analytical thinking with automation and AI-powered workflows to solve real-world business problems. My focus is on delivering accurate, insightful, and decision-ready analysis that helps businesses work smarter and grow.</p>
+        <p class="meta">Works in English, Hindi and Bengali. Kolkata, UTC+5:30.</p>
+      </div>
+      <figure class="tl-box">
+        <figcaption>Background, 2016 to today</figcaption>
+        <div id="timeline"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact" class="dark" aria-labelledby="contact-title">
+    <div class="wrap split">
+      <div class="c-main">
+        <h2 id="contact-title">Start a project</h2>
+        <a class="mail" href="mailto:bmondal0000@gmail.com?subject=Project%20enquiry">bmondal0000@gmail.com</a>
+        <p>I reply with follow-up questions or a short proposal.</p>
+      </div>
+      <div class="c-list">
+        <p><b>A good first email covers</b></p>
+        <ul>
+          <li>Where your data lives: spreadsheets, a database, or an app</li>
+          <li>The questions the dashboard should answer</li>
+          <li>Who will use it, and your deadline</li>
+        </ul>
+      </div>
+    </div>
   </section>
 </main>
 
-<footer>&copy; <span id="y">2026</span> Biswajit Mondal</footer>
+<footer class="wrap foot">
+  <span>&copy; <span id="y">2026</span> Biswajit Mondal</span>
+  <a href="https://github.com/sciencenerd-des" target="_blank" rel="noopener">github.com/sciencenerd-des</a>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Dashboard at full size">
+  <form method="dialog"><button class="lb-close" type="submit">Close</button></form>
+  <img alt="">
+</dialog>
+
+<script src="script.js" defer></script>
 </body>
 </html>
