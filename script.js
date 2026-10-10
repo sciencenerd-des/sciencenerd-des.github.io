@@ -1,4 +1,4 @@
-// Portfolio behaviour: Tableau-style story points, full-size viewer, services matrix, Gantt, timeline.
+// Portfolio behaviour: Tableau-style story points, full-size viewer, services matrix, Gantt.
 (function () {
   const $ = (s, r = document) => r.querySelector(s);
 
@@ -150,22 +150,6 @@
   ).join("");
   $("#g-axis").innerHTML = '<span></span><div class="g-days">' +
     Array.from({ length: 10 }, (_, i) => '<span data-d="' + (i + 1) + '">Day ' + (i + 1) + "</span>").join("") + "</div>";
-
-  // ---- Background timeline ----
-  const pct = (y) => ((y - 2016) / 11) * 100;
-  const now = 2026 + 9 / 12;
-  const TIMELINE = [
-    ["B.E. Civil Engineering", "IIEST Shibpur, 2016", 2016.5, null, "var(--orange)"],
-    ["Accountant, public-sector accounts", "2022 to 2023", 2022 + 8 / 12, 2023 + 7 / 12, "var(--teal)"],
-    ["Auditor, public-sector audit", "2023 to today", 2023 + 7 / 12, now, "var(--blue)"],
-  ];
-  $("#timeline").innerHTML = TIMELINE.map(([what, when, from, to, c]) =>
-    '<div class="tl-item"><p><b>' + what + "</b> <span>" + when + "</span></p>" +
-    '<div class="tl-track"><span class="tl-mark' + (to ? "" : " point") + '" style="--c:' + c + ";left:" + pct(from) + "%" +
-    (to ? ";width:" + (pct(to) - pct(from)) + "%" : "") + '"></span></div></div>'
-  ).join("") +
-    '<div class="tl-axis" aria-hidden="true">' +
-    [2016, 2018, 2020, 2022, 2024, 2026].map((y) => '<span style="left:' + pct(y) + '%">' + y + "</span>").join("") + "</div>";
 
   $("#y").textContent = new Date().getFullYear();
 })();
