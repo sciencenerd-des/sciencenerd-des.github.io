@@ -235,3 +235,14 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;max-width:15ch}
 .lb-body img{width:100%;height:auto;cursor:zoom-in}
 .lb-body img.zoomed{width:auto;max-width:none;min-width:1600px;cursor:zoom-out}
 @media (max-width:860px){.pt{flex-basis:70%}}
+
+/* Pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.tier{display:flex;flex-direction:column;gap:8px;padding:18px;background:var(--sheet);border:1px solid var(--rule);border-top:4px solid var(--blue)}
+.tier-in{border-top-color:var(--orange)}
+.tier h3{font-size:17px;font-weight:700;line-height:1.3}
+.tier .price{font-stretch:72%;font-size:30px;font-weight:800;line-height:1.1;color:var(--blue-dk)}
+.tier .price small{font-stretch:100%;font-size:14px;font-weight:600;color:var(--ink-2)}
+.tier p:not(.price){font-size:14px;color:var(--ink-2)}
+.price-cta{margin-top:24px;font-size:16px}
+@media (max-width:860px){.tiers{grid-template-columns:1fr}}
