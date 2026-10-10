@@ -113,7 +113,7 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;max-width:15ch}
 .ctrl svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .ctrl .full{margin-left:auto}
 
-.more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:20px}
+.more{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:20px}
 .card{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--sheet);border:1px solid var(--rule)}
 .card.wip{border-style:dashed;border-color:var(--wip)}
 .card h3{font-size:17px;font-weight:700;line-height:1.3}
