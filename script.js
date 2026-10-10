@@ -106,25 +106,35 @@
 
   // ---- Full-size viewer ----
   const lightbox = $("#lightbox");
+  const zoomBtn = $("#lb-zoom");
   function openFull() {
     const big = $("img", lightbox);
     big.src = img.src; big.alt = img.alt;
+    big.classList.remove("zoomed"); zoomBtn.setAttribute("aria-pressed", "false"); zoomBtn.textContent = "Zoom to actual size";
+    $("#lb-cap").textContent = STORIES[cur].wb + ": " + STORIES[cur].title;
     if (lightbox.showModal) lightbox.showModal(); else window.open(img.src, "_blank");
   }
   $("#shot").addEventListener("click", openFull);
   $("#full").addEventListener("click", openFull);
   lightbox.addEventListener("click", (e) => { if (e.target === lightbox) lightbox.close(); });
+  function toggleZoom() {
+    const on = $("img", lightbox).classList.toggle("zoomed");
+    zoomBtn.setAttribute("aria-pressed", String(on));
+    zoomBtn.textContent = on ? "Fit to window" : "Zoom to actual size";
+  }
+  zoomBtn.addEventListener("click", toggleZoom);
+  $("img", lightbox).addEventListener("click", toggleZoom);
 
   // ---- Services by tool (2 = main tool, 1 = also used) ----
   const TOOLS = ["Tableau", "Power BI", "Excel", "SQL", "Python", "R"];
   const LEVEL = ["Not used", "Also used", "Main tool"];
   const SERVICES = [
-    ["Interactive dashboards", "Dashboards your team can filter and explore", [2, 2, 1, 1, 0, 0]],
+    ["Interactive dashboards", "Dashboards your team can filter and explore", [2, 1, 1, 1, 0, 0]],
     ["Data cleaning and prep", "Messy exports turned into tidy, documented tables", [0, 0, 2, 2, 2, 1]],
     ["Reporting automation", "Weekly and monthly reports that build themselves", [0, 1, 2, 1, 2, 0]],
     ["Statistical analysis and A/B tests", "Clear answers on what changed and whether it matters", [0, 0, 1, 0, 2, 2]],
     ["Financial and audit analytics", "Reconciliations, variance checks, exception reports", [1, 1, 2, 2, 1, 0]],
-    ["KPI design and data modeling", "Metric definitions and models that stay consistent", [2, 2, 1, 2, 0, 0]],
+    ["KPI design and data modeling", "Metric definitions and models that stay consistent", [2, 1, 1, 2, 0, 0]],
   ];
   const mx = $("#mx");
   mx.tHead.rows[0].insertAdjacentHTML("beforeend", TOOLS.map((t) => '<th scope="col">' + t + "</th>").join(""));

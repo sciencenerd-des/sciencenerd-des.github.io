@@ -19,7 +19,7 @@ window.addEventListener('unhandledrejection',e=>{document.body.dataset.err=(docu
 let _n=0;
 function sheet(id,{title,q,ref='',guide='',inferred=false,span=6,plot=false,height='',hint=''}){
  _n++;const a=document.createElement('article');a.className='sheet s'+span;a.style.animationDelay=(_n*40)+'ms';
- a.innerHTML=`<header><h3><span class="no">${String(_n).padStart(2,'0')}</span>${title}</h3>${guide?`<span class="badge">Guide chart ${guide}</span>`:''}${inferred?'<span class="tag">inferred, to be confirmed</span>':''}</header>
+ a.innerHTML=`<header><h3><span class="no">${String(_n).padStart(2,'0')}</span>${title}</h3>${guide?`<span class="badge">Guide chart ${guide}</span>`:''}</header>
  <p class="q">${q}</p>${ref?`<p class="ref">${ref}</p>`:''}
  <div class="body">${plot?`<div class="plot" id="${id}" role="img" aria-label="${title}"></div>`:`<div class="cv ${height}"><canvas id="${id}" role="img" aria-label="${title}: ${q.replace(/"/g,'')}"></canvas></div>`}</div>
  <p class="hint" id="${id}-hint">${hint}</p>`;

@@ -17,12 +17,12 @@ const pick=(except)=>{const out=[];for(let i=0;i<N;i++){
 const avg=a=>a.length?a.reduce((s,v)=>s+v,0)/a.length:0;
 const nights=i=>f.nights[i].reduce((s,v)=>s+v,0);
 
-sheet('c1',{title:'Listings by bedrooms',q:'How many distinct listings are there for each bedroom count?',inferred:true,span:4,ref:'Workbook chart: distinct bedroom listings. Click a bar to filter the page.',hint:''});
-sheet('c2',{title:'Average price by bedrooms',q:'What is the average price per bedroom count?',inferred:true,span:4,ref:'Workbook chart: average price per bedroom (median shown beside it).'});
-sheet('c6',{title:'Room types',q:'How do room types differ in count and price?',inferred:true,span:4,ref:'Supporting view. Click a bar to filter by room type.'});
-sheet('c3',{title:'Price by zip code',q:'Which zip codes have the highest average listing price?',inferred:true,span:5,height:'tall',ref:'Workbook chart: price by zipcode (top 12 zips by average price; only zips with enough listings). Click a bar to filter by zip.'});
-sheet('c4',{title:'Estimated revenue',q:'How does estimated revenue vary by year and month?',inferred:true,span:7,height:'tall',ref:'Workbook chart: revenue by year. Estimate = unavailable nights x listing price; calendar covers Jan 2016 to 2 Jan 2017 only.'});
-sheet('c5',{title:'Listing map',q:'Where are listings and prices spread across the city?',inferred:true,span:12,plot:true,ref:'Overall question: how listings, prices and revenue are spread across areas and years. Every listing priced up to $500 that matches the filters; hover for details.'});
+sheet('c1',{title:'Listings by bedrooms',q:'How many distinct listings are there for each bedroom count?',span:4,ref:'Workbook chart: distinct bedroom listings. Click a bar to filter the page.',hint:''});
+sheet('c2',{title:'Average price by bedrooms',q:'What is the average price per bedroom count?',span:4,ref:'Workbook chart: average price per bedroom (median shown beside it).'});
+sheet('c6',{title:'Room types',q:'How do room types differ in count and price?',span:4,ref:'Supporting view. Click a bar to filter by room type.'});
+sheet('c3',{title:'Price by zip code',q:'Which zip codes have the highest average listing price?',span:5,height:'tall',ref:'Workbook chart: price by zipcode (top 12 zips by average price; only zips with enough listings). Click a bar to filter by zip.'});
+sheet('c4',{title:'Estimated revenue',q:'How does estimated revenue vary by year and month?',span:7,height:'tall',ref:'Workbook chart: revenue by year. Estimate = unavailable nights x listing price; calendar covers Jan 2016 to 2 Jan 2017 only.'});
+sheet('c5',{title:'Listing map',q:'Where are listings and prices spread across the city?',span:12,plot:true,ref:'Overall question: how listings, prices and revenue are spread across areas and years. Every listing priced up to $500 that matches the filters; hover for details.'});
 
 const bc=(id,type,labels,datasets,opt)=>new Chart(id,{type,data:{labels,datasets},options:Object.assign({plugins:{legend:{display:datasets.length>1}}},opt)});
 const dimC=(sel,i,col)=>sel==null||sel===i?col:hex2rgba(col,.22);
@@ -88,6 +88,6 @@ document.getElementById('notes').innerHTML=`<li>Source: Tableau Full Project.xls
 <li>Revenue estimate: ${fmt(m.booked_nights)} unavailable nights x each listing's listed price. Unavailable nights may include host-blocked dates, and calendar prices are blank on those nights.</li>
 <li>${m.bedrooms_missing} listings have no bedroom count and ${m.zip_missing} have no usable zip code; they are left out of those charts. Bedroom charts show 0 to 5 bedrooms. The map shows listings priced $1 to $500 with coordinates.</li>
 <li>Filters work on the real listing-level data; "average" is the mean of the listing price column. The zip chart needs 20 listings per zip unfiltered and 5 once a room or bedroom filter is on, so tiny groups don't dominate.</li>
-<li>Questions marked "inferred" were worked out from the Tableau workbook's chart titles and need confirming.</li>`;
+`;
 render();
 })();

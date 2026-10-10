@@ -15,14 +15,13 @@ const yok=i=>{const y=f.year[i];if(y==null)return full();return y>=+F.v.y0&&y<=+
 const pick=ex=>{const o=[];for(let i=0;i<N;i++){if(!yok(i))continue;if(ex!=='genre'&&F.v.genre!=='all'&&f.genre[i]!==+F.v.genre)continue;if(ex!=='plat'&&F.v.plat!=='all'&&f.plat[i]!==+F.v.plat)continue;o.push(i)}return o};
 const val=(i,r)=>f[r][i];
 const topN=(rows,keyArr,names,r,n)=>{const g={};rows.forEach(i=>{const k=keyArr[i];if(k==null)return;g[k]=(g[k]||0)+f[r][i]});return Object.entries(g).sort((a,b)=>b[1]-a[1]).slice(0,n).map(([k,v])=>[names?names[k]:k,v,k])};
-sheet('c1',{title:'Sales by genre',q:'Which genres generate the most global sales?',inferred:true,span:4,height:'tall',ref:'Click a bar to filter by genre. Bars follow the Sales region toggle.'});
-sheet('c2',{title:'Sales by genre over time',q:'How have sales by genre changed across release years?',inferred:true,span:8,plot:true,ref:'Years 1980 to 2016 (later years have too few games). Stacked by genre; the selected genre keeps its colour.'});
-sheet('c3',{title:'Top platforms',q:'Which platforms have sold the most?',inferred:true,span:4,height:'tall',ref:'Top 10 platforms. Click a bar to filter by platform.'});
-sheet('c4',{title:'Top publishers',q:'Which publishers lead in global sales?',inferred:true,span:4,height:'tall',ref:'Top 10 publishers under the current filters.'});
-sheet('c5',{title:'Regional split',q:'How is global sales split across regions?',inferred:true,span:4,height:'tall',ref:'Click a slice to switch the Sales region. Shares are of the four regional columns.'});
-sheet('c6',{title:'Genre by region',q:'Do regions prefer different genres?',inferred:true,span:6,plot:true,ref:'Each row is a region split of that genre\'s sales (% of genre total). Click a row to filter by genre.'});
-sheet('c7',{title:'Best-selling games',q:'Which individual games sold the most?',inferred:true,span:6,height:'tall',ref:'Top 10 titles under the current filters; label shows game and platform.'});
-sheet('c8',{title:'Directory locations',q:'Which countries have the most locations in directory.csv?',inferred:true,span:12,ref:'Second data file in the workbook: a store directory ('+fmt(m.dir_rows)+' rows, almost all Starbucks). <span class="note">not affected by the filters: separate dataset</span>'});
+sheet('c1',{title:'Sales by genre',q:'Which genres generate the most global sales?',span:4,height:'tall',ref:'Click a bar to filter by genre. Bars follow the Sales region toggle.'});
+sheet('c2',{title:'Sales by genre over time',q:'How have sales by genre changed across release years?',span:8,plot:true,ref:'Years 1980 to 2016 (later years have too few games). Stacked by genre; the selected genre keeps its colour.'});
+sheet('c3',{title:'Top platforms',q:'Which platforms have sold the most?',span:4,height:'tall',ref:'Top 10 platforms. Click a bar to filter by platform.'});
+sheet('c4',{title:'Top publishers',q:'Which publishers lead in global sales?',span:4,height:'tall',ref:'Top 10 publishers under the current filters.'});
+sheet('c5',{title:'Regional split',q:'How is global sales split across regions?',span:4,height:'tall',ref:'Click a slice to switch the Sales region. Shares are of the four regional columns.'});
+sheet('c6',{title:'Genre by region',q:'Do regions prefer different genres?',span:6,plot:true,ref:'Each row is a region split of that genre\'s sales (% of genre total). Click a row to filter by genre.'});
+sheet('c7',{title:'Best-selling games',q:'Which individual games sold the most?',span:6,height:'tall',ref:'Top 10 titles under the current filters; label shows game and platform.'});
 
 const gcol=i=>T.cat[i%12];
 const hbar=(id,cb)=>new Chart(id,{type:'bar',data:{labels:[],datasets:[{data:[],backgroundColor:T.blue,borderRadius:3}]},options:{indexAxis:'y',onClick:cb,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${fmt(c.raw,2)}M units`}}},scales:{x:{beginAtZero:true,title:{display:true,text:'Sales (millions of units)'}},y:{grid:{display:false}}}}});
@@ -31,7 +30,6 @@ ch.c1=hbar('c1',(e,els)=>els.length&&F.toggle('genre',String(ch.c1._k[els[0].ind
 ch.c3=hbar('c3',(e,els)=>els.length&&F.toggle('plat',String(ch.c3._k[els[0].index])));
 ch.c4=hbar('c4',null);ch.c7=hbar('c7',null);
 ch.c5=new Chart('c5',{type:'doughnut',data:{labels:REG.slice(1).map(r=>r[1]),datasets:[{data:[],backgroundColor:[T.blue,T.coral,T.teal,T.violet],borderColor:'#111821',borderWidth:2,offset:[0,0,0,0]}]},options:{cutout:'58%',onClick:(e,els)=>{if(els.length)F.toggle('reg',REG[els[0].index+1][0])},plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:c=>{const t=c.dataset.data.reduce((a,b)=>a+b,0);return `${c.label}: ${fmt(c.raw,1)}M (${(c.raw/t*100).toFixed(1)}%)`}}}}}});
-ch.c8=new Chart('c8',{type:'bar',data:{labels:d.stores.k,datasets:[{label:'Stores',data:d.stores.v,backgroundColor:T.violet,borderRadius:3}]},options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.raw)+' locations'}}},scales:{y:{beginAtZero:true,title:{display:true,text:'Locations'}},x:{grid:{display:false}}}}});
 [ch.c1,ch.c3,ch.c5].forEach(c=>pointer(c));
 let tInit=false,hInit=false;
 
@@ -76,10 +74,9 @@ function render(){
  hint('c6',jp?`Japan takes its largest share in <b>${jp[0]}</b> (${jp[1]}% of that genre's sales).`:'');
  setLabel('c2','Stacked area of sales by genre and release year');setLabel('c6','Heatmap of genre share by region');
 }
-document.getElementById('notes').innerHTML=`<li>Source: vgsales.csv (${fmt(m.rows)} games, sales in millions of units) and directory.csv (${fmt(m.dir_rows)} stores). Filters re-cut the real rows; no values are modelled.</li>
+document.getElementById('notes').innerHTML=`<li>Source: vgsales.csv (${fmt(m.rows)} games, sales in millions of units). Filters re-cut the real rows; no values are modelled.</li>
 <li>${m.year_missing} games have no release year. They are included only while the release-year range is the full ${m.year_min} to ${m.year_max}; narrowing the range removes them. ${m.publisher_missing} games have no publisher and are left out of the publisher chart. The trend chart stops at 2016 because the data thins out after it.</li>
 <li>Regional sales are the file's NA, EU, JP and Other columns. Global sales is its own column and may differ slightly from their sum.</li>
-<li>directory.csv is a store listing, not game data; it is shown separately because the DV1 workbook includes it, and it ignores the filters.</li>
-<li>Questions marked "inferred" were worked out from the data itself and need confirming.</li>`;
+`;
 render();
 })();

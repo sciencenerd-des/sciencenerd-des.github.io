@@ -4,7 +4,7 @@
   --sheet:#FFFFFF;
   --ink:#1E2A38;
   --ink-2:#4A5868;
-  --muted:#586577;
+  --muted:#4A5868;
   --rule:#D3DAE1;
   --rule-soft:#E8ECF0;
   --blue:#4E79A7;
@@ -30,7 +30,7 @@
     --sheet:#1A222C;
     --ink:#E6EBF0;
     --ink-2:#C3CDD8;
-    --muted:#9DAAB8;
+    --muted:#B4C0CC;
     --rule:#2E3945;
     --rule-soft:#253039;
     --blue:#6E9BCB;
@@ -208,3 +208,30 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;max-width:15ch}
   html{scroll-behavior:auto}
   *{transition:none!important}
 }
+
+/* Polish: CTA, thumbnails, contrast, zoomable viewer */
+.hero>div:first-child h1+*{margin-top:0}
+.lede-box{display:grid;gap:16px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.cta a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:3px;font-size:15px;font-weight:700;text-decoration:none}
+.cta .btn-hot{background:var(--orange);color:#1E2A38}
+.cta .btn-hot:hover{background:var(--orange-lt);color:#1E2A38}
+.btn-ghost{border:1px solid var(--ink-2);color:var(--ink)}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+.thumb{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border:1px solid var(--rule);background:#fff}
+.pt[aria-selected="true"] .thumb{border-color:var(--orange)}
+.bans span,.kicker,.q{color:var(--ink-2)}
+.avail{color:var(--orange-lt)!important;font-weight:600}
+.foot-links{display:flex;flex-wrap:wrap;gap:14px}
+.foot a{color:var(--blue-dk)}
+.lightbox{display:none;flex-direction:column}
+.lightbox[open]{display:flex}
+.lb-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px;background:var(--navy);color:#fff;position:sticky;top:0;z-index:2}
+.lb-bar p{flex:1 1 200px;font-size:14px;font-weight:600;margin:0}
+.lb-bar button{height:44px;padding:0 14px;border:1px solid #fff;border-radius:3px;background:transparent;color:#fff;font-weight:700;cursor:pointer}
+.lb-bar .lb-close{position:static;float:none;margin:0;background:var(--orange);color:#1E2A38;border-color:var(--orange)}
+.lb-bar form{margin:0}
+.lb-body{overflow:auto;flex:1}
+.lb-body img{width:100%;height:auto;cursor:zoom-in}
+.lb-body img.zoomed{width:auto;max-width:none;min-width:1600px;cursor:zoom-out}
+@media (max-width:860px){.pt{flex-basis:70%}}

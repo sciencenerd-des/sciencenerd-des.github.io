@@ -12,11 +12,11 @@ The dashboards are shown as a Tableau-style **Story**: a row of captioned story 
 4. Add an entry to `STORIES` in `script.js` (image, size, alt text, workbook line, title, question, two key numbers, three notes) and a matching `<button class="pt" role="tab" id="pt-N">` with its caption in `index.html`. Captions are findings, written as one plain sentence.
 5. Five story points fit one row on desktop; more than five scroll sideways.
 
-## In-progress cards
-The video game sales and e-commerce cards under the story are placeholders (`.card.wip`). When a dashboard is ready, add it as a story point and delete its card.
+## Dashboard cards
+The three interactive web dashboards live in `dashboards/` and are linked from the cards under the story.
 
 ## Other data
-The services matrix, process Gantt and background timeline are built from `SERVICES`, `STEPS` and `TIMELINE` in `script.js`.
+The services matrix, process Gantt are built from `SERVICES` and `STEPS` in `script.js`.
 
 ## Contact
 Email `bmondal0000@gmail.com` appears in `index.html` (header, contact section).
