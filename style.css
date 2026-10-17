@@ -1,6 +1,11 @@
-/* Tokens. Marks use Tableau 10 blue and orange; ink is a deep navy; sheets sit on a cool grey canvas. */
+/* Tokens. Marks use Tableau 10 blue (data) and orange (actions only); ink is a deep navy; sheets sit on a ledger-tinted canvas; audit red is reserved for flags. */
 :root{
-  --canvas:#EEF1F4;
+  --canvas:#EEF2EF;
+  --red:#B8323A;
+  --red-lt:#F6E3E4;
+  --tick:#2F6B2A;
+  --tick-lt:#E3EFE1;
+  --ledger:#CFDCD5;
   --sheet:#FFFFFF;
   --ink:#1E2A38;
   --ink-2:#4A5868;
@@ -27,6 +32,11 @@
 @media (prefers-color-scheme:dark){
   :root{
     --canvas:#121820;
+    --red:#F08A90;
+    --red-lt:#3A2226;
+    --tick:#8FD086;
+    --tick-lt:#1F3320;
+    --ledger:#2E3A34;
     --sheet:#1A222C;
     --ink:#E6EBF0;
     --ink-2:#C3CDD8;
@@ -75,17 +85,14 @@ h1,.sec-head h2,.about h2,.c-main h2,.info h3{font-stretch:72%;font-weight:800;l
 .top nav a.btn-hot:hover{background:var(--orange-lt);color:#1E2A38}
 
 /* Hero */
-.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,26rem);gap:40px;align-items:end;padding-top:56px;padding-bottom:28px}
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,27rem);gap:56px;align-items:center;padding-top:64px;padding-bottom:64px}
 .status{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--green-dk);margin-bottom:14px}
 .status span{width:9px;height:9px;border-radius:50%;background:var(--green)}
-h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;max-width:15ch}
-.lede{font-size:18px;color:var(--ink-2);max-width:40ch}
+h1{font-size:clamp(2.6rem,6.2vw,4.9rem);line-height:.95;max-width:14ch;text-wrap:balance}
+.lede{font-size:18px;color:var(--ink-2);max-width:56ch}
 
 /* Story */
 .work{padding-bottom:64px}
-.story-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px}
-.story-head h2{font-size:15px;font-weight:700}
-.story-head p{font-size:14px;color:var(--muted)}
 .story-nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
 .pt{display:flex;flex-direction:column;gap:8px;min-height:96px;padding:12px 14px 14px;text-align:left;font-size:14px;font-weight:500;line-height:1.35;background:var(--sheet);color:var(--ink);border:1px solid var(--rule);border-radius:2px;cursor:pointer;transition:background-color .15s,border-color .15s}
 .pt i{display:block;width:28px;height:4px;border-radius:2px;background:var(--wip);transition:width .2s,background-color .2s}
@@ -158,7 +165,7 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;max-width:15ch}
 /* About */
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
 .about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:16px 40px;align-items:start}
-.about h2{grid-row:span 2}
+.about h2{grid-row:span 3}
 .about h2{font-size:clamp(2rem,4vw,2.75rem);line-height:1}
 .about p{max-width:62ch}
 .about .meta{font-size:14px;color:var(--muted)}
@@ -187,7 +194,6 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;max-width:15ch}
 @media (max-width:860px){
   body{font-size:16px}
   .wrap{padding:0 16px}
-  .top nav a:not(.btn-hot){display:none}
   .hero{grid-template-columns:1fr;gap:20px;padding-top:36px;padding-bottom:36px}
   .story-nav{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:thin}
   .pt{flex:0 0 78%;min-height:84px;scroll-snap-align:start}
@@ -246,3 +252,98 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;max-width:15ch}
 .tier p:not(.price){font-size:14px;color:var(--ink-2)}
 .price-cta{margin-top:24px;font-size:16px}
 @media (max-width:860px){.tiers{grid-template-columns:1fr}}
+
+/* ---- Client-attraction upgrade ---- */
+.hero-copy{display:grid;gap:22px}
+.hero-copy .status{margin-bottom:-6px}
+.facts{font-size:14.5px;color:var(--ink-2);max-width:60ch;padding-top:14px;border-top:1px solid var(--ledger)}
+
+/* The one bold element: an audit working paper. Ticks and flags land in sequence on load. */
+.paper{background:var(--sheet);border:1px solid var(--rule);border-left:6px solid var(--blue);padding:22px 22px 18px;box-shadow:8px 8px 0 var(--ledger)}
+.paper-title{display:flex;justify-content:space-between;align-items:baseline;font-stretch:72%;font-size:24px;font-weight:800;line-height:1.1;margin-bottom:10px}
+.paper-title span{font-stretch:100%;font-size:13px;font-weight:600;color:var(--ink-2)}
+.checks{list-style:none;padding:0;display:grid}
+.checks li{border-top:1px solid var(--rule-soft);display:grid;grid-template-columns:28px minmax(0,1fr);grid-template-areas:"m w" "m r";column-gap:10px;padding:8px 0;min-height:44px;align-items:center}
+.checks li::before{grid-area:m;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;font-weight:800;font-size:15px;line-height:1}
+.checks .ok::before{content:"\2713";color:var(--tick);background:var(--tick-lt)}
+.checks .bad::before{content:"!";color:var(--red);background:var(--red-lt)}
+.checks .what{grid-area:w;font-size:15px;font-weight:600}
+.checks .what b{font-weight:600;letter-spacing:.02em}
+.checks .res{grid-area:r;font-size:13.5px;color:var(--ink-2)}
+.checks .bad .res{color:var(--red);font-weight:600}
+.paper figcaption{margin-top:12px;font-size:13.5px;color:var(--ink-2)}
+@media (prefers-reduced-motion:no-preference){
+  .checks li{animation:land .45s cubic-bezier(.2,.7,.2,1) both}
+  .checks li:nth-child(1){animation-delay:.25s}.checks li:nth-child(2){animation-delay:.55s}
+  .checks li:nth-child(3){animation-delay:.85s}.checks li:nth-child(4){animation-delay:1.15s}
+  @keyframes land{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+}
+
+/* Who I help: ruled rows, not cards */
+.rows{list-style:none;padding:0;margin:0;display:grid;border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.1fr) minmax(0,1.1fr);gap:28px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.row h3{font-stretch:72%;font-size:24px;font-weight:800;line-height:1.1}
+.row p{color:var(--ink-2);max-width:42ch}
+.row .build{color:var(--ink);font-weight:600;padding-left:14px;border-left:3px solid var(--blue)}
+
+/* Case studies */
+.case{padding:28px 0;border-top:2px solid var(--ink)}
+.case + .case{border-top-width:1px;border-top-color:var(--rule)}
+.case header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 24px;margin-bottom:18px}
+.case h3{font-stretch:72%;font-size:clamp(1.6rem,3vw,2.1rem);font-weight:800;line-height:1.05}
+.src{font-size:14px;color:var(--ink-2)}
+.pao{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.pao h4{margin:0 0 6px;font-size:14px;font-weight:700;color:var(--blue-dk)}
+.pao > div:last-child h4{color:var(--tick)}
+.pao p{font-size:15.5px;max-width:44ch}
+.pao b{font-stretch:85%;font-weight:800}
+.case-link{margin-top:16px;font-size:15px;font-weight:600}
+
+/* Dashboards band */
+.work.band{padding-bottom:64px}
+#story-count{display:block;margin-top:6px;font-size:14px;font-weight:600;color:var(--ink-2)}
+.card h3 a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--blue-lt);text-underline-offset:3px}
+.card h3 a:hover{text-decoration-color:var(--blue-dk)}
+
+/* Pricing additions */
+.tier ul{margin-top:auto;padding:10px 0 0 18px;border-top:1px solid var(--rule-soft);display:grid;gap:4px;font-size:14px}
+.tier li::marker{color:var(--tick)}
+.tier-main{border-top-color:var(--orange);box-shadow:6px 6px 0 var(--ledger)}
+.tier-side{border-top-color:var(--rule);background:transparent;border-style:dashed}
+
+/* How I work */
+.principles{list-style:none;padding:0;margin-top:28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 40px}
+.principles li{padding-left:36px;position:relative;max-width:52ch;color:var(--ink-2)}
+.principles li::before{content:"\2713";position:absolute;left:0;top:0;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:var(--tick-lt);color:var(--tick);font-weight:800;font-size:14px}
+.principles b{color:var(--ink)}
+
+/* FAQ */
+.faq{border-top:2px solid var(--ink);max-width:880px}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px 0;min-height:44px;font-size:17.5px;font-weight:700}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--rule);border-radius:50%;font-weight:600;transition:transform .2s}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{padding:0 0 18px;max-width:68ch;color:var(--ink-2)}
+
+/* Contact */
+.c-main .cta{margin-top:4px}
+.dark .btn-hot{background:var(--orange);color:#1E2A38}
+
+@media (max-width:1020px){
+  .hero{grid-template-columns:1fr;gap:36px}
+  .paper{max-width:34rem}
+}
+@media (max-width:860px){
+  .top-in{gap:8px;padding-top:10px;padding-bottom:8px}
+  .top nav{width:100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -8px}
+  .top nav::-webkit-scrollbar{display:none}
+  .top nav a{white-space:nowrap;padding:10px}
+  .top nav a.btn-hot{margin-left:auto;position:sticky;right:0;box-shadow:-12px 0 12px var(--navy)}
+  html{scroll-padding-top:116px}
+  .hero{padding-top:36px;padding-bottom:44px}
+  .row,.pao,.principles{grid-template-columns:1fr;gap:10px}
+  .row{gap:8px}
+  .pao{gap:16px}
+  .paper{box-shadow:5px 5px 0 var(--ledger);padding:18px 16px 14px}
+}
