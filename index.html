@@ -107,7 +107,7 @@
       <div class="pao">
         <div><h4>Problem</h4><p>An online seller wants to know what drives bad reviews, and whether delivery is worth fixing first.</p></div>
         <div><h4>Approach</h4><p>Cleaned the order, customer and review tables, matched promised and actual delivery dates, and compared review scores for late and on-time orders by state and month.</p></div>
-        <div><h4>Outcome</h4><p>Late orders averaged <b>2.27 stars</b> against <b>4.29</b> on time, and <b>54%</b> of late orders got one star, against 7% on time. Only 3% of customers ordered again, so a late first order rarely gets a second chance.</p></div>
+        <div><h4>Outcome</h4><p>Late orders averaged <b>2.27 stars</b> against <b>4.29</b> on time, and <b>54%</b> of late orders got one star, against 7% on time. Only 3% of customers ever ordered again, so the first delivery is usually the only chance to earn a good review.</p></div>
       </div>
       <p class="case-link"><a href="dashboards/ecommerce.html">Open the interactive dashboard</a></p>
     </article>
@@ -136,7 +136,7 @@
       <header><h3 id="c4">Which acquisition channels pay back</h3><p class="src">Simulated Indian e-commerce market; channel costs are assumptions</p></header>
       <div class="pao">
         <div><h4>Problem</h4><p>A growth team needs to compare what each channel costs to acquire a customer with what that customer is worth.</p></div>
-        <div><h4>Approach</h4><p>A Python pipeline builds a star schema (25,001 sessions, 8,443 customers), then funnel, cohort retention and CAC against LTV views, with a Power BI data model and DAX alongside.</p></div>
+        <div><h4>Approach</h4><p>A Python pipeline builds a star schema (25,000 sessions, 8,442 customers), then funnel, cohort retention and CAC against LTV views, with a Power BI data model and DAX alongside.</p></div>
         <div><h4>Outcome</h4><p>A dashboard where the channel costs are editable, so the team can test "what if" spend before committing budget. Every figure traces back to the processed tables.</p></div>
       </div>
       <p class="case-link"><a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Project_1" target="_blank" rel="noopener">See the code on GitHub</a></p>
@@ -228,10 +228,10 @@
         <p>Several linked pages, with written KPI definitions and a data model that stays consistent.</p>
         <ul><li>KPI definitions you can share with your team</li><li>All source files handed over</li></ul>
       </article>
-      <article class="tier tier-in">
+      <article class="tier">
         <h3>For clients in India</h3>
         <p class="price">&#8377;8,000 to &#8377;25,000 <small>per project</small></p>
-        <p>The same packages at a fixed rupee price, or about &#8377;1,000 an hour for open-ended work.</p>
+        <p>Most single-dashboard and workbook projects fall between &#8377;8,000 and &#8377;25,000. Open-ended work is about &#8377;1,000 an hour.</p>
         <ul><li>Costing, reconciliation, sales and stock workbooks</li><li>Invoices in rupees</li></ul>
       </article>
       <article class="tier">
@@ -252,13 +252,14 @@
         <h2 id="services-title">Tools for each job</h2>
         <p>A filled dot is the main tool for that kind of work; a ring means I also use it. If you already use one of these, I'll build in it.</p>
       </div>
-      <section class="mx-scroll" tabindex="0" aria-label="Services by tool, scrolls sideways">
+      <!-- [html-validate-disable-next prefer-native-element -- a scroll container, not a document section; role="region" makes it keyboard-focusable and named] -->
+      <div class="mx-scroll" role="region" tabindex="0" aria-label="Services by tool, scrolls sideways">
         <table class="mx" id="mx">
           <caption class="sr">Services by tool</caption>
           <thead><tr><th scope="col">Service</th></tr></thead>
           <tbody></tbody>
         </table>
-      </section>
+      </div>
     </div>
   </section>
 
