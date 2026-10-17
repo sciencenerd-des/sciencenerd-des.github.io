@@ -26,7 +26,11 @@ Hero (with the invoice-check "working paper"), Who I help, Case studies, Dashboa
 The services matrix and process Gantt are built from `SERVICES` and `STEPS` in `script.js`.
 
 ## Contact
-Email `bmondal0000@gmail.com` appears in `index.html` (header, contact section).
+Email `bmondal0000@gmail.com` appears in `index.html` (contact section, footer and the Person JSON-LD).
+
+Freelance profiles, linked from the contact section, the footer, the "Freelancer or Upwork" FAQ answer and the JSON-LD `sameAs`:
+- Freelancer: https://www.freelancer.com/u/biswajitm024
+- Upwork: https://www.upwork.com/freelancers/~01228b6c590d97c3cc
 
 ## Publish
 Push to `main`; GitHub Pages serves the repo root.
