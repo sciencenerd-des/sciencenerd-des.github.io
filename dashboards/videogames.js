@@ -29,7 +29,7 @@ let ch={};
 ch.c1=hbar('c1',(e,els)=>els.length&&F.toggle('genre',String(ch.c1._k[els[0].index])));
 ch.c3=hbar('c3',(e,els)=>els.length&&F.toggle('plat',String(ch.c3._k[els[0].index])));
 ch.c4=hbar('c4',null);ch.c7=hbar('c7',null);
-ch.c5=new Chart('c5',{type:'doughnut',data:{labels:REG.slice(1).map(r=>r[1]),datasets:[{data:[],backgroundColor:[T.blue,T.coral,T.teal,T.violet],borderColor:'#111821',borderWidth:2,offset:[0,0,0,0]}]},options:{cutout:'58%',onClick:(e,els)=>{if(els.length)F.toggle('reg',REG[els[0].index+1][0])},plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:c=>{const t=c.dataset.data.reduce((a,b)=>a+b,0);return `${c.label}: ${fmt(c.raw,1)}M (${(c.raw/t*100).toFixed(1)}%)`}}}}}});
+ch.c5=new Chart('c5',{type:'doughnut',data:{labels:REG.slice(1).map(r=>r[1]),datasets:[{data:[],backgroundColor:[T.blue,T.coral,T.teal,T.violet],borderColor:T.panel,borderWidth:2,offset:[0,0,0,0]}]},options:{cutout:'58%',onClick:(e,els)=>{if(els.length)F.toggle('reg',REG[els[0].index+1][0])},plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:c=>{const t=c.dataset.data.reduce((a,b)=>a+b,0);return `${c.label}: ${fmt(c.raw,1)}M (${(c.raw/t*100).toFixed(1)}%)`}}}}}});
 [ch.c1,ch.c3,ch.c5].forEach(c=>pointer(c));
 let tInit=false,hInit=false;
 
@@ -68,7 +68,7 @@ function render(){
  // heatmap: genre x region % (genre ignored; platform + years apply)
  const hz=gs.map(([g,_,k])=>{const rows=g0.filter(i=>f.genre[i]===k),v=REG.slice(1).map(([c])=>rows.reduce((s,i)=>s+f[c][i],0)),t=v.reduce((a,b)=>a+b,0);return v.map(x=>t?+(x/t*100).toFixed(1):null)});
  const hl=PL({yaxis:ax('',{autorange:'reversed'}),height:400,margin:{t:10,r:10,b:40,l:90},shapes:selG==null?[]:[{type:'rect',xref:'paper',x0:0,x1:1,yref:'y',y0:gs.findIndex(x=>x[2]===selG)-.5,y1:gs.findIndex(x=>x[2]===selG)+.5,line:{color:T.sand,width:2}}]});
- const ht=[{type:'heatmap',z:hz,x:REG.slice(1).map(x=>x[1]),y:gs.map(x=>x[0]),colorscale:[[0,'#101b29'],[.5,'#2a6f97'],[1,'#8fe3d8']],xgap:2,ygap:2,text:hz.map(r=>r.map(v=>v==null?'':v+'%')),texttemplate:'%{text}',hovertemplate:'%{y}, %{x}: %{z}% of the genre\'s sales<extra></extra>',colorbar:{thickness:10,ticksuffix:'%'}}];
+ const ht=[{type:'heatmap',z:hz,x:REG.slice(1).map(x=>x[1]),y:gs.map(x=>x[0]),colorscale:T.heat,xgap:2,ygap:2,text:hz.map(r=>r.map(v=>v==null?'':v+'%')),texttemplate:'%{text}',hovertemplate:'%{y}, %{x}: %{z}% of the genre\'s sales<extra></extra>',colorbar:{thickness:10,ticksuffix:'%'}}];
  if(!hInit){Plotly.newPlot('c6',ht,hl,PCFG);document.getElementById('c6').on('plotly_click',ev=>{const p=ev.points[0];if(p)F.toggle('genre',String(f.genres.indexOf(p.y)))});hInit=true}else Plotly.react('c6',ht,hl,PCFG);
  const jp=f.genres.map((g,k)=>[g,hz[gs.findIndex(x=>x[2]===k)][2]]).filter(x=>x[1]!=null).sort((a,b)=>b[1]-a[1])[0];
  hint('c6',jp?`Japan takes its largest share in <b>${jp[0]}</b> (${jp[1]}% of that genre's sales).`:'');

@@ -43,13 +43,13 @@ function render(){
  const sc=F.v.year!=='all'||F.v.state!=='all';
  kpis([['Orders (all statuses)',fmt(orders),sc?`of ${fmt(m.orders)} total`:'all purchase months'],['Delivered merchandise value','R$'+(mv>=1e5?fmt(mv/1e6,2)+'M':fmt(mv)),'excludes freight'],['Delivered AOV',mvn?'R$'+fmt(mv/mvn,2):'n/a','per delivered order'],
   ['On-time delivery rate',elig?fmt(ot/elig*100,2)+'%':'n/a',fmt(late)+' late of '+fmt(elig)+' eligible'],['Average review score',rn?fmt(rs/rn,2)+'/5':'n/a',fmt(rn)+' reviewed orders'],['Repeat customers',m.repeat_pct+'%','all customers, not filtered']]);
- F.status(`Showing <b>${F.v.year==='all'?'all years':F.v.year}</b> &middot; <b>${F.v.state==='all'?'all states':F.v.state}</b> &middot; ${fmt(orders)} orders`);
+ F.status(`Showing <b>${F.v.year==='all'?'all years':F.v.year}</b>, <b>${F.v.state==='all'?'all states':F.v.state}</b>, ${fmt(orders)} orders`);
  // ---- states (year filter only, state highlighted)
  const sb=sumBy(f.deliv,i=>f.deliv.si[i],(mi)=>okY(mi));
  let rows=ST.map((s,si)=>{const r=sb[si]||{n:0,mv:0};return {s,si,n:r.n,mv:r.mv,aov:r.n?r.mv/r.n:null}}).filter(r=>r.n>0);
  const sel=F.v.state==='all'?null:F.v.state;
  const sct=[{type:'scatter',mode:'markers+text',x:rows.map(r=>r.n),y:rows.map(r=>r.aov),text:rows.map(r=>r.s),textposition:'top center',textfont:{size:10,color:T.muted},
-  marker:{size:rows.map(r=>8+Math.sqrt(r.mv)/55),sizemode:'diameter',color:rows.map(r=>sel==null?T.teal:r.s===sel?T.coral:hex2rgba(T.teal,.3)),line:{color:'#0a0e13',width:1}},
+  marker:{size:rows.map(r=>8+Math.sqrt(r.mv)/55),sizemode:'diameter',color:rows.map(r=>sel==null?T.teal:r.s===sel?T.coral:hex2rgba(T.teal,.3)),line:{color:T.panel,width:1}},
   customdata:rows.map(r=>[r.mv]),hovertemplate:'<b>%{text}</b><br>%{x:,} delivered orders<br>R$%{y:,.2f} per order<br>R$%{customdata[0]:,.0f} merchandise value<extra></extra>'}];
  const shapes=F.v.year==='all'?[{type:'line',x0:5000,x1:5000,y0:0,y1:1,yref:'paper',line:{color:T.sand,dash:'dot',width:1}},{type:'line',y0:150,y1:150,x0:0,x1:1,xref:'paper',line:{color:T.sand,dash:'dot',width:1}}]:[];
  const ann=F.v.year==='all'?[{x:1,y:1,xref:'paper',yref:'paper',xanchor:'right',yanchor:'top',text:'busy and big baskets',showarrow:false,font:{size:10.5,color:T.sand}},{x:0,y:0,xref:'paper',yref:'paper',xanchor:'left',yanchor:'bottom',text:'small and light',showarrow:false,font:{size:10.5,color:T.sand}}]:[];
@@ -77,7 +77,7 @@ function render(){
  // ---- heatmap (year + state)
  const z=Array.from({length:7},()=>Array(24).fill(0));
  for(let i=0;i<f.heat.mi.length;i++)if(okY(f.heat.mi[i])&&okS(f.heat.si[i]))z[f.heat.purchase_weekday_number[i]-1][f.heat.purchase_hour[i]]+=f.heat.n[i];
- Plotly.react('c8',[{type:'heatmap',z,x:[...Array(24).keys()],y:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],colorscale:[[0,'#101b29'],[.5,'#2a6f97'],[1,'#8fe3d8']],xgap:1,ygap:1,colorbar:{thickness:10},hovertemplate:'%{y} %{x}:00<br>%{z:,} orders<extra></extra>'}],PL({xaxis:ax('Hour of day',{dtick:3}),yaxis:ax('',{autorange:'reversed'}),height:300,margin:{t:10,r:10,b:46,l:44}}),PCFG);
+ Plotly.react('c8',[{type:'heatmap',z,x:[...Array(24).keys()],y:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],colorscale:T.heat,xgap:1,ygap:1,colorbar:{thickness:10},hovertemplate:'%{y} %{x}:00<br>%{z:,} orders<extra></extra>'}],PL({xaxis:ax('Hour of day',{dtick:3}),yaxis:ax('',{autorange:'reversed'}),height:300,margin:{t:10,r:10,b:46,l:44}}),PCFG);
  let bi=[0,0];z.forEach((r,y)=>r.forEach((v,x)=>{if(v>z[bi[0]][bi[1]])bi=[y,x]}));
  hint('c8',`Peak slot: <b>${['Mon','Tue','Wed','Thu','Fri','Sat','Sun'][bi[0]]} ${bi[1]}:00</b>. Orders thin out overnight.`);
  // ---- reviews late/on-time
