@@ -2,17 +2,19 @@
 const fmt=(n,d=0)=>Number(n).toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:d});
 /* Theme: chart colours come from the CSS variables in dash.css, so charts follow the light/dark page theme. */
 const _cs=getComputedStyle(document.documentElement),_v=(n,f)=>(_cs.getPropertyValue(n).trim()||f);
-const T={text:_v('--ink','#1E2A38'),muted:_v('--ink-2','#4A5868'),line:_v('--rule','#D3DAE1'),panel:_v('--sheet','#FFFFFF'),
- teal:_v('--teal','#499894'),coral:_v('--red','#E15759'),blue:_v('--blue','#4E79A7'),violet:_v('--violet','#B07AA1'),sand:_v('--orange-dk','#C4661A'),dim:_v('--rule','#D3DAE1'),amber:_v('--orange','#F28E2B'),
- heat:[[0,_v('--heat-0','#F1F5F9')],[.5,_v('--heat-1','#A0CBE8')],[1,_v('--heat-2','#2E5A88')]],tip:'#1E2A38',
- // Tableau-10 categorical palette (colour-blind friendly hues), same family as the homepage
- cat:['#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f','#edc948','#b07aa1','#ff9da7','#9c755f','#bab0ac','#86bcb6','#d37295']};
-const SANS="'Archivo',-apple-system,'Segoe UI',sans-serif",MONO=SANS;
+const T={text:_v('--ink','#1d1a16'),muted:_v('--ink-2','#423c35'),line:_v('--rule','#d5cbb9'),panel:_v('--sheet','#f9f6f0'),
+ teal:_v('--teal','#2d6a5a'),coral:_v('--red','#9e2a2b'),blue:_v('--blue','#154734'),violet:_v('--violet','#5c3d4a'),sand:_v('--orange-dk','#6e4814'),dim:_v('--rule','#d5cbb9'),amber:_v('--orange','#8c5a18'),
+ flag:_v('--flag','#9e2a2b'),warn:_v('--warn','#8c5a18'),pass:_v('--pass','#1b6548'),accent:_v('--accent','#154734'),
+ scale1:_v('--scale-1','#9e2a2b'),scale2:_v('--scale-2','#8c5a18'),scale3:_v('--scale-3','#c4a36a'),scale4:_v('--scale-4','#3d7a62'),scale5:_v('--scale-5','#154734'),
+ heat:[[0,_v('--heat-0','#f7f2e8')],[.5,_v('--heat-1','#dfece6')],[1,_v('--heat-2','#154734')]],tip:_v('--ink','#1d1a16'),
+ // Categorical palette drawn from the homepage greens, cream, flag and warn tones
+ cat:[_v('--accent','#154734'),_v('--warn','#8c5a18'),_v('--flag','#9e2a2b'),_v('--teal','#2d6a5a'),_v('--pass','#1b6548'),_v('--orange-lt','#c4a36a'),_v('--violet','#5c3d4a'),_v('--ink-2','#423c35'),_v('--muted','#665e53'),_v('--rule-strong','#b9ad99'),_v('--blue-lt','#3d7a62'),_v('--orange-dk','#6e4814')]};
+const SANS="'Plus Jakarta Sans',-apple-system,'Segoe UI',sans-serif",MONO=SANS;
 if(window.Chart){const c=Chart.defaults;c.color=T.muted;c.borderColor=T.line;c.font.family=SANS;c.font.size=12;c.animation.duration=350;c.maintainAspectRatio=false;
- Object.assign(c.plugins.tooltip,{backgroundColor:T.tip,borderColor:T.tip,borderWidth:1,padding:10,titleColor:'#FFBE7D',bodyColor:'#FFFFFF',titleFont:{family:SANS,size:12,weight:'700'},bodyFont:{family:SANS,size:12.5},footerFont:{family:SANS,size:11,weight:'400'},footerColor:'#DCE4EC',cornerRadius:3,boxPadding:4});
+ Object.assign(c.plugins.tooltip,{backgroundColor:T.tip,borderColor:T.tip,borderWidth:1,padding:10,titleColor:_v('--warn-soft','#f4ead6'),bodyColor:_v('--accent-ink','#f7f3eb'),titleFont:{family:SANS,size:12,weight:'700'},bodyFont:{family:SANS,size:12.5},footerFont:{family:SANS,size:11,weight:'400'},footerColor:_v('--accent-ink','#f7f3eb'),cornerRadius:6,boxPadding:4});
  c.plugins.legend.labels.usePointStyle=true;c.plugins.legend.labels.boxWidth=8;c.plugins.legend.labels.boxHeight=8;}
 const PL=(extra={})=>Object.assign({paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{color:T.muted,family:SANS,size:12},margin:{t:10,r:16,b:50,l:60},height:380,
- hoverlabel:{bgcolor:T.tip,bordercolor:T.tip,font:{family:SANS,color:'#FFFFFF',size:12.5}}},extra);
+ hoverlabel:{bgcolor:T.tip,bordercolor:T.tip,font:{family:SANS,color:_v('--accent-ink','#f7f3eb'),size:12.5}}},extra);
 const ax=(t,e={})=>Object.assign({title:{text:t,font:{size:11.5}},gridcolor:T.line,zerolinecolor:T.line,linecolor:T.line,tickfont:{size:11}},e);
 const PCFG={responsive:true,displaylogo:false,displayModeBar:false};
 async function load(f){const r=await fetch('data/'+f);if(!r.ok)throw new Error('Could not load '+f);return r.json()}
@@ -61,3 +63,19 @@ const annotPlugin={id:'annot',afterDatasetsDraw(ch,_a,o){if(!o||!o.items)return;
  o.items.forEach(it=>{const m=ch.getDatasetMeta(it.ds||0).data[it.i];if(!m)return;const x=m.x,y=m.y,ty=A.top+12;ctx.beginPath();ctx.setLineDash([3,3]);ctx.moveTo(x,y-4);ctx.lineTo(x,ty+6);ctx.stroke();ctx.setLineDash([]);
   ctx.textAlign='right';ctx.fillText(it.text,Math.min(A.right,x+8),ty)});ctx.restore()}};
 if(window.Chart)Chart.register(annotPlugin);
+
+/* Honour the homepage theme key so light/dark stays in sync across pages. */
+(function(){
+  const root=document.documentElement;
+  const btn=document.getElementById('themeToggle');
+  const icon=document.getElementById('themeIcon');
+  if(!btn||!icon)return;
+  const setIcon=()=>{icon.textContent=root.getAttribute('data-theme')==='dark'?'☀':'◐'};
+  setIcon();
+  btn.addEventListener('click',()=>{
+    const next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('bm_theme',next)}catch(e){}
+    setIcon();
+  });
+})();

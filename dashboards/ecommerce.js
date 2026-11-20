@@ -27,7 +27,7 @@ ch.c6.options.plugins.tooltip={callbacks:{label:c=>c.datasetIndex?`AOV: R$${fmt(
 ch.c11=new Chart('c11',{data:{labels:[],datasets:[{type:'bar',label:'Eligible orders',data:[],backgroundColor:hex2rgba(T.blue,.75),yAxisID:'y',borderRadius:2},{type:'line',label:'On-time rate (%)',data:[],borderColor:T.teal,backgroundColor:T.teal,yAxisID:'y1',pointRadius:3,tension:.2,spanGaps:true}]},options:comboOpt({min:50,max:100,title:{display:true,text:'On-time rate (%)'}})});
 ch.c11.options.scales.y.title={display:true,text:'Delivery-eligible orders'};
 ch.c11.options.plugins.tooltip={callbacks:{label:c=>c.datasetIndex?`On-time rate: ${c.raw==null?'n/a':c.raw.toFixed(1)+'%'}`:`Eligible orders: ${fmt(c.raw)}`}};
-const SC=['#ef4444','#f97316','#eab308','#84cc16','#22c55e'];
+const SC=[T.scale1,T.scale2,T.scale3,T.scale4,T.scale5];
 ch.c16=new Chart('c16',{type:'bar',data:{labels:[],datasets:[1,2,3,4,5].map((s,i)=>({label:s+' star',data:[],backgroundColor:SC[i],borderWidth:0}))},options:{indexAxis:'y',interaction:{mode:'nearest',intersect:true},plugins:{legend:{position:'bottom'},tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${c.raw.toFixed(1)}% of reviewed orders`}}},scales:{x:{stacked:true,max:100,title:{display:true,text:'% of reviewed orders'}},y:{stacked:true,grid:{display:false}}}}});
 const co=d.cohort;
 Plotly.newPlot('c24',[{type:'heatmap',z:co.z,x:co.age.map(a=>'Month '+a),y:co.cohorts,colorscale:'Viridis',text:co.z.map(r=>r.map(v=>v==null?'':v.toFixed(2)+'%')),texttemplate:'%{text}',textfont:{size:11},hovertemplate:'Cohort %{y}, %{x}<br>%{z:.2f}% bought again<extra></extra>',zmax:3,zmin:0,colorbar:{thickness:10,ticksuffix:'%'},xgap:2,ygap:2}],PL({yaxis:ax('',{autorange:'reversed',type:'category'}),height:520,margin:{t:10,r:20,b:40,l:80}}),PCFG);

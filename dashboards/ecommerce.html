@@ -1,16 +1,78 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="theme-color" content="#1E2A38"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Olist E-commerce Analysis | Biswajit Mondal</title><meta name="description" content="Orders, delivery and customer behaviour across Brazilian states. Each sheet is headed by the question from my Olist chart guide; filter by year and state, or click a state to cross-highlight.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap" rel="stylesheet">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="dash.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script></head><body>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efe9dd">
+  <meta name="author" content="Biswajit Mondal">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23154734'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='28' fill='%23f7f2e8'%3EBM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dash.css">
+  <script>(function(){try{var t=localStorage.getItem('bm_theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <title>Olist E-commerce Analysis | Biswajit Mondal</title>
+  <meta name="description" content="Orders, delivery and customer behaviour across Brazilian states. Each sheet is headed by the question from my Olist chart guide; filter by year and state, or click a state to cross-highlight.">
+  <link rel="canonical" href="https://sciencenerd-des.github.io/dashboards/ecommerce.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Biswajit Mondal — Data Analytics &amp; Reconciliation">
+  <meta property="og:title" content="Olist E-commerce Analysis | Biswajit Mondal">
+  <meta property="og:description" content="Orders, delivery and customer behaviour across Brazilian states. Each sheet is headed by the question from my Olist chart guide; filter by year and state, or click a state to cross-highlight.">
+  <meta property="og:url" content="https://sciencenerd-des.github.io/dashboards/ecommerce.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Olist E-commerce Analysis | Biswajit Mondal">
+  <meta name="twitter:description" content="Orders, delivery and customer behaviour across Brazilian states. Each sheet is headed by the question from my Olist chart guide; filter by year and state, or click a state to cross-highlight.">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
 <a class="skip" href="#board">Skip to charts</a>
-<header class="topbar"><a class="brand" href="../index.html"><img src="../images/avatar.jpg" alt="" width="40" height="40"><span>Biswajit Mondal<small>Freelance data analyst, Kolkata</small></span></a><nav aria-label="Primary"><a href="../index.html">Portfolio</a><a href="../index.html#cases">Case studies</a><a href="index.html">Dashboards</a><a class="btn-hot" href="../index.html#contact">Get a quote</a></nav></header>
-<main class="wrap"><a class="crumb" href="index.html">&larr; All dashboards</a>
-<div class="hero"><p class="eyebrow">Tableau project 2, rebuilt for the web</p><h1>Olist e-commerce analysis</h1><p class="lede">Orders, delivery and customer behaviour across Brazilian states. Each sheet is headed by the question from my Olist chart guide; filter by year and state, or click a state to cross-highlight.</p></div>
-<section class="filters" id="filters" aria-label="Filters"></section>
-<section class="kpis" id="kpis" aria-label="Key figures"></section><div class="board" id="board"></div>
-<aside class="notes" aria-label="Caveats"><h2>Notes and caveats</h2><ul id="notes"></ul></aside></main>
-<footer class="site"><span>&copy; 2026 Biswajit Mondal, freelance data analyst, Kolkata</span><span><a href="../index.html">Back to portfolio</a></span></footer>
-<script src="dash.js"></script><script src="ecommerce.js"></script></body></html>
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="brand-seal" aria-hidden="true">BM</span>
+    <span class="brand-text">
+      <span class="brand-name">Biswajit Mondal</span>
+      <span class="brand-sub">Data analyst, Kolkata</span>
+    </span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/#cases">Case studies</a>
+    <a href="/dashboards/" aria-current="page">Dashboards</a>
+    <button type="button" class="icon-btn" id="themeToggle" aria-label="Switch color theme" title="Switch light and dark theme"><span id="themeIcon" aria-hidden="true">◐</span></button>
+    <a class="btn btn-primary btn-sm" href="/#contact">Get a quote</a>
+  </nav>
+</header>
+<main class="wrap">
+  <a class="crumb" href="/dashboards/">&larr; All dashboards</a>
+  <div class="hero">
+    <p class="eyebrow">Tableau project 2, rebuilt for the web</p>
+    <h1>Olist e-commerce analysis</h1>
+    <p class="lede">Orders, delivery and customer behaviour across Brazilian states. Each sheet is headed by the question from my Olist chart guide; filter by year and state, or click a state to cross-highlight.</p>
+  </div>
+  <section class="filters" id="filters" aria-label="Filters"></section>
+  <section class="kpis" id="kpis" aria-label="Key figures"></section>
+  <div class="board" id="board"></div>
+  <aside class="notes" aria-label="Caveats">
+    <h2>Notes and caveats</h2>
+    <ul id="notes"></ul>
+  </aside>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div>© 2026 Biswajit Mondal, Freelance data analyst in Kolkata (UTC+5:30)</div>
+    <div class="footer-links">
+      <a href="mailto:bmondal0000@gmail.com">Email</a>
+      <a href="https://github.com/sciencenerd-des" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener noreferrer">Upwork</a>
+      <a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener noreferrer">Freelancer</a>
+      <a href="/">Back to portfolio</a>
+    </div>
+  </div>
+</footer>
+  <script src="dash.js"></script>
+  <script src="ecommerce.js"></script>
+</body>
+</html>

@@ -1,12 +1,106 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="theme-color" content="#1E2A38"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dashboards | Biswajit Mondal</title><meta name="description" content="How listings, prices and revenue are spread across areas and years. Rebuilt from my Tableau workbook; click any bar or use the filters to cross-filter the whole page.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap" rel="stylesheet">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="dash.css">
-</head><body>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efe9dd">
+  <meta name="author" content="Biswajit Mondal">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23154734'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='28' fill='%23f7f2e8'%3EBM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dash.css">
+  <script>(function(){try{var t=localStorage.getItem('bm_theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <title>Dashboards | Biswajit Mondal</title>
+  <meta name="description" content="Three Tableau projects rebuilt for the web: Seattle Airbnb listings, Olist e-commerce analysis, and video game sales. Each page uses the same source data as the workbook, with working filters and click-to-cross-highlight.">
+  <link rel="canonical" href="https://sciencenerd-des.github.io/dashboards/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Biswajit Mondal — Data Analytics &amp; Reconciliation">
+  <meta property="og:title" content="Dashboards | Biswajit Mondal">
+  <meta property="og:description" content="Three Tableau projects rebuilt for the web: Seattle Airbnb listings, Olist e-commerce analysis, and video game sales. Each page uses the same source data as the workbook, with working filters and click-to-cross-highlight.">
+  <meta property="og:url" content="https://sciencenerd-des.github.io/dashboards/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dashboards | Biswajit Mondal">
+  <meta name="twitter:description" content="Three Tableau projects rebuilt for the web: Seattle Airbnb listings, Olist e-commerce analysis, and video game sales. Each page uses the same source data as the workbook, with working filters and click-to-cross-highlight.">
+</head>
+<body>
 <a class="skip" href="#main">Skip to dashboards</a>
-<header class="topbar"><a class="brand" href="../index.html"><img src="../images/avatar.jpg" alt="" width="40" height="40"><span>Biswajit Mondal<small>Freelance data analyst, Kolkata</small></span></a><nav aria-label="Primary"><a href="../index.html">Portfolio</a><a href="../index.html#cases">Case studies</a><a href="index.html" aria-current="page">Dashboards</a><a class="btn-hot" href="../index.html#contact">Get a quote</a></nav></header>
-<main class="wrap" id="main"><div class="hero"><p class="eyebrow">Interactive dashboards</p><h1>Three Tableau projects, rebuilt for the web</h1><p class="lede">Each page uses the same source data as my Tableau workbook, with working filters, hover tooltips and click-to-cross-highlight. Every chart carries the question it answers.</p></div>
-<div class="cards"><a class="dcard" href="airbnb.html"><div class="shot" style="background-image:url(../screens/airbnb.png)" role="img" aria-label="Preview of the Seattle Airbnb listings dashboard"></div><div class="tx"><p class="eyebrow">Tableau project 1</p><h2>Seattle Airbnb listings</h2><p>How listings, prices and revenue are spread across areas and years.</p><div class="meta"><span class="badge">6 sheets, 4 filters and a map</span></div><span class="go">Open the dashboard</span></div></a><a class="dcard" href="ecommerce.html"><div class="shot" style="background-image:url(../screens/ecommerce.png)" role="img" aria-label="Preview of the Olist e-commerce analysis dashboard"></div><div class="tx"><p class="eyebrow">Tableau project 2</p><h2>Olist e-commerce analysis</h2><p>Orders, delivery and customer behaviour across Brazilian states, with each sheet headed by the question from my Olist chart guide.</p><div class="meta"><span class="badge">7 sheets, 2 filters, cross-highlighting</span></div><span class="go">Open the dashboard</span></div></a><a class="dcard" href="videogames.html"><div class="shot" style="background-image:url(../screens/videogames.png)" role="img" aria-label="Preview of the video game sales dashboard"></div><div class="tx"><p class="eyebrow">Tableau project 3</p><h2>Video game sales</h2><p>Genre, platform, publisher and regional sales patterns from vgsales.csv.</p><div class="meta"><span class="badge">7 sheets, 5 filters and a region toggle</span></div><span class="go">Open the dashboard</span></div></a></div>
-<aside class="notes" aria-label="About"><h2>About these pages</h2><ul><li>Built with Chart.js and Plotly.js on static HTML, so they run straight from GitHub Pages with no server.</li><li>E-commerce questions are quoted from my Olist chart guide. The Airbnb and video game questions are my own wording, based on the workbook chart titles and the data.</li></ul></aside></main>
-<footer class="site"><span>&copy; 2026 Biswajit Mondal, freelance data analyst, Kolkata</span><span><a href="../index.html">Back to portfolio</a></span></footer></body></html>
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="brand-seal" aria-hidden="true">BM</span>
+    <span class="brand-text">
+      <span class="brand-name">Biswajit Mondal</span>
+      <span class="brand-sub">Data analyst, Kolkata</span>
+    </span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/#cases">Case studies</a>
+    <a href="/dashboards/" aria-current="page">Dashboards</a>
+    <button type="button" class="icon-btn" id="themeToggle" aria-label="Switch color theme" title="Switch light and dark theme"><span id="themeIcon" aria-hidden="true">◐</span></button>
+    <a class="btn btn-primary btn-sm" href="/#contact">Get a quote</a>
+  </nav>
+</header>
+<main class="wrap" id="main">
+  <div class="hero">
+    <p class="eyebrow">Interactive dashboards</p>
+    <h1>Three Tableau projects, rebuilt for the web</h1>
+    <p class="lede">Each page uses the same source data as my Tableau workbook, with working filters, hover tooltips and click-to-cross-highlight. Every chart carries the question it answers.</p>
+  </div>
+  <div class="cards">
+    <a class="dcard" href="airbnb.html">
+      <div class="shot" style="background-image:url(../screens/airbnb.png)" role="img" aria-label="Preview of the Seattle Airbnb listings dashboard"></div>
+      <div class="tx">
+        <p class="eyebrow">Tableau project 1</p>
+        <h2>Seattle Airbnb listings</h2>
+        <p>How listings, prices and revenue are spread across areas and years.</p>
+        <div class="meta"><span class="badge">6 sheets, 4 filters and a map</span></div>
+        <span class="go">Open the dashboard</span>
+      </div>
+    </a>
+    <a class="dcard" href="ecommerce.html">
+      <div class="shot" style="background-image:url(../screens/ecommerce.png)" role="img" aria-label="Preview of the Olist e-commerce analysis dashboard"></div>
+      <div class="tx">
+        <p class="eyebrow">Tableau project 2</p>
+        <h2>Olist e-commerce analysis</h2>
+        <p>Orders, delivery and customer behaviour across Brazilian states, with each sheet headed by the question from my Olist chart guide.</p>
+        <div class="meta"><span class="badge">7 sheets, 2 filters, cross-highlighting</span></div>
+        <span class="go">Open the dashboard</span>
+      </div>
+    </a>
+    <a class="dcard" href="videogames.html">
+      <div class="shot" style="background-image:url(../screens/videogames.png)" role="img" aria-label="Preview of the video game sales dashboard"></div>
+      <div class="tx">
+        <p class="eyebrow">Tableau project 3</p>
+        <h2>Video game sales</h2>
+        <p>Genre, platform, publisher and regional sales patterns from vgsales.csv.</p>
+        <div class="meta"><span class="badge">7 sheets, 5 filters and a region toggle</span></div>
+        <span class="go">Open the dashboard</span>
+      </div>
+    </a>
+  </div>
+  <aside class="notes" aria-label="About">
+    <h2>About these pages</h2>
+    <ul>
+      <li>Built with Chart.js and Plotly.js on static HTML, so they run straight from GitHub Pages with no server.</li>
+      <li>E-commerce questions are quoted from my Olist chart guide. The Airbnb and video game questions are my own wording, based on the workbook chart titles and the data.</li>
+    </ul>
+  </aside>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div>© 2026 Biswajit Mondal, Freelance data analyst in Kolkata (UTC+5:30)</div>
+    <div class="footer-links">
+      <a href="mailto:bmondal0000@gmail.com">Email</a>
+      <a href="https://github.com/sciencenerd-des" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener noreferrer">Upwork</a>
+      <a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener noreferrer">Freelancer</a>
+      <a href="/">Back to portfolio</a>
+    </div>
+  </div>
+</footer>
+<script src="dash.js"></script>
+</body>
+</html>
