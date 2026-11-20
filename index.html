@@ -1464,7 +1464,7 @@
                   <span class="tag">99,441 orders</span>
                 </div>
                 <div class="folio-foot">
-                  <a href="https://sciencenerd-des.github.io/dashboards/ecommerce.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Open live dashboard</a>
+                  <a href="/dashboards/ecommerce.html" class="btn btn-secondary btn-sm">Open live dashboard</a>
                 </div>
               </article>
 
@@ -1563,7 +1563,8 @@
                 <p class="muted" id="storyDesc" style="font-size:0.92rem; margin:0 0 14px;"></p>
                 <div class="kpi-strip" id="storyKpis"></div>
                 <div style="display:flex; flex-wrap:wrap; gap:10px;">
-                  <a href="https://sciencenerd-des.github.io/dashboards/ecommerce.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="storyLink">Open full dashboard</a>
+                  <a href="/dashboards/ecommerce.html" class="btn btn-primary btn-sm" id="storyLink">Open full dashboard</a>
+                  <a href="/dashboards/" class="btn btn-secondary btn-sm">Browse all dashboards</a>
                   <a href="#contact" class="btn btn-secondary btn-sm">Request similar build</a>
                 </div>
               </div>
@@ -2126,7 +2127,7 @@
           tag: 'Live web dashboard, Olist public dataset',
           title: 'Delivery delays drive 7.7× more one-star reviews',
           desc: 'Interactive dashboard breaking down 99,441 orders by delivery status, review distribution, and repeat-buyer rate so operations teams can prioritize late corridors.',
-          link: 'https://sciencenerd-des.github.io/dashboards/ecommerce.html',
+          link: '/dashboards/ecommerce.html',
           linkText: 'Open e-commerce dashboard',
           kpis: [
             { num: '99,441', sub: 'Orders analyzed' },
@@ -2207,7 +2208,7 @@
           tag: 'Live web dashboard, market exploration',
           title: 'Airbnb listings and pricing explorer',
           desc: 'Interactive web dashboard comparing neighborhood pricing, room types, and availability patterns under a unified light and dark analytical design system.',
-          link: 'https://sciencenerd-des.github.io/dashboards/airbnb.html',
+          link: '/dashboards/airbnb.html',
           linkText: 'Open Airbnb dashboard',
           kpis: [
             { num: 'Interactive', sub: 'Filterable views' },
@@ -2235,7 +2236,7 @@
           tag: 'Live web dashboard, historical sales',
           title: 'Video games sales and platform trends',
           desc: 'Interactive portfolio dashboard tracking global video game sales across genres, publishers, and console generations with instant browser-side filtering.',
-          link: 'https://sciencenerd-des.github.io/dashboards/videogames.html',
+          link: '/dashboards/videogames.html',
           linkText: 'Open video games dashboard',
           kpis: [
             { num: 'Multi-region', sub: 'Global splits' },
@@ -2270,6 +2271,13 @@
         storyDesc.textContent = s.desc;
         storyLink.setAttribute('href', s.link);
         storyLink.textContent = s.linkText;
+        if (s.link.startsWith('/') || s.link.startsWith('#')) {
+          storyLink.removeAttribute('target');
+          storyLink.removeAttribute('rel');
+        } else {
+          storyLink.setAttribute('target', '_blank');
+          storyLink.setAttribute('rel', 'noopener noreferrer');
+        }
         storyKpis.innerHTML = s.kpis.map(function (k) {
           return '<div class="kpi-cell"><span class="kpi-num num">' + k.num + '</span><span class="kpi-sub">' + k.sub + '</span></div>';
         }).join('');
