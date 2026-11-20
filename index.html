@@ -1,344 +1,2468 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biswajit Mondal | Freelance Data Analyst in India: Excel, Power BI and Tableau</title>
-<meta name="description" content="Freelance data analyst in Kolkata with an engineering and financial audit background. Fixed-price Excel workbooks, Power BI and Tableau dashboards, and data cleanup for CA firms, manufacturers, traders and e-commerce sellers.">
-<meta name="theme-color" content="#1E2A38">
-<link rel="canonical" href="https://sciencenerd-des.github.io/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Biswajit Mondal">
-<meta property="og:locale" content="en_IN">
-<meta property="og:title" content="Biswajit Mondal | Fixed-price dashboards and Excel workbooks for small businesses">
-<meta property="og:description" content="From messy spreadsheets to numbers you can act on. Excel, Power BI and Tableau work at a fixed price, from a data analyst with a financial audit background.">
-<meta property="og:url" content="https://sciencenerd-des.github.io/">
-<meta property="og:image" content="https://sciencenerd-des.github.io/images/india-d1.jpg">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="1280">
-<meta property="og:image:alt" content="India trade overview dashboard built in Tableau">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Biswajit Mondal | Fixed-price dashboards and Excel workbooks for small businesses">
-<meta name="twitter:description" content="From messy spreadsheets to numbers you can act on. Excel, Power BI and Tableau work at a fixed price.">
-<meta name="twitter:image" content="https://sciencenerd-des.github.io/images/india-d1.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"Person","@id":"https://sciencenerd-des.github.io/#me","name":"Biswajit Mondal","jobTitle":"Freelance Data Analyst","email":"mailto:bmondal0000@gmail.com","url":"https://sciencenerd-des.github.io/","image":"https://sciencenerd-des.github.io/images/avatar.jpg","address":{"@type":"PostalAddress","addressLocality":"Kolkata","addressCountry":"IN"},"sameAs":["https://github.com/sciencenerd-des","https://www.freelancer.com/u/biswajitm024","https://www.upwork.com/freelancers/~01228b6c590d97c3cc"],"knowsLanguage":["en","hi","bn"],"knowsAbout":["Excel","Power BI","Tableau","SQL","Python","R","IDEA","Data cleaning","Dashboard design","Financial audit analytics","GST reconciliation"]},
-{"@type":"ProfessionalService","name":"Biswajit Mondal, freelance data analysis","url":"https://sciencenerd-des.github.io/","provider":{"@id":"https://sciencenerd-des.github.io/#me"},"areaServed":["IN","Worldwide"],"priceRange":"$100 to $1,000 per project","makesOffer":[
-{"@type":"Offer","name":"Dashboard audit or data cleanup","priceSpecification":{"@type":"PriceSpecification","minPrice":100,"priceCurrency":"USD"}},
-{"@type":"Offer","name":"Single dashboard","priceSpecification":{"@type":"PriceSpecification","minPrice":200,"maxPrice":500,"priceCurrency":"USD"}},
-{"@type":"Offer","name":"Multi-page dashboard","priceSpecification":{"@type":"PriceSpecification","minPrice":500,"maxPrice":1000,"priceCurrency":"USD"}},
-{"@type":"Offer","name":"Fixed-price project for clients in India","priceSpecification":{"@type":"PriceSpecification","price":35000,"priceCurrency":"INR"}}]}
-]}
-</script>
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Should I use Excel, Power BI or Tableau?", "acceptedAnswer": {"@type": "Answer", "text": "Usually whatever your team already opens every day. Excel suits small teams and anything you'll print or email. Power BI suits teams on Microsoft 365 who want shared, refreshable reports. Tableau suits richer exploration. I'll recommend one on the scoping call and explain why."}}, {"@type": "Question", "name": "What do you need from me to quote?", "acceptedAnswer": {"@type": "Answer", "text": "A sample of the data (a few months of exports is enough), the questions the report should answer, who will use it, and your deadline. I reply with follow-up questions or a fixed price and scope."}}, {"@type": "Question", "name": "My data comes from Tally, Zoho Books, Shopify or a marketplace. Can you work with it?", "acceptedAnswer": {"@type": "Answer", "text": "If it exports to Excel or CSV, yes. I'll set up the cleaning steps so next month's export drops in without redoing the work."}}, {"@type": "Question", "name": "Is the price really fixed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for the written scope. If you ask for something outside it, I'll quote that change separately before doing it, so there are no surprise bills."}}, {"@type": "Question", "name": "How long does a project take?", "acceptedAnswer": {"@type": "Answer", "text": "A single dashboard takes about two weeks, with a working draft by day five. A cleanup or audit is often a few days. Larger multi-page work gets a dated plan in the scope."}}, {"@type": "Question", "name": "Can I hire you through Freelancer or Upwork?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can hire me directly by email, or through Freelancer or Upwork if you prefer the platform's payment protection. The scope and process are the same either way."}}, {"@type": "Question", "name": "Do you build AI agents or automations?", "acceptedAnswer": {"@type": "Answer", "text": "I build small prototypes and internal tools with n8n, APIs, RAG and LLM document checks, like the GST invoice-check demo above. I'm not offering production-grade AI systems, and I'll tell you plainly if your project needs one."}}]}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biswajit Mondal | Freelance Data Analyst — Excel, Power BI, Tableau &amp; GST Reconciliation</title>
+  <meta name="description" content="Freelance data analyst in Kolkata helping CA firms, manufacturers, traders, and e-commerce sellers turn messy Tally, Excel, and SQL exports into reconciled workbooks and fixed-price dashboards. Working draft by Day 5.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Biswajit Mondal">
+  <meta name="theme-color" content="#efe9dd">
+  <link rel="canonical" href="https://sciencenerd-des.github.io/">
+  <link rel="alternate" hreflang="en-IN" href="https://sciencenerd-des.github.io/">
+  <link rel="alternate" hreflang="x-default" href="https://sciencenerd-des.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Biswajit Mondal — Data Analytics &amp; Reconciliation">
+  <meta property="og:title" content="Biswajit Mondal | Fixed-Price Dashboards, Excel Automation &amp; Audit Analytics">
+  <meta property="og:description" content="Turn messy Tally, Excel, marketplace, or database exports into clean workbooks and dashboards that reconcile. Fixed-price scope, Day-5 draft, full file ownership.">
+  <meta property="og:url" content="https://sciencenerd-des.github.io/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Biswajit Mondal | Freelance Data Analyst (Excel, Power BI, Tableau, Python)">
+  <meta name="twitter:description" content="Fixed-price dashboards, GST &amp; 2B reconciliation, and automated reporting for CA firms, manufacturers, traders, and e-commerce sellers.">
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23154734'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='28' fill='%23f7f2e8'%3EBM%3C/text%3E%3C/svg%3E">
+
+  <!-- Distinctive Typography: Fraunces (display serif) + Plus Jakarta Sans (humanist body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://sciencenerd-des.github.io/#website",
+        "url": "https://sciencenerd-des.github.io/",
+        "name": "Biswajit Mondal — Freelance Data Analyst",
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://sciencenerd-des.github.io/#person",
+        "name": "Biswajit Mondal",
+        "jobTitle": "Freelance Data Analyst",
+        "description": "Freelance data analyst based in Kolkata specializing in Excel automation, Power BI, Tableau, SQL, Python, financial reconciliations, and GST invoice validation.",
+        "url": "https://sciencenerd-des.github.io/",
+        "email": "mailto:bmondal0000@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kolkata",
+          "addressRegion": "West Bengal",
+          "addressCountry": "IN"
+        },
+        "knowsLanguage": ["English", "Hindi", "Bengali"],
+        "sameAs": [
+          "https://github.com/sciencenerd-des",
+          "https://www.upwork.com/freelancers/~01228b6c590d97c3cc",
+          "https://www.freelancer.com/u/biswajitm024"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://sciencenerd-des.github.io/#service",
+        "name": "Biswajit Mondal Data Analytics & Reporting",
+        "url": "https://sciencenerd-des.github.io/",
+        "provider": { "@id": "https://sciencenerd-des.github.io/#person" },
+        "areaServed": ["India", "Worldwide"],
+        "priceRange": "$100 - $1,000 / ₹8,000 - ₹35,000+",
+        "email": "mailto:bmondal0000@gmail.com",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Fixed-Price Data Analytics Packages",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Dashboard Audit or Data Cleanup",
+              "description": "Audit of an existing workbook or dashboard, or turning messy exports into tidy, documented tables.",
+              "priceCurrency": "USD",
+              "price": "100"
+            },
+            {
+              "@type": "Offer",
+              "name": "Single Interactive Dashboard",
+              "description": "Interactive dashboard built on cleaned data with a working draft by Day 5, review round, and walkthrough.",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "200",
+                "maxPrice": "500",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Multi-Page Dashboard & Data Model",
+              "description": "Multiple linked dashboard pages with written KPI definitions, consistent data model, and full source-file handover.",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "500",
+                "maxPrice": "1000",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sciencenerd-des.github.io/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Should I choose Excel, Power BI, or Tableau for my project?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Choose Excel for costing, reconciliation, and operational workbooks your team edits directly; Power BI for Microsoft 365 teams needing automated star-schema models; and Tableau for visual exploration and executive storytelling. I help you pick the right tool before we start."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do you need from me to give a fixed-price quote?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A short description of the decisions you want to make, a small anonymized sample of your exports or current workbook, and your target tool or timeline. You receive a written fixed-price scope before any work begins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you work with Tally, Zoho Books, Shopify, or marketplace exports?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Most projects start from messy CSV or Excel exports from Tally, Zoho Books, Shopify, Amazon/Flipkart marketplaces, or SQL databases, which are cleaned into documented, repeatable pipelines."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does fixed pricing work for Indian vs. international clients?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "International projects are quoted in USD ($100+ for audits/cleanups, $200–$500 for single dashboards, $500–$1,000 for multi-page models, or $40/hour). Indian clients can be invoiced in INR (from ₹8,000 for cleanups, about ₹35,000 per project, or about ₹4,000/hour for open-ended work)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How fast is the turnaround time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Audits and data cleanups typically finish within 2–4 days. A single interactive dashboard delivers a working draft by Day 5 and completes end-to-end in about 2 weeks including a review round and walkthrough."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I hire you through Upwork or Freelancer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You can contract directly via email and invoice, or hire through my verified Upwork or Freelancer profiles for escrow protection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you also build AI document checks or workflow automation prototypes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. On request, I build targeted automation prototypes using Python, n8n, APIs, RAG, and LLM-assisted document checks (such as GST invoice validation combined with deterministic rules), quoted per job."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #efe9dd;
+      --surface: #f9f6f0;
+      --surface-recess: #e5ddd0;
+      --ink: #1d1a16;
+      --ink-2: #423c35;
+      --muted: #665e53;
+      --rule: #d5cbb9;
+      --rule-strong: #b9ad99;
+
+      --accent: #154734;
+      --accent-hover: #0f3627;
+      --accent-ink: #f7f3eb;
+      --accent-soft: #dfece6;
+
+      --flag: #9e2a2b;
+      --flag-soft: #f6e4e2;
+      --warn: #8c5a18;
+      --warn-soft: #f4ead6;
+      --pass: #1b6548;
+      --pass-soft: #dfece6;
+
+      --shadow-ledger: 0 18px 40px -22px rgba(29, 26, 22, 0.24), 0 2px 6px rgba(29, 26, 22, 0.06);
+      --sidebar-w: 244px;
+      --max-w: 1120px;
+      --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --bg: #171512;
+      --surface: #211e1a;
+      --surface-recess: #2b2722;
+      --ink: #f3ede2;
+      --ink-2: #d2c8b8;
+      --muted: #9e9383;
+      --rule: #353029;
+      --rule-strong: #4d463c;
+
+      --accent: #68b894;
+      --accent-hover: #83cca9;
+      --accent-ink: #121714;
+      --accent-soft: rgba(104, 184, 148, 0.14);
+
+      --flag: #e07a7b;
+      --flag-soft: rgba(224, 122, 123, 0.14);
+      --warn: #e0b068;
+      --warn-soft: rgba(224, 176, 104, 0.14);
+      --pass: #68b894;
+      --pass-soft: rgba(104, 184, 148, 0.14);
+
+      --shadow-ledger: 0 22px 46px -22px rgba(0, 0, 0, 0.68);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-body);
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(circle at 12% 8%, rgba(255, 252, 245, 0.55), transparent 42%),
+        radial-gradient(circle at 88% 18%, rgba(21, 71, 52, 0.045), transparent 44%),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 31px,
+          rgba(29, 26, 22, 0.018) 31px,
+          rgba(29, 26, 22, 0.018) 32px
+        );
+    }
+
+    [data-theme="dark"] body {
+      background-image:
+        radial-gradient(circle at 14% 8%, rgba(104, 184, 148, 0.06), transparent 40%),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 31px,
+          rgba(243, 237, 226, 0.02) 31px,
+          rgba(243, 237, 226, 0.02) 32px
+        );
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--accent);
+      color: var(--accent-ink);
+      padding: 10px 16px;
+      z-index: 1000;
+      font-weight: 600;
+    }
+    .skip-link:focus { left: 0; }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+      text-underline-offset: 3px;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration-color: currentColor;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .num { font-variant-numeric: tabular-nums; }
+    .muted { color: var(--muted); }
+
+    @keyframes fadeLift {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal { animation: fadeLift 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    .reveal-delay-1 { animation-delay: 0.08s; }
+    .reveal-delay-2 { animation-delay: 0.16s; }
+
+    /* ==========================================================================
+       Shell Layout — Persistent Architectural Sidebar (Desktop) + Slide Drawer
+       ========================================================================== */
+    .app-shell {
+      display: grid;
+      grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      background: var(--surface);
+      border-right: 1px solid var(--rule-strong);
+      display: flex;
+      flex-direction: column;
+      padding: 22px 18px;
+      overflow-y: auto;
+      z-index: 60;
+    }
+
+    .sidebar-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-bottom: 18px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--ink);
+      text-decoration: none;
+      min-width: 0;
+    }
+    .brand:hover { text-decoration: none; color: var(--ink); }
+
+    .brand-seal {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--accent-ink);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      display: grid;
+      place-items: center;
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+
+    .brand-text { display: flex; flex-direction: column; line-height: 1.22; min-width: 0; }
+    .brand-name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.02rem;
+      color: var(--ink);
+    }
+    .brand-sub { font-size: 0.76rem; color: var(--muted); }
+
+    .sidebar-close {
+      display: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      border: 1px solid var(--rule-strong);
+      background: var(--bg);
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 1.1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sidebar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      flex: 1;
+    }
+
+    .side-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 11px;
+      border-radius: 6px;
+      color: var(--ink-2);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      border-left: 2.5px solid transparent;
+      transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+    }
+    .side-link:hover {
+      background: var(--bg);
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .side-link.active {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      border-left-color: var(--accent);
+    }
+    .side-num {
+      font-size: 0.74rem;
+      color: var(--muted);
+      width: 20px;
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .side-link.active .side-num { color: var(--accent); }
+
+    .sidebar-foot {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sidebar-meta {
+      font-size: 0.77rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .sidebar-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(29, 26, 22, 0.45);
+      z-index: 55;
+    }
+    .sidebar-backdrop.open { display: block; }
+
+    .main-column {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Mobile / Tablet Top Bar (shown when sidebar collapses) */
+    .mobile-topbar {
+      display: none;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--rule);
+      padding: 12px 20px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      border: 1px solid var(--rule-strong);
+      background: var(--surface);
+      color: var(--ink);
+      display: inline-grid;
+      place-items: center;
+      cursor: pointer;
+      transition: border-color 0.15s ease;
+    }
+    .icon-btn:hover { border-color: var(--accent); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.89rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.12s ease;
+    }
+    .btn:hover { text-decoration: none; }
+    .btn:active { transform: translateY(1px); }
+
+    .btn-primary { background: var(--accent); color: var(--accent-ink); }
+    .btn-primary:hover { background: var(--accent-hover); color: var(--accent-ink); }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--ink);
+      border-color: var(--rule-strong);
+    }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+    .btn-sm { padding: 8px 14px; font-size: 0.83rem; }
+
+    /* ==========================================================================
+       Sections & Typography
+       ========================================================================== */
+    section {
+      padding: 68px 0;
+      border-bottom: 1px solid var(--rule);
+      scroll-margin-top: 24px;
+    }
+
+    .section-index {
+      display: inline-block;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 18px 28px;
+      margin-bottom: 36px;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.35rem);
+      line-height: 1.07;
+      letter-spacing: -0.025em;
+      font-weight: 600;
+      margin: 0 0 18px;
+      color: var(--ink);
+      max-width: 17ch;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.55rem, 2.6vw, 2.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      font-weight: 600;
+      margin: 0;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      line-height: 1.25;
+      font-weight: 600;
+      margin: 0 0 8px;
+      color: var(--ink);
+    }
+
+    .lede {
+      font-size: 1.03rem;
+      line-height: 1.65;
+      color: var(--ink-2);
+      margin: 0 0 26px;
+      max-width: 52ch;
+    }
+
+    /* Hero */
+    .hero { padding: 54px 0 64px; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .availability-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 16px;
+      padding: 6px 13px;
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 999px;
+    }
+
+    .availability-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--pass);
+      box-shadow: 0 0 0 3px var(--pass-soft);
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .hero-promises {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule-strong);
+    }
+    .promise-title { display: block; font-weight: 700; font-size: 0.85rem; color: var(--ink); }
+    .promise-sub { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+
+    /* Signature Element: Interactive Audit Ledger Sheet */
+    .ledger-sheet {
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 12px;
+      box-shadow: var(--shadow-ledger);
+      overflow: hidden;
+    }
+
+    .ledger-top {
+      background: var(--accent);
+      color: var(--accent-ink);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .ledger-heading {
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    .ledger-tabs {
+      display: flex;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 3px;
+      border-radius: 6px;
+    }
+    [data-theme="dark"] .ledger-tabs { background: rgba(0, 0, 0, 0.22); }
+
+    .proof-tab {
+      border: none;
+      background: transparent;
+      color: color-mix(in srgb, var(--accent-ink) 80%, transparent);
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 5px 9px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .proof-tab.active { background: var(--surface); color: var(--ink); }
+
+    .ledger-body { padding: 16px; }
+
+    .ledger-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 11px;
+      margin-bottom: 11px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.81rem;
+      color: var(--muted);
+    }
+
+    .check-list {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+
+    .check-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.83rem;
+      transition: background 0.2s ease;
+    }
+    .check-row:last-child { border-bottom: none; }
+    .check-row.flag { background: var(--flag-soft); }
+    .check-row.pass { background: var(--pass-soft); }
+
+    .check-label { font-weight: 600; color: var(--ink); display: block; }
+    .check-detail { font-size: 0.77rem; color: var(--ink-2); display: block; margin-top: 2px; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge-pass { background: var(--pass-soft); color: var(--pass); border: 1px solid color-mix(in srgb, var(--pass) 28%, transparent); }
+    .badge-flag { background: var(--flag-soft); color: var(--flag); border: 1px solid color-mix(in srgb, var(--flag) 28%, transparent); }
+    .badge-info { background: var(--surface-recess); color: var(--ink); }
+    .badge-warn { background: var(--warn-soft); color: var(--warn); }
+
+    .ledger-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Fact Band */
+    .fact-band {
+      background: var(--surface);
+      border-bottom: 1px solid var(--rule);
+      padding: 24px 0;
+    }
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .fact-item {
+      padding-left: 14px;
+      border-left: 2px solid var(--accent);
+    }
+    .fact-val {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.12rem;
+      color: var(--ink);
+      display: block;
+    }
+    .fact-lbl { font-size: 0.8rem; color: var(--muted); display: block; margin-top: 2px; }
+
+    /* Who I Help — Ruled Advisory Rows */
+    .advisory-list { border-top: 1.5px solid var(--ink); }
+    .advisory-row {
+      display: grid;
+      grid-template-columns: 60px minmax(0, 0.9fr) minmax(0, 1.3fr) auto;
+      gap: 16px 20px;
+      align-items: center;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--rule-strong);
+    }
+    .advisory-num {
+      font-family: var(--font-display);
+      font-size: 1.28rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .advisory-sector { font-size: 0.79rem; color: var(--muted); display: block; margin-bottom: 2px; }
+    .advisory-desc { margin: 0; font-size: 0.92rem; color: var(--ink-2); max-width: 50ch; }
+
+    /* Case Studies */
+    .folio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .folio-card {
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 10px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.15s ease;
+      scroll-margin-top: 24px;
+    }
+    .folio-card:hover { border-color: var(--accent); }
+
+    .folio-meta { font-size: 0.81rem; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 16px 0;
+      padding: 13px 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .kpi-cell { display: flex; flex-direction: column; }
+    .kpi-num {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .kpi-sub { font-size: 0.75rem; color: var(--muted); margin-top: 3px; }
+
+    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: var(--surface-recess);
+      color: var(--ink-2);
+    }
+    .folio-foot { margin-top: auto; }
+
+    /* Showcase */
+    .showcase-band { background: var(--surface-recess); }
+    .tab-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .tab-btn {
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--rule-strong);
+      background: var(--surface);
+      color: var(--ink-2);
+      font-family: var(--font-body);
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .tab-btn:hover { border-color: var(--accent); color: var(--ink); }
+    .tab-btn.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+    .showcase-stage {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      gap: 24px;
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 12px;
+      padding: 24px;
+      align-items: center;
+    }
+    .svg-frame {
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 14px;
+      width: 100%;
+    }
+    .svg-frame svg { width: 100%; height: auto; display: block; }
+
+    /* Pricing */
+    .currency-toggle {
+      display: inline-flex;
+      background: var(--surface-recess);
+      border: 1px solid var(--rule-strong);
+      border-radius: 7px;
+      padding: 3px;
+    }
+    .currency-btn {
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.83rem;
+      padding: 7px 13px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .currency-btn.active {
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: 0 1px 3px rgba(29, 26, 22, 0.12);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .tier-card {
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 10px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .tier-featured {
+      background: var(--accent);
+      color: var(--accent-ink);
+      border-color: var(--accent);
+      box-shadow: var(--shadow-ledger);
+    }
+    .tier-featured h3, .tier-featured .price-big, .tier-featured .tier-kicker { color: var(--accent-ink); }
+    .tier-featured .muted, .tier-featured .feature-list { color: color-mix(in srgb, var(--accent-ink) 86%, transparent); }
+    .tier-featured .check-ic { color: var(--accent-ink); }
+    .tier-featured .btn-invert { background: var(--surface); color: var(--ink); }
+    .tier-featured .btn-invert:hover { background: var(--bg); color: var(--ink); }
+
+    .tier-kicker { font-size: 0.81rem; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+    .price-big {
+      font-family: var(--font-display);
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin: 10px 0 6px;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      font-size: 0.88rem;
+      color: var(--ink-2);
+    }
+    .feature-list li { display: flex; align-items: flex-start; gap: 8px; }
+    .check-ic { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+    .pricing-footnote {
+      margin-top: 20px;
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 10px;
+      padding: 16px 22px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.88rem;
+    }
+
+    /* Tools Matrix */
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 10px;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 600px; }
+    th, td { padding: 13px 14px; border-bottom: 1px solid var(--rule); text-align: left; }
+    th { background: var(--surface-recess); font-weight: 600; font-size: 0.81rem; color: var(--ink-2); }
+    tr:last-child td { border-bottom: none; }
+    td.center, th.center { text-align: center; }
+
+    .lvl-main {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.74rem;
+    }
+    .lvl-also {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: var(--surface-recess);
+      color: var(--ink-2);
+      font-weight: 600;
+      font-size: 0.74rem;
+    }
+    .lvl-none { color: var(--rule-strong); }
+
+    /* Process */
+    .gantt {
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 10px;
+      padding: 22px;
+      margin-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+    .gantt-row {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+    }
+    .gantt-label { font-size: 0.87rem; font-weight: 600; color: var(--ink); }
+    .gantt-track {
+      position: relative;
+      height: 28px;
+      background: var(--surface-recess);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .gantt-bar {
+      position: absolute;
+      top: 3px;
+      bottom: 3px;
+      border-radius: 4px;
+      background: var(--ink);
+      color: var(--bg);
+      font-size: 0.73rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+    .gantt-bar.milestone { background: var(--accent); color: var(--accent-ink); }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .principle { padding-top: 14px; border-top: 2px solid var(--rule-strong); }
+    .principle p { margin: 0; font-size: 0.88rem; color: var(--ink-2); }
+
+    /* About & FAQ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+      gap: 28px;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 12px;
+      padding: 30px;
+    }
+
+    .faq-list { max-width: 820px; border-top: 1.5px solid var(--ink); }
+    details.faq-item { border-bottom: 1px solid var(--rule-strong); padding: 17px 4px; }
+    details.faq-item summary {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.05rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      color: var(--ink);
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::after {
+      content: "+";
+      font-family: var(--font-body);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    details.faq-item[open] summary::after { content: "−"; }
+    details.faq-item p { margin: 11px 0 4px; color: var(--ink-2); font-size: 0.93rem; max-width: 70ch; }
+
+    /* Quote Builder */
+    .quote-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+      gap: 24px;
+      align-items: start;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
+    .form-control {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--rule-strong);
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+    }
+    .brief-box {
+      background: var(--bg);
+      border: 1px solid var(--rule-strong);
+      border-radius: 6px;
+      padding: 13px;
+      font-size: 0.83rem;
+      color: var(--ink-2);
+      white-space: pre-wrap;
+      line-height: 1.54;
+      margin: 15px 0;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      background: var(--ink);
+      color: var(--bg);
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-ledger);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      z-index: 100;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    footer {
+      padding: 34px 0;
+      background: var(--surface);
+      border-top: 1px solid var(--rule-strong);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+
+    /* ==========================================================================
+       Responsive — Sidebar becomes Smooth Slide-Out Drawer below 1080px
+       ========================================================================== */
+    @media (max-width: 1080px) {
+      .app-shell { grid-template-columns: 1fr; }
+      .mobile-topbar { display: flex; }
+      section { scroll-margin-top: 72px; }
+      .folio-card { scroll-margin-top: 72px; }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: min(290px, 84vw);
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+        box-shadow: var(--shadow-ledger);
+      }
+      .sidebar.open { transform: translateX(0); }
+      .sidebar-close { display: inline-flex; }
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid, .showcase-stage, .quote-grid, .about-grid { grid-template-columns: 1fr; }
+      .section-head { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .fact-grid, .principles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .advisory-row { grid-template-columns: 46px minmax(0, 1fr); align-items: start; }
+      .advisory-desc, .advisory-action { grid-column: 2; }
+    }
+
+    @media (max-width: 700px) {
+      .container { padding: 0 18px; }
+      .folio-grid, .fact-grid, .principles-grid, .hero-promises { grid-template-columns: 1fr; }
+      .gantt-row { grid-template-columns: 1fr; gap: 6px; }
+      section { padding: 48px 0; }
+      .hero { padding: 34px 0 44px; }
+      .about-grid { padding: 22px; }
+    }
+  </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<header class="top">
-  <div class="wrap top-in">
-    <a class="me" href="#top">
-      <img src="images/avatar.jpg" alt="" width="40" height="40">
-      <span><b>Biswajit Mondal</b><small>Freelance data analyst, Kolkata</small></span>
-    </a>
-    <nav aria-label="Sections">
-      <a href="#clients">Who I help</a>
-      <a href="#cases">Case studies</a>
-      <a href="#work">Dashboards</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
-      <a class="btn-hot" href="#contact">Get a quote</a>
-    </nav>
+  <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
+
+  <div class="app-shell">
+    <!-- ARCHITECTURAL SIDEBAR NAVIGATION -->
+    <aside class="sidebar" id="sidebar" aria-label="Section navigation">
+      <div class="sidebar-head">
+        <a href="#top" class="brand side-jump" aria-label="Biswajit Mondal home">
+          <span class="brand-seal" aria-hidden="true">BM</span>
+          <span class="brand-text">
+            <span class="brand-name">Biswajit Mondal</span>
+            <span class="brand-sub">Data analyst, Kolkata</span>
+          </span>
+        </a>
+        <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">×</button>
+      </div>
+
+      <nav class="sidebar-nav" id="sidebarNav" aria-label="Page sections">
+        <a href="#top" class="side-link active" data-section="top"><span class="side-num">00</span>Overview</a>
+        <a href="#clients" class="side-link" data-section="clients"><span class="side-num">01</span>Who I help</a>
+        <a href="#cases" class="side-link" data-section="cases"><span class="side-num">02</span>Case studies</a>
+        <a href="#work" class="side-link" data-section="work"><span class="side-num">03</span>Dashboards</a>
+        <a href="#pricing" class="side-link" data-section="pricing"><span class="side-num">04</span>Pricing</a>
+        <a href="#services" class="side-link" data-section="services"><span class="side-num">05</span>Tools matrix</a>
+        <a href="#process" class="side-link" data-section="process"><span class="side-num">06</span>Process</a>
+        <a href="#about" class="side-link" data-section="about"><span class="side-num">07</span>About</a>
+        <a href="#faq" class="side-link" data-section="faq"><span class="side-num">08</span>FAQ</a>
+        <a href="#contact" class="side-link" data-section="contact"><span class="side-num">09</span>Quote builder</a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <a href="#contact" class="btn btn-primary btn-sm side-jump" style="width:100%;">Get a quote</a>
+        <div class="sidebar-meta">
+          <span>UTC+5:30 · EN/HI/BN</span>
+          <button type="button" class="icon-btn" id="themeToggle" aria-label="Switch color theme" title="Switch light and dark theme">
+            <span id="themeIcon" aria-hidden="true">◐</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT COLUMN -->
+    <div class="main-column">
+      <!-- Mobile / Tablet Sticky Bar -->
+      <header class="mobile-topbar">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <button type="button" class="icon-btn" id="sidebarOpen" aria-label="Open sidebar navigation" aria-expanded="false" aria-controls="sidebar">
+            <span aria-hidden="true">☰</span>
+          </button>
+          <a href="#top" class="brand side-jump">
+            <span class="brand-name">Biswajit Mondal</span>
+          </a>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button type="button" class="icon-btn" id="mobileThemeToggle" aria-label="Switch color theme" title="Switch light and dark theme">
+            <span id="mobileThemeIcon" aria-hidden="true">◐</span>
+          </button>
+          <a href="#contact" class="btn btn-primary btn-sm side-jump">Get a quote</a>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <!-- HERO -->
+        <section id="top" class="hero">
+          <div class="container hero-grid">
+            <div class="reveal">
+              <div class="availability-note">
+                <span class="availability-dot" aria-hidden="true"></span>
+                Taking new fixed-price projects, with a working draft by Day 5
+              </div>
+              <h1>From messy spreadsheets to numbers that reconcile.</h1>
+              <p class="lede">
+                I turn raw Tally, Zoho Books, Excel, Shopify, and SQL exports into clean, auditable workbooks and interactive Power BI or Tableau dashboards—so you spot leaks early and act on numbers you trust.
+              </p>
+              <div class="hero-cta-row">
+                <a href="#contact" class="btn btn-primary">Build a fixed-price quote</a>
+                <a href="#cases" class="btn btn-secondary">Read verified case studies</a>
+              </div>
+              <div class="hero-promises reveal reveal-delay-1">
+                <div>
+                  <span class="promise-title">Written scope first</span>
+                  <span class="promise-sub">Fixed price agreed before work starts</span>
+                </div>
+                <div>
+                  <span class="promise-title">Full file ownership</span>
+                  <span class="promise-sub">All Excel, PBIX, Tableau &amp; Python files</span>
+                </div>
+                <div>
+                  <span class="promise-title">Private data handling</span>
+                  <span class="promise-sub">NDA ready and anonymized samples</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Signature Element: Tactile Interactive Audit Sheet -->
+            <aside class="ledger-sheet reveal reveal-delay-2" aria-label="Interactive data verification demo">
+              <div class="ledger-top">
+                <span class="ledger-heading">Working paper preview</span>
+                <div class="ledger-tabs" role="tablist" aria-label="Verification demo scenarios">
+                  <button type="button" class="proof-tab active" role="tab" aria-selected="true" data-demo="gst">GST &amp; 2B</button>
+                  <button type="button" class="proof-tab" role="tab" aria-selected="false" data-demo="ecom">E-com SLA</button>
+                  <button type="button" class="proof-tab" role="tab" aria-selected="false" data-demo="cost">Costing</button>
+                </div>
+              </div>
+              <div class="ledger-body">
+                <div class="ledger-meta">
+                  <span id="demoDataset">Invoice check on synthetic GST demo data</span>
+                  <span class="badge badge-info" id="demoStatusBadge">Ready</span>
+                </div>
+                <div class="check-list" id="demoChecks" aria-live="polite"></div>
+                <div class="ledger-footer">
+                  <button type="button" class="btn btn-primary btn-sm" id="runCheckBtn">Run check</button>
+                  <a href="#case-gst" id="demoCaseLink" style="font-size:0.85rem; font-weight:600;">Inspect full case study</a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- FACT BAND -->
+        <div class="fact-band" aria-label="Service benchmarks">
+          <div class="container fact-grid">
+            <div class="fact-item">
+              <span class="fact-val num">Day 5</span>
+              <span class="fact-lbl">Working draft on single dashboards</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-val">USD or INR</span>
+              <span class="fact-lbl">Fixed pricing for global and Indian clients</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-val">Zero lock-in</span>
+              <span class="fact-lbl">Clean handover with documented formulas</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-val">English, Hindi, Bengali</span>
+              <span class="fact-lbl">Based in Kolkata (UTC+5:30)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHO I HELP -->
+        <section id="clients">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="section-index">01 / Who I help</span>
+                <h2>Built for teams tired of manual reconciliation</h2>
+              </div>
+              <p class="muted" style="margin:0; max-width:42ch; font-size:0.93rem;">
+                Choose the workflow closest to yours to pre-fill an instant fixed-price estimate below.
+              </p>
+            </div>
+
+            <div class="advisory-list">
+              <article class="advisory-row">
+                <span class="advisory-num num">01</span>
+                <div>
+                  <span class="advisory-sector">Finance and compliance</span>
+                  <h3>CA and accounting firms</h3>
+                </div>
+                <p class="advisory-desc">
+                  Stop hunting mismatches line by line. Get automated reconciliation workbooks, exception reports, and GST invoice checks against GSTR-2B.
+                </p>
+                <div class="advisory-action">
+                  <button type="button" class="btn btn-secondary btn-sm prefill-btn" data-pkg="audit" data-source="Tally / Zoho Books">Estimate this project</button>
+                </div>
+              </article>
+
+              <article class="advisory-row">
+                <span class="advisory-num num">02</span>
+                <div>
+                  <span class="advisory-sector">Plant operations</span>
+                  <h3>Small manufacturers</h3>
+                </div>
+                <p class="advisory-desc">
+                  Replace fragile quotation sheets with linked, zero-macro costing workbooks where every raw material rate, overhead, and margin ties out.
+                </p>
+                <div class="advisory-action">
+                  <button type="button" class="btn btn-secondary btn-sm prefill-btn" data-pkg="single" data-source="Excel / CSV sheets">Estimate this project</button>
+                </div>
+              </article>
+
+              <article class="advisory-row">
+                <span class="advisory-num num">03</span>
+                <div>
+                  <span class="advisory-sector">Wholesale and distribution</span>
+                  <h3>Traders and distributors</h3>
+                </div>
+                <p class="advisory-desc">
+                  Monitor daily sales, party-wise receivables, live stock movement, and automatic low-stock flags without waiting for month-end closes.
+                </p>
+                <div class="advisory-action">
+                  <button type="button" class="btn btn-secondary btn-sm prefill-btn" data-pkg="single" data-source="Tally / Zoho Books">Estimate this project</button>
+                </div>
+              </article>
+
+              <article class="advisory-row">
+                <span class="advisory-num num">04</span>
+                <div>
+                  <span class="advisory-sector">Online retail</span>
+                  <h3>E-commerce sellers</h3>
+                </div>
+                <p class="advisory-desc">
+                  See true margins after returns, delivery delays, and acquisition spend—connecting order exports directly to review scores and repeat buyers.
+                </p>
+                <div class="advisory-action">
+                  <button type="button" class="btn btn-secondary btn-sm prefill-btn" data-pkg="multi" data-source="Shopify / Marketplaces">Estimate this project</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CASE STUDIES -->
+        <section id="cases">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="section-index">02 / Case studies</span>
+                <h2>Verified work with open code and live dashboards</h2>
+              </div>
+              <p class="muted" style="margin:0; max-width:44ch; font-size:0.93rem;">
+                Each example runs on public or synthetic datasets so you can inspect the formulas, data model, and visual clarity before we work together.
+              </p>
+            </div>
+
+            <div class="folio-grid">
+              <article class="folio-card" id="case-ecom">
+                <span class="folio-meta">E-commerce operations, Olist dataset</span>
+                <h3>Late deliveries and one-star reviews</h3>
+                <p class="muted" style="font-size:0.91rem; margin:0;">
+                  Analyzed 99,441 marketplace orders to quantify how shipping delays damage ratings and repeat purchases, isolating the exact routes driving churn.
+                </p>
+                <div class="kpi-strip">
+                  <div class="kpi-cell"><span class="kpi-num num">2.27 ★</span><span class="kpi-sub">Late vs 4.29 on time</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">54%</span><span class="kpi-sub">1-star late vs 7%</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">3%</span><span class="kpi-sub">Repeat buyers</span></div>
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Interactive web dashboard</span>
+                  <span class="tag">SQL and Python</span>
+                  <span class="tag">99,441 orders</span>
+                </div>
+                <div class="folio-foot">
+                  <a href="https://sciencenerd-des.github.io/dashboards/ecommerce.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Open live dashboard</a>
+                </div>
+              </article>
+
+              <article class="folio-card" id="case-gst">
+                <span class="folio-meta">Audit and tax automation, Python and AI</span>
+                <h3>GST invoice checks and 2B reconciliation</h3>
+                <p class="muted" style="font-size:0.91rem; margin:0;">
+                  Pairs AI document extraction with deterministic Python validation rules to flag invalid GSTIN checksums, line-item math variance, tax split errors, and GSTR-2B gaps.
+                </p>
+                <div class="kpi-strip">
+                  <div class="kpi-cell"><span class="kpi-num">GSTIN</span><span class="kpi-sub">Checksum check</span></div>
+                  <div class="kpi-cell"><span class="kpi-num">Math</span><span class="kpi-sub">Line &amp; tax parity</span></div>
+                  <div class="kpi-cell"><span class="kpi-num">2B match</span><span class="kpi-sub">vs purchase book</span></div>
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Python rules</span>
+                  <span class="tag">LLM extraction</span>
+                  <span class="tag">Synthetic invoices</span>
+                </div>
+                <div class="folio-foot">
+                  <a href="https://github.com/sciencenerd-des/openai-ai-deployment-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Inspect on GitHub</a>
+                </div>
+              </article>
+
+              <article class="folio-card" id="case-cost">
+                <span class="folio-meta">Manufacturing finance, zero-macro Excel</span>
+                <h3>Manufacturing costing and quote workbook</h3>
+                <p class="muted" style="font-size:0.91rem; margin:0;">
+                  A 13-sheet linked Excel template built with zero VBA macros so plant managers and accountants can audit every formula and issue reliable quotes.
+                </p>
+                <div class="kpi-strip">
+                  <div class="kpi-cell"><span class="kpi-num num">13 sheets</span><span class="kpi-sub">Linked model</span></div>
+                  <div class="kpi-cell"><span class="kpi-num">0 macros</span><span class="kpi-sub">Safe standard Excel</span></div>
+                  <div class="kpi-cell"><span class="kpi-num">100%</span><span class="kpi-sub">Auditable formulas</span></div>
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Excel modeling</span>
+                  <span class="tag">Costing and quotes</span>
+                  <span class="tag">Sample data</span>
+                </div>
+                <div class="folio-foot">
+                  <a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Excel_files" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Excel files</a>
+                </div>
+              </article>
+
+              <article class="folio-card" id="case-growth">
+                <span class="folio-meta">Growth analytics, Power BI and star schema</span>
+                <h3>Which acquisition channels pay back</h3>
+                <p class="muted" style="font-size:0.91rem; margin:0;">
+                  Python star-schema pipeline and Power BI DAX model analyzing a simulated Indian e-commerce market across cohort retention and CAC versus LTV payback.
+                </p>
+                <div class="kpi-strip">
+                  <div class="kpi-cell"><span class="kpi-num num">25,000</span><span class="kpi-sub">Sessions modeled</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">8,442</span><span class="kpi-sub">Customers tracked</span></div>
+                  <div class="kpi-cell"><span class="kpi-num">CAC vs LTV</span><span class="kpi-sub">Cohort DAX model</span></div>
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Power BI and DAX</span>
+                  <span class="tag">Python ETL</span>
+                  <span class="tag">Star schema</span>
+                </div>
+                <div class="folio-foot">
+                  <a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Project_1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Power BI repo</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- INTERACTIVE SHOWCASE -->
+        <section id="work" class="showcase-band">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="section-index">03 / Interactive portfolio</span>
+                <h2>Explore live dashboards and analytical stories</h2>
+              </div>
+              <p class="muted" style="margin:0; max-width:42ch; font-size:0.93rem;">
+                Switch stories to preview the reporting clarity, then open any live web dashboard.
+              </p>
+            </div>
+
+            <div class="tab-bar" role="tablist" aria-label="Dashboard stories">
+              <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-story="ecom">E-commerce SLA</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="gst">GST 2B audit</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="growth">Channel CAC vs LTV</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="airbnb">Airbnb market</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="games">Video games sales</button>
+            </div>
+
+            <div class="showcase-stage" id="showcaseStage" aria-live="polite">
+              <div class="svg-frame" id="storyVisual"></div>
+              <div>
+                <span class="folio-meta" id="storyTag" style="display:block;"></span>
+                <h3 id="storyTitle"></h3>
+                <p class="muted" id="storyDesc" style="font-size:0.92rem; margin:0 0 14px;"></p>
+                <div class="kpi-strip" id="storyKpis"></div>
+                <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                  <a href="https://sciencenerd-des.github.io/dashboards/ecommerce.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="storyLink">Open full dashboard</a>
+                  <a href="#contact" class="btn btn-secondary btn-sm">Request similar build</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRICING -->
+        <section id="pricing">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="section-index">04 / Transparent pricing</span>
+                <h2>Fixed-price packages with zero surprises</h2>
+              </div>
+              <div class="currency-toggle" role="group" aria-label="Select pricing currency">
+                <button type="button" class="currency-btn active" data-currency="USD" aria-pressed="true">USD ($)</button>
+                <button type="button" class="currency-btn" data-currency="INR" aria-pressed="false">INR (₹ India)</button>
+              </div>
+            </div>
+
+            <div class="pricing-grid">
+              <article class="tier-card">
+                <span class="tier-kicker">Fast entry</span>
+                <h3>Dashboard audit or data cleanup</h3>
+                <div class="price-big num" id="priceAudit">From $100</div>
+                <p class="muted" style="font-size:0.87rem; margin:0;">Best for messy exports or fragile workbooks.</p>
+                <ul class="feature-list">
+                  <li><span class="check-ic">✓</span> Audit of an existing workbook or dashboard</li>
+                  <li><span class="check-ic">✓</span> Messy exports cleaned into tidy, documented tables</li>
+                  <li><span class="check-ic">✓</span> Formula error and reconciliation check</li>
+                  <li><span class="check-ic">✓</span> Written summary of every fix made</li>
+                </ul>
+                <div style="margin-top:auto;">
+                  <button type="button" class="btn btn-secondary prefill-btn" style="width:100%;" data-pkg="audit">Select and build quote</button>
+                </div>
+              </article>
+
+              <article class="tier-card tier-featured">
+                <span class="tier-kicker">Most popular, Day-5 working draft</span>
+                <h3>Single interactive dashboard</h3>
+                <div class="price-big num" id="priceSingle">$200 – $500</div>
+                <p class="muted" style="font-size:0.87rem; margin:0;" id="noteSingle">End-to-end delivery in about 2 weeks with walkthrough.</p>
+                <ul class="feature-list">
+                  <li><span class="check-ic">✓</span> Cleaned data pipeline with reconciled numbers</li>
+                  <li><span class="check-ic">✓</span> Interactive Power BI, Tableau, or Excel dashboard</li>
+                  <li><span class="check-ic">✓</span> Working draft delivered by Day 5</li>
+                  <li><span class="check-ic">✓</span> Dedicated review round and live walkthrough</li>
+                </ul>
+                <div style="margin-top:auto;">
+                  <button type="button" class="btn btn-invert prefill-btn" style="width:100%;" data-pkg="single">Select and build quote</button>
+                </div>
+              </article>
+
+              <article class="tier-card">
+                <span class="tier-kicker">Full analytics system</span>
+                <h3>Multi-page dashboard and model</h3>
+                <div class="price-big num" id="priceMulti">$500 – $1,000</div>
+                <p class="muted" style="font-size:0.87rem; margin:0;">For teams needing linked views and governed KPIs.</p>
+                <ul class="feature-list">
+                  <li><span class="check-ic">✓</span> Multiple linked pages across departments</li>
+                  <li><span class="check-ic">✓</span> Written KPI definitions and consistent data model</li>
+                  <li><span class="check-ic">✓</span> Automated refresh via SQL, Python, or Power Query</li>
+                  <li><span class="check-ic">✓</span> Full source-file handover and documentation</li>
+                </ul>
+                <div style="margin-top:auto;">
+                  <button type="button" class="btn btn-secondary prefill-btn" style="width:100%;" data-pkg="multi">Select and build quote</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="pricing-footnote">
+              <div>
+                <strong>Hourly and ongoing support:</strong>
+                <span class="num" id="priceHourly" style="font-weight:700; color:var(--accent); margin-left:6px;">$40/hour</span>
+                <span class="muted" id="noteHourly"> — Ongoing analysis, report automation, or updates to existing dashboards.</span>
+              </div>
+              <div class="muted" style="font-size:0.85rem;">
+                <strong>Also on request:</strong> Logo and graphic design, short video edits, and small automation prototypes (n8n or APIs), quoted per job.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TOOLS MATRIX -->
+        <section id="services">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="section-index">05 / Stack and capabilities</span>
+                <h2>Right tool for each job</h2>
+              </div>
+              <div class="tab-bar" style="margin-bottom:0;" id="toolFilterBar" role="group" aria-label="Filter services by tool">
+                <button type="button" class="tab-btn active" data-tool="ALL">All tools</button>
+                <button type="button" class="tab-btn" data-tool="Excel">Excel</button>
+                <button type="button" class="tab-btn" data-tool="Power BI">Power BI</button>
+                <button type="button" class="tab-btn" data-tool="Tableau">Tableau</button>
+                <button type="button" class="tab-btn" data-tool="SQL">SQL</button>
+                <button type="button" class="tab-btn" data-tool="Python">Python</button>
+                <button type="button" class="tab-btn" data-tool="R">R</button>
+              </div>
+            </div>
+
+            <div class="table-wrap">
+              <table id="toolsTable" aria-label="Tools by service matrix">
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th class="center">Tableau</th>
+                    <th class="center">Power BI</th>
+                    <th class="center">Excel</th>
+                    <th class="center">SQL</th>
+                    <th class="center">Python</th>
+                    <th class="center">R</th>
+                  </tr>
+                </thead>
+                <tbody id="toolsTbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROCESS & PRINCIPLES -->
+        <section id="process">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="section-index">06 / Delivery workflow</span>
+                <h2>How a typical 2-week project runs</h2>
+              </div>
+              <p class="muted" style="margin:0; max-width:42ch; font-size:0.93rem;">
+                Structured milestones keep delivery predictable, auditable, and easy to review.
+              </p>
+            </div>
+
+            <div class="gantt" aria-label="Two-week project timeline">
+              <div class="gantt-row">
+                <span class="gantt-label">1. Discovery and written scope</span>
+                <div class="gantt-track"><div class="gantt-bar" style="left:0%; width:18%;">Days 1–2</div></div>
+              </div>
+              <div class="gantt-row">
+                <span class="gantt-label">2. Data cleaning and reconciliation</span>
+                <div class="gantt-track"><div class="gantt-bar" style="left:16%; width:24%;">Days 3–4</div></div>
+              </div>
+              <div class="gantt-row">
+                <span class="gantt-label">3. Working draft review</span>
+                <div class="gantt-track"><div class="gantt-bar milestone" style="left:36%; width:18%;">Day 5 draft</div></div>
+              </div>
+              <div class="gantt-row">
+                <span class="gantt-label">4. Refinement and validation</span>
+                <div class="gantt-track"><div class="gantt-bar" style="left:52%; width:28%;">Days 6–10</div></div>
+              </div>
+              <div class="gantt-row">
+                <span class="gantt-label">5. Walkthrough and handover</span>
+                <div class="gantt-track"><div class="gantt-bar milestone" style="left:78%; width:22%;">Days 11–14</div></div>
+              </div>
+            </div>
+
+            <div class="principles-grid">
+              <div class="principle">
+                <h3>Scope in writing</h3>
+                <p>Deliverables, KPI definitions, timeline, and fixed price agreed upfront before billing starts.</p>
+              </div>
+              <div class="principle">
+                <h3>Numbers that reconcile</h3>
+                <p>Every summary total ties back to source registers with explicit exception flags.</p>
+              </div>
+              <div class="principle">
+                <h3>You own everything</h3>
+                <p>Full source files (.xlsx, .pbix, .twbx, SQL, Python) handed over cleanly with no lock-in.</p>
+              </div>
+              <div class="principle">
+                <h3>Your data stays private</h3>
+                <p>Confidential handling for financial and client records, with anonymized sample workflows supported.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+          <div class="container">
+            <div class="about-grid">
+              <div>
+                <span class="section-index">07 / About</span>
+                <h2 style="margin-bottom:14px;">Engineering rigor meets financial auditing</h2>
+                <p class="muted" style="margin:0 0 14px; font-size:0.95rem;">
+                  I’m <strong>Biswajit Mondal</strong>, a freelance data analyst based in Kolkata, India (UTC+5:30). My background blends engineering, financial auditing, and AI-assisted analytics—so I care as much about whether your totals actually tie out as how clean the visuals look.
+                </p>
+                <p class="muted" style="margin:0; font-size:0.95rem;">
+                  I work in <strong>English, Hindi, and Bengali</strong> with both Indian businesses (invoiced in INR) and international teams (invoiced in USD or via Upwork and Freelancer).
+                </p>
+              </div>
+              <div>
+                <div style="font-size:0.83rem; font-weight:600; color:var(--muted); margin-bottom:12px;">Verified profiles and repositories</div>
+                <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                  <a href="https://github.com/sciencenerd-des" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub profile</a>
+                  <a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Upwork</a>
+                  <a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Freelancer</a>
+                  <a href="https://github.com/sciencenerd-des/forge" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Forge</a>
+                  <a href="https://github.com/sciencenerd-des/writing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Writing</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="section-index">08 / Frequently asked questions</span>
+                <h2>Common questions before we start</h2>
+              </div>
+            </div>
+
+            <div class="faq-list">
+              <details class="faq-item" open>
+                <summary>Should I choose Excel, Power BI, or Tableau?</summary>
+                <p>Pick Excel for costing, reconciliation, and operational workbooks your team edits directly; Power BI for Microsoft 365 teams needing automated data models; and Tableau for visual exploration and executive storytelling. If you are unsure, I recommend the best fit during scoping.</p>
+              </details>
+              <details class="faq-item">
+                <summary>What do you need from me to give a fixed-price quote?</summary>
+                <p>Share the decisions you want to make, a small anonymized sample of your exports or current sheet, and your preferred tool or deadline. I reply with a clear written scope, timeline, and fixed price.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Can you work with Tally, Zoho Books, Shopify, or marketplace exports?</summary>
+                <p>Yes. Most client projects begin with raw CSV or Excel exports from Tally, Zoho Books, Shopify, Amazon or Flipkart marketplaces, or SQL databases, cleaned into repeatable, documented tables.</p>
+              </details>
+              <details class="faq-item">
+                <summary>How does fixed pricing work for India vs. international clients?</summary>
+                <p>International projects are quoted in USD ($100+ audits and cleanups, $200–$500 single dashboards, $500–$1,000 multi-page models, or $40/hour). Indian clients can be invoiced in rupees (from ₹8,000 for audits and cleanups, about ₹35,000 per project, or about ₹4,000/hour for open-ended work).</p>
+              </details>
+              <details class="faq-item">
+                <summary>How fast will I see results?</summary>
+                <p>Audits and cleanups usually wrap up in 2–4 days. Single dashboards deliver a working draft by Day 5 and complete end-to-end in roughly 2 weeks, including a revision round and walkthrough.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Can I hire you through Upwork or Freelancer?</summary>
+                <p>Yes—you can work directly via email and invoice, or hire through my verified <a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener noreferrer">Upwork</a> or <a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener noreferrer">Freelancer</a> profiles if you prefer platform escrow.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Do you also build AI document checks or automation prototypes?</summary>
+                <p>Yes. On request, I build targeted automation prototypes using Python, n8n, APIs, RAG, and LLM-assisted document checks (like GST invoice validation paired with deterministic rules), quoted per job.</p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- QUOTE & BRIEF BUILDER -->
+        <section id="contact" style="border-bottom:none;">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <span class="section-index">09 / Start a project</span>
+                <h2>Get a fixed-price quote in 60 seconds</h2>
+              </div>
+              <p class="muted" style="margin:0; max-width:44ch; font-size:0.93rem;">
+                Configure your scope to see a transparent ballpark range and generate a ready-to-send email brief.
+              </p>
+            </div>
+
+            <div class="quote-grid">
+              <form class="panel" id="quoteForm" novalidate>
+                <div class="form-group">
+                  <label for="qPackage">1. What do you need?</label>
+                  <select id="qPackage" class="form-control">
+                    <option value="audit">Dashboard audit or data cleanup</option>
+                    <option value="single" selected>Single interactive dashboard or workbook</option>
+                    <option value="multi">Multi-page dashboard and data model</option>
+                    <option value="hourly">Hourly or ongoing support and automation</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="qSource">2. Primary data source</label>
+                  <select id="qSource" class="form-control">
+                    <option value="Excel / CSV sheets">Excel / CSV sheets</option>
+                    <option value="Tally / Zoho Books">Tally / Zoho Books (accounting &amp; GST)</option>
+                    <option value="Shopify / Marketplaces">Shopify / Marketplace exports</option>
+                    <option value="SQL / Database">SQL / Database or APIs</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="qTool">3. Preferred output tool</label>
+                  <select id="qTool" class="form-control">
+                    <option value="Recommend the best fit">Recommend the best fit</option>
+                    <option value="Excel (zero-macro workbook)">Excel (zero-macro workbook)</option>
+                    <option value="Power BI">Power BI</option>
+                    <option value="Tableau">Tableau</option>
+                    <option value="Python / Automated Report">Python / Automated Report</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom:0;">
+                  <label for="qNotes">4. Short note on your goal (optional)</label>
+                  <textarea id="qNotes" class="form-control" rows="3" placeholder="For example: Reconcile monthly GSTR-2B against our purchase register, or track SKU margins after returns."></textarea>
+                </div>
+              </form>
+
+              <div class="panel" style="border-color: var(--accent); border-width: 1.5px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+                  <span class="tier-kicker" style="margin:0;">Estimated fixed scope</span>
+                  <span class="badge badge-pass" id="qTimelineBadge">Draft by Day 5, about 2 weeks</span>
+                </div>
+                <div class="price-big num" id="qEstimateRange">$200 – $500</div>
+                <p class="muted" style="font-size:0.85rem; margin:0;">
+                  Final fixed price is confirmed in writing once we review a small sample of your data.
+                </p>
+
+                <div class="brief-box" id="qBriefPreview" aria-label="Generated project enquiry brief"></div>
+
+                <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                  <a href="mailto:bmondal0000@gmail.com" id="qMailtoBtn" class="btn btn-primary" style="flex:1 1 180px;">Send pre-filled email</a>
+                  <button type="button" id="qCopyBtn" class="btn btn-secondary">Copy brief</button>
+                </div>
+
+                <div style="margin-top:15px; padding-top:14px; border-top:1px solid var(--rule); font-size:0.83rem; color:var(--muted); display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px;">
+                  <span>Direct: <a href="mailto:bmondal0000@gmail.com">bmondal0000@gmail.com</a></span>
+                  <span>Prefer escrow? <a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener noreferrer">Upwork</a> or <a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener noreferrer">Freelancer</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container footer-inner">
+          <div>© 2026 Biswajit Mondal, Freelance data analyst in Kolkata (UTC+5:30)</div>
+          <div class="footer-links">
+            <a href="mailto:bmondal0000@gmail.com">Email</a>
+            <a href="https://github.com/sciencenerd-des" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener noreferrer">Upwork</a>
+            <a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener noreferrer">Freelancer</a>
+            <a href="#top">Back to top</a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </div>
-</header>
 
-<main id="main">
-  <section class="wrap hero" id="top" aria-labelledby="hero-title">
-    <div class="hero-copy">
-      <p class="status"><span aria-hidden="true"></span>Taking new fixed-price projects</p>
-      <h1 id="hero-title">From messy spreadsheets to numbers you can act on.</h1>
-      <p class="lede">I'm Biswajit, a data analyst with a background in engineering and financial audit. I turn the exports you already have, from Tally, Excel, marketplaces or a database, into clean workbooks and dashboards that reconcile, so you can see margins, stock, sales and exceptions without rebuilding the sheet every month.</p>
-      <p class="cta"><a class="btn-hot" href="#contact">Get a fixed-price quote</a><a class="btn-ghost" href="#cases">See case studies</a></p>
-      <p class="facts">Excel, Power BI, Tableau, SQL, Python, R and IDEA. Scope and price agreed in writing before I start. I work in English, Hindi and Bengali.</p>
-    </div>
-    <figure class="paper" aria-labelledby="paper-cap">
-      <p class="paper-title">Invoice check <span>demo data</span></p>
-      <ol class="checks">
-        <li class="bad"><span class="what">Supplier GSTIN <b>29AAAAA0000A1Z9</b></span><span class="res">Checksum mismatch</span></li>
-        <li class="bad"><span class="what">Line 2: 2 &times; 299 = 598</span><span class="res">Invoice prints 698</span></li>
-        <li class="ok"><span class="what">CGST equals SGST</span><span class="res">Matches</span></li>
-        <li class="ok"><span class="what">No IGST mixed with CGST and SGST</span><span class="res">Matches</span></li>
-      </ol>
-      <figcaption id="paper-cap">The kind of checks my <a href="#case-gst">GST invoice-check prototype</a> runs, on sample data. An auditor's habit: every total gets ticked or flagged.</figcaption>
-    </figure>
-  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <section id="clients" class="band" aria-labelledby="clients-title">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2 id="clients-title">Who I help</h2>
-        <p>Small teams whose numbers live in spreadsheets and exports. If your problem looks like one of these, I can usually scope it in one call.</p>
-      </div>
-      <ul class="rows">
-        <li class="row"><h3>CA and accounting firms</h3><p>Client data arrives as Tally and Excel exports, and reconciliations are done by hand.</p><p class="build">Reconciliation workbooks, exception reports and GST invoice checks.</p></li>
-        <li class="row"><h3>Small manufacturers</h3><p>Quotes are priced from rough estimates, so the margin on a job is known only after it ships.</p><p class="build">A costing and quote workbook that rolls materials, labour, machines and overheads into a unit cost.</p></li>
-        <li class="row"><h3>Traders and distributors</h3><p>Purchases, sales and stock sit in separate sheets that never quite agree.</p><p class="build">A sales and inventory tracker with live stock and low-stock flags.</p></li>
-        <li class="row"><h3>E-commerce sellers</h3><p>Marketplace reports pile up, and it's hard to tell which orders, states or delays cost you money.</p><p class="build">A dashboard for orders, returns, delivery delays, reviews and margin.</p></li>
-      </ul>
-    </div>
-  </section>
+  <script>
+    (function () {
+      'use strict';
 
-  <section id="cases" class="wrap sec" aria-labelledby="cases-title">
-    <div class="sec-head">
-      <h2 id="cases-title">Case studies</h2>
-      <p>Built from my own projects on public, sample or simulated data. I haven't published client work here; every number below comes from the linked files.</p>
-    </div>
+      // ---------- Theme Management ----------
+      const root = document.documentElement;
+      const themeToggle = document.getElementById('themeToggle');
+      const themeIcon = document.getElementById('themeIcon');
+      const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+      const mobileThemeIcon = document.getElementById('mobileThemeIcon');
 
-    <article class="case" id="case-ecom" aria-labelledby="c1">
-      <header><h3 id="c1">Late deliveries and one-star reviews</h3><p class="src">Public Olist e-commerce dataset, 99,441 orders</p></header>
-      <div class="pao">
-        <div><h4>Problem</h4><p>An online seller wants to know what drives bad reviews, and whether delivery is worth fixing first.</p></div>
-        <div><h4>Approach</h4><p>Cleaned the order, customer and review tables, matched promised and actual delivery dates, and compared review scores for late and on-time orders by state and month.</p></div>
-        <div><h4>Outcome</h4><p>Late orders averaged <b>2.27 stars</b> against <b>4.29</b> on time, and <b>54%</b> of late orders got one star, against 7% on time. Only 3% of customers ever ordered again, so the first delivery is usually the only chance to earn a good review.</p></div>
-      </div>
-      <p class="case-link"><a href="dashboards/ecommerce.html">Open the interactive dashboard</a></p>
-    </article>
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        const symbol = theme === 'dark' ? '☀' : '◐';
+        themeIcon.textContent = symbol;
+        mobileThemeIcon.textContent = symbol;
+        try { localStorage.setItem('bm_theme', theme); } catch (e) {}
+      }
 
-    <article class="case" id="case-cost" aria-labelledby="c2">
-      <header><h3 id="c2">Manufacturing costing and quote workbook</h3><p class="src">Excel template with sample products, no client data</p></header>
-      <div class="pao">
-        <div><h4>Problem</h4><p>A small manufacturer needs to price a quote from the real cost of a batch, not a rough markup.</p></div>
-        <div><h4>Approach</h4><p>One workbook with 13 linked sheets: suppliers, bill of materials, labour, machine hours, tooling, quality, packaging and logistics roll into a cost summary with overhead allocation.</p></div>
-        <div><h4>Outcome</h4><p>Pick a product and the workbook shows unit cost, selling price, gross margin and each cost's share, then fills the customer quote. No macros, so it opens in any copy of Excel.</p></div>
-      </div>
-      <p class="case-link"><a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Excel_files" target="_blank" rel="noopener">See the workbooks on GitHub</a></p>
-    </article>
+      let savedTheme = null;
+      try { savedTheme = localStorage.getItem('bm_theme'); } catch (e) {}
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        applyTheme(savedTheme);
+      }
 
-    <article class="case" id="case-gst" aria-labelledby="c3">
-      <header><h3 id="c3">GST invoice checks and 2B reconciliation</h3><p class="src">Prototype on synthetic invoices, not a production system</p></header>
-      <div class="pao">
-        <div><h4>Problem</h4><p>Accountants check GST invoices by hand: the GSTIN, the line maths, the CGST and SGST split, and whether purchases match GSTR-2B.</p></div>
-        <div><h4>Approach</h4><p>An AI model reads the invoice photo into fixed fields. Plain Python rules then make every correctness call: GSTIN checksum, line totals, tax split, and the 2B against purchase-register match.</p></div>
-        <div><h4>Outcome</h4><p>A working demo that flags bad GSTINs and totals that don't add up, and runs offline with no API key. Results still need a person's review before any filing decision.</p></div>
-      </div>
-      <p class="case-link"><a href="https://github.com/sciencenerd-des/openai-ai-deployment-portfolio" target="_blank" rel="noopener">See the code and reviewer guide</a></p>
-    </article>
+      function toggleTheme() {
+        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+      }
+      themeToggle.addEventListener('click', toggleTheme);
+      mobileThemeToggle.addEventListener('click', toggleTheme);
 
-    <article class="case" id="case-growth" aria-labelledby="c4">
-      <header><h3 id="c4">Which acquisition channels pay back</h3><p class="src">Simulated Indian e-commerce market; channel costs are assumptions</p></header>
-      <div class="pao">
-        <div><h4>Problem</h4><p>A growth team needs to compare what each channel costs to acquire a customer with what that customer is worth.</p></div>
-        <div><h4>Approach</h4><p>A Python pipeline builds a star schema (25,000 sessions, 8,442 customers), then funnel, cohort retention and CAC against LTV views, with a Power BI data model and DAX alongside.</p></div>
-        <div><h4>Outcome</h4><p>A dashboard where the channel costs are editable, so the team can test "what if" spend before committing budget. Every figure traces back to the processed tables.</p></div>
-      </div>
-      <p class="case-link"><a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Project_1" target="_blank" rel="noopener">See the code on GitHub</a></p>
-    </article>
-  </section>
+      // ---------- Sidebar Drawer & Active Scroll-Spy ----------
+      const sidebar = document.getElementById('sidebar');
+      const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+      const sidebarOpen = document.getElementById('sidebarOpen');
+      const sidebarClose = document.getElementById('sidebarClose');
+      const sideLinks = Array.prototype.slice.call(document.querySelectorAll('.side-link'));
 
-  <!-- Tableau Story: each story point is one dashboard from a real workbook. Data lives in script.js (STORIES). -->
-  <section id="work" class="band work" aria-labelledby="story-title">
-   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="story-title">Dashboards</h2>
-      <p>Five findings from my Tableau workbooks on public data. Pick one, then click the screenshot to zoom. <span id="story-count" aria-live="polite">1 of 5</span></p>
-    </div>
-    <div class="story-nav" role="tablist" aria-label="Story points" id="story-nav">
-      <button type="button" class="pt" role="tab" id="pt-0" aria-selected="true" aria-controls="stage" tabindex="0"><img class="thumb" src="images/india-d1.jpg" alt="" width="160" height="100" loading="lazy"><i></i>India imported more than it exported in every month from 2022 to 2026</button>
-      <button type="button" class="pt" role="tab" id="pt-1" aria-selected="false" aria-controls="stage" tabindex="-1"><img class="thumb" src="images/india-d2.jpg" alt="" width="160" height="100" loading="lazy"><i></i>The US buys the most from India; China sells it the most</button>
-      <button type="button" class="pt" role="tab" id="pt-2" aria-selected="false" aria-controls="stage" tabindex="-1"><img class="thumb" src="images/himalaya-d1.jpg" alt="" width="160" height="100" loading="lazy"><i></i>Himalayan expedition success rose from about 25% to about 70% in a century</button>
-      <button type="button" class="pt" role="tab" id="pt-3" aria-selected="false" aria-controls="stage" tabindex="-1"><img class="thumb" src="images/himalaya-d2.jpg" alt="" width="160" height="100" loading="lazy"><i></i>The climber fatality rate fell below 1%, while Everest drew 2,329 expeditions</button>
-      <button type="button" class="pt" role="tab" id="pt-4" aria-selected="false" aria-controls="stage" tabindex="-1"><img class="thumb" src="images/airbnb-d1.jpg" alt="" width="160" height="100" loading="lazy"><i></i>A six-bedroom Seattle Airbnb lists for over six times a one-bedroom</button>
-    </div>
+      function openSidebar() {
+        sidebar.classList.add('open');
+        sidebarBackdrop.classList.add('open');
+        sidebarOpen.setAttribute('aria-expanded', 'true');
+      }
 
-    <div class="stage" id="stage" role="tabpanel" aria-labelledby="pt-0">
-      <button type="button" class="shot" id="shot" aria-label="Open this dashboard at full size">
-        <img id="shot-img" src="images/india-d1.jpg" width="1600" height="1280" alt="India trade overview dashboard: export, import and trade balance totals, a 2024 line of monthly exports and imports, and monthly trade balance bars from 2022 to 2026, all in deficit.">
-      </button>
-      <div class="info">
-        <p class="wb" id="s-wb">India trade workbook, dashboard 1 of 2</p>
-        <h3 id="s-title">Trade overview</h3>
-        <p class="q" id="s-q">Where does India's trade deficit come from?</p>
-        <div class="bans">
-          <p><b id="s-b1">Every month</b><span id="s-b1l">in deficit since January 2022</span></p>
-          <p><b id="s-b2">&minus;$274B</b><span id="s-b2l">2024 balance: $443B exports, $717B imports</span></p>
-        </div>
-        <ul id="s-notes">
-          <li>KPI tiles for exports, imports and balance</li>
-          <li>Dual-axis line of monthly exports and imports</li>
-          <li>Monthly balance bars, 2022 to 2026</li>
-        </ul>
-        <div class="ctrl">
-          <button type="button" id="prev" aria-label="Previous story point"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4 6 10l6 6"/></svg></button>
-          <button type="button" id="next" aria-label="Next story point"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 4 6 6-6 6"/></svg></button>
-          <button type="button" class="full" id="full">Full size</button>
-        </div>
-      </div>
-    </div>
+      function closeSidebar() {
+        sidebar.classList.remove('open');
+        sidebarBackdrop.classList.remove('open');
+        sidebarOpen.setAttribute('aria-expanded', 'false');
+      }
 
-    <div class="more">
-      <article class="card">
-        <h3><a href="dashboards/videogames.html">Video game sales by genre and platform</a></h3>
-        <p>Four decades of global sales: genre mix, platform share and regional splits. Interactive web dashboard.</p>
-      </article>
-      <article class="card">
-        <h3><a href="dashboards/ecommerce.html">E-commerce orders, delivery and reviews</a></h3>
-        <p>Order trends, state Pareto, freight burden and how delivery delays move review scores. Interactive web dashboard.</p>
-      </article>
-      <article class="card">
-        <h3><a href="dashboards/airbnb.html">Seattle Airbnb listings</a></h3>
-        <p>How listings, prices and revenue are spread across areas, bedroom counts and years. Interactive web dashboard.</p>
-      </article>
-      <article class="card">
-        <h3><a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Project_1" target="_blank" rel="noopener">Growth analytics dashboard</a></h3>
-        <p>Funnel, retention cohorts and CAC vs LTV on a Python star-schema pipeline, with a Power BI model. Code on GitHub.</p>
-      </article>
-    </div>
-   </div>
-  </section>
+      sidebarOpen.addEventListener('click', openSidebar);
+      sidebarClose.addEventListener('click', closeSidebar);
+      sidebarBackdrop.addEventListener('click', closeSidebar);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && sidebar.classList.contains('open')) {
+          closeSidebar();
+        }
+      });
 
-  <section id="pricing" class="wrap sec" aria-labelledby="pricing-title">
-    <div class="sec-head">
-      <h2 id="pricing-title">Fixed-price packages</h2>
-      <p>Starting prices. After a short scoping call you get one fixed price and a written scope, and that price doesn't change unless the scope does.</p>
-    </div>
-    <div class="tiers">
-      <article class="tier">
-        <h3>Dashboard audit or data cleanup</h3>
-        <p class="price">From $100 <small>about &#8377;8,000</small></p>
-        <p>A review of an existing dashboard or workbook, or messy exports turned into tidy, documented tables.</p>
-        <ul><li>A list of the issues found, with fixes</li><li>Clean tables you can reuse every month</li></ul>
-      </article>
-      <article class="tier tier-main">
-        <h3>Single dashboard</h3>
-        <p class="price">$200 to $500</p>
-        <p>One interactive dashboard your team can filter and explore, built on cleaned data.</p>
-        <ul><li>A working draft by day five</li><li>About two weeks end to end</li><li>A review round on your feedback, then a walkthrough at handover</li></ul>
-      </article>
-      <article class="tier">
-        <h3>Multi-page dashboard</h3>
-        <p class="price">$500 to $1,000</p>
-        <p>Several linked pages, with written KPI definitions and a data model that stays consistent.</p>
-        <ul><li>KPI definitions you can share with your team</li><li>All source files handed over</li></ul>
-      </article>
-      <article class="tier">
-        <h3>For clients in India</h3>
-        <p class="price">About &#8377;35,000 <small>per project</small></p>
-        <p>Most single-dashboard and workbook projects come to around &#8377;35,000, quoted as one fixed price. Open-ended work is about &#8377;4,000 an hour.</p>
-        <ul><li>Costing, reconciliation, sales and stock workbooks</li><li>Invoices in rupees</li></ul>
-      </article>
-      <article class="tier">
-        <h3>Hourly work</h3>
-        <p class="price">$40 <small>an hour</small></p>
-        <p>Ongoing analysis, report automation, or changes to an existing dashboard.</p>
-      </article>
-      <article class="tier tier-side">
-        <h3>Also on request</h3>
-        <p>Logo and graphic design, short video edits, and small automation prototypes with n8n or APIs. Quoted per job.</p>
-      </article>
-    </div>
-  </section>
+      function setActiveSideLink(sectionId) {
+        sideLinks.forEach(function (link) {
+          const isMatch = link.getAttribute('data-section') === sectionId;
+          link.classList.toggle('active', isMatch);
+          if (isMatch) {
+            link.setAttribute('aria-current', 'location');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      }
 
-  <section id="services" class="band" aria-labelledby="services-title">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2 id="services-title">Tools for each job</h2>
-        <p>A filled dot is the main tool for that kind of work; a ring means I also use it. If you already use one of these, I'll build in it.</p>
-      </div>
-      <!-- [html-validate-disable-next prefer-native-element -- a scroll container, not a document section; role="region" makes it keyboard-focusable and named] -->
-      <div class="mx-scroll" role="region" tabindex="0" aria-label="Services by tool, scrolls sideways">
-        <table class="mx" id="mx">
-          <caption class="sr">Services by tool</caption>
-          <thead><tr><th scope="col">Service</th></tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+      // Smooth jump + immediate active highlight + drawer close on click
+      document.querySelectorAll('.side-link, .side-jump').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          const href = link.getAttribute('href');
+          if (href && href.charAt(0) === '#') {
+            const targetId = href.slice(1);
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) {
+              e.preventDefault();
+              targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              setActiveSideLink(targetId);
+              closeSidebar();
+            }
+          }
+        });
+      });
 
-  <section id="process" class="wrap sec" aria-labelledby="process-title">
-    <div class="sec-head">
-      <h2 id="process-title">How a project runs</h2>
-      <p>A typical single dashboard takes about two weeks. You see a working draft by day five.</p>
-    </div>
-    <figure class="gantt-box">
-      <figcaption class="sr">Project steps by working day, and what you get from each</figcaption>
-      <ol class="gantt" id="gantt"></ol>
-      <div class="g-axis" id="g-axis" aria-hidden="true"></div>
-    </figure>
-    <ul class="principles">
-      <li><b>Scope in writing.</b> What's included, what isn't, the price and the dates, agreed before I start.</li>
-      <li><b>Numbers that reconcile.</b> Totals are checked back to your source files, the way an auditor ticks a ledger.</li>
-      <li><b>You own everything.</b> Workbooks, dashboard files and data steps are handed over, with notes on how to refresh them.</li>
-      <li><b>Your data stays private.</b> I only use it for your project and don't publish any of it.</li>
-    </ul>
-  </section>
+      // Scroll-spy using IntersectionObserver
+      const trackedSections = sideLinks
+        .map(function (l) { return document.getElementById(l.getAttribute('data-section')); })
+        .filter(Boolean);
 
-  <section id="about" class="band" aria-labelledby="about-title">
-    <div class="wrap">
-      <div class="about">
-        <h2 id="about-title">About me</h2>
-        <p>I'm a data analyst with a background in engineering, financial auditing and AI-driven analytics. Audit work taught me to distrust a total until it ties back to the source, and engineering taught me to build things that keep working after handover. I clean data, run statistical analysis and build dashboards in Python, SQL, Excel, Power BI, Tableau and R, and I use IDEA for audit analytics.</p>
-        <p>I also build AI and automation prototypes, such as document checks with a deterministic validation layer and an agent runtime called <a href="https://github.com/sciencenerd-des/forge" target="_blank" rel="noopener">Forge</a>. I write about that work in my <a href="https://github.com/sciencenerd-des/writing" target="_blank" rel="noopener">technical notes</a>. These are prototypes and learning projects, and I say so in every proposal.</p>
-        <p class="meta">Kolkata, India (UTC+5:30). English, Hindi and Bengali. Code on <a href="https://github.com/sciencenerd-des" target="_blank" rel="noopener">GitHub</a>.</p>
-      </div>
-    </div>
-  </section>
+      if ('IntersectionObserver' in window && trackedSections.length) {
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              setActiveSideLink(entry.target.id);
+            }
+          });
+        }, { rootMargin: '-25% 0px -60% 0px', threshold: 0.01 });
 
-  <section id="faq" class="wrap sec" aria-labelledby="faq-title">
-    <div class="sec-head">
-      <h2 id="faq-title">Questions clients ask</h2>
-      <p>If yours isn't here, ask it in your first email.</p>
-    </div>
-    <div class="faq">
-      <details><summary>Should I use Excel, Power BI or Tableau?</summary><p>Usually whatever your team already opens every day. Excel suits small teams and anything you'll print or email. Power BI suits teams on Microsoft 365 who want shared, refreshable reports. Tableau suits richer exploration. I'll recommend one on the scoping call and explain why.</p></details>
-      <details><summary>What do you need from me to quote?</summary><p>A sample of the data (a few months of exports is enough), the questions the report should answer, who will use it, and your deadline. I reply with follow-up questions or a fixed price and scope.</p></details>
-      <details><summary>My data comes from Tally, Zoho Books, Shopify or a marketplace. Can you work with it?</summary><p>If it exports to Excel or CSV, yes. I'll set up the cleaning steps so next month's export drops in without redoing the work.</p></details>
-      <details><summary>Is the price really fixed?</summary><p>Yes, for the written scope. If you ask for something outside it, I'll quote that change separately before doing it, so there are no surprise bills.</p></details>
-      <details><summary>How long does a project take?</summary><p>A single dashboard takes about two weeks, with a working draft by day five. A cleanup or audit is often a few days. Larger multi-page work gets a dated plan in the scope.</p></details>
-      <details><summary>Can I hire you through Freelancer or Upwork?</summary><p>Yes. You can hire me directly by email, or through <a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener">Freelancer</a> or <a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener">Upwork</a> if you prefer the platform's payment protection. The scope and process are the same either way.</p></details>
-      <details><summary>Do you build AI agents or automations?</summary><p>I build small prototypes and internal tools with n8n, APIs, RAG and LLM document checks, like the GST invoice-check demo above. I'm not offering production-grade AI systems, and I'll tell you plainly if your project needs one.</p></details>
-    </div>
-  </section>
+        trackedSections.forEach(function (sec) { observer.observe(sec); });
+      }
 
-  <section id="contact" class="dark" aria-labelledby="contact-title">
-    <div class="wrap split">
-      <div class="c-main">
-        <h2 id="contact-title">Get a fixed-price quote</h2>
-        <p>Email me what you have and what you need. I reply with follow-up questions or a short proposal with a fixed price.</p>
-        <a class="mail" href="mailto:bmondal0000@gmail.com?subject=Project%20enquiry&amp;body=Hi%20Biswajit%2C%0A%0AWhere%20my%20data%20lives%3A%20%0AQuestions%20the%20report%20should%20answer%3A%20%0AWho%20will%20use%20it%3A%20%0ADeadline%20and%20budget%3A%20%0A">bmondal0000@gmail.com</a>
-        <p class="cta"><a class="btn-hot" href="mailto:bmondal0000@gmail.com?subject=Project%20enquiry&amp;body=Hi%20Biswajit%2C%0A%0AWhere%20my%20data%20lives%3A%20%0AQuestions%20the%20report%20should%20answer%3A%20%0AWho%20will%20use%20it%3A%20%0ADeadline%20and%20budget%3A%20%0A">Email me about a project</a></p>
-        <p class="c-alt">Prefer to hire through a platform? Find me on <a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener">Freelancer</a> or <a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener">Upwork</a>.</p>
-      </div>
-      <div class="c-list">
-        <p><b>A good first email covers</b></p>
-        <ul>
-          <li>Where your data lives: spreadsheets, Tally or another app, or a database</li>
-          <li>The questions the report should answer</li>
-          <li>Who will use it, your deadline and a rough budget</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</main>
+      // ---------- Toast ----------
+      const toastEl = document.getElementById('toast');
+      let toastTimer = null;
+      function showToast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toastEl.classList.remove('show');
+        }, 2500);
+      }
 
-<footer class="wrap foot">
-  <span>&copy; <span id="y">2026</span> Biswajit Mondal, freelance data analyst, Kolkata</span>
-  <span class="foot-links"><a href="mailto:bmondal0000@gmail.com">bmondal0000@gmail.com</a><a href="https://www.freelancer.com/u/biswajitm024" target="_blank" rel="noopener">Freelancer</a><a href="https://www.upwork.com/freelancers/~01228b6c590d97c3cc" target="_blank" rel="noopener">Upwork</a><a href="https://github.com/sciencenerd-des" target="_blank" rel="noopener">GitHub</a><a href="#top">Back to top</a></span>
-</footer>
+      // ---------- Hero Interactive Audit Ledger ----------
+      const DEMOS = {
+        gst: {
+          dataset: 'Invoice check on synthetic GST demo data',
+          link: '#case-gst',
+          summary: '2 flagged, 2 reconciled',
+          checks: [
+            { label: 'GSTIN checksum (29AAAAA0000A1Z9)', detail: 'Invalid check digit caught before 2B filing', status: 'flag', tag: 'Flagged' },
+            { label: 'Line-item math (2 × ₹299)', detail: 'Expected ₹598 vs billed ₹698 (+₹100 variance)', status: 'flag', tag: 'Mismatch' },
+            { label: 'CGST and SGST parity', detail: 'Central and State tax amounts match cleanly', status: 'pass', tag: 'Reconciled' },
+            { label: 'Tax type exclusivity', detail: 'No mixed IGST with CGST and SGST on one bill', status: 'pass', tag: 'Reconciled' }
+          ]
+        },
+        ecom: {
+          dataset: 'Olist marketplace, 99,441 public orders',
+          link: '#case-ecom',
+          summary: 'Delivery SLA impact isolated',
+          checks: [
+            { label: 'Late delivery rating drop', detail: '2.27 ★ average when late vs 4.29 ★ on time', status: 'flag', tag: '-2.02 ★' },
+            { label: 'One-star review spike', detail: '54% one-star rate on late orders vs 7% on time', status: 'flag', tag: '7.7× risk' },
+            { label: 'Repeat purchase retention', detail: 'Only 3% repeat buyers — retention bottleneck found', status: 'flag', tag: '3% repeat' },
+            { label: 'Order-to-review join integrity', detail: 'All 99,441 order records reconciled to scores', status: 'pass', tag: 'Verified' }
+          ]
+        },
+        cost: {
+          dataset: 'Manufacturing costing, 13-sheet Excel model',
+          link: '#case-cost',
+          summary: '13 sheets balanced, 0 macros',
+          checks: [
+            { label: 'Linked sheet architecture', detail: '13 sheets tied from raw rates to final quote', status: 'pass', tag: 'Linked' },
+            { label: 'Macro-free security', detail: 'Zero VBA macros — runs safely on any Excel setup', status: 'pass', tag: '0 macros' },
+            { label: 'Formula audit trail', detail: 'Transparent unit costs, overheads, and margin rollup', status: 'pass', tag: 'Auditable' },
+            { label: 'Sample data reconciliation', detail: 'Line totals tie cleanly to grand quote total', status: 'pass', tag: 'Balanced' }
+          ]
+        }
+      };
 
-<dialog class="lightbox" id="lightbox" aria-labelledby="lb-cap">
-  <div class="lb-bar"><p id="lb-cap"></p><button type="button" id="lb-zoom" aria-pressed="false">Zoom to actual size</button><form method="dialog"><button class="lb-close" type="submit" autofocus>Close (Esc)</button></form></div>
-  <div class="lb-body"><img src="images/india-d1.jpg" alt="" loading="lazy"></div>
-</dialog>
+      let activeDemo = 'gst';
+      const demoDatasetEl = document.getElementById('demoDataset');
+      const demoStatusBadge = document.getElementById('demoStatusBadge');
+      const demoChecksEl = document.getElementById('demoChecks');
+      const demoCaseLink = document.getElementById('demoCaseLink');
+      const runCheckBtn = document.getElementById('runCheckBtn');
 
-<script src="script.js" defer></script>
+      function renderDemo(key, revealResults) {
+        const d = DEMOS[key];
+        demoDatasetEl.textContent = d.dataset;
+        demoCaseLink.setAttribute('href', d.link);
+        demoStatusBadge.textContent = revealResults ? d.summary : 'Checking';
+        demoStatusBadge.className = 'badge ' + (revealResults ? 'badge-info' : 'badge-warn');
+
+        demoChecksEl.innerHTML = d.checks.map(function (c) {
+          const rowClass = revealResults ? ('check-row ' + c.status) : 'check-row';
+          const badgeClass = revealResults
+            ? (c.status === 'flag' ? 'badge badge-flag' : 'badge badge-pass')
+            : 'badge badge-warn';
+          const tagText = revealResults ? c.tag : 'Queued';
+          return '<div class="' + rowClass + '">' +
+            '<div><span class="check-label">' + c.label + '</span>' +
+            '<span class="check-detail">' + c.detail + '</span></div>' +
+            '<span class="' + badgeClass + '">' + tagText + '</span>' +
+            '</div>';
+        }).join('');
+      }
+
+      document.querySelectorAll('.proof-tab').forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          document.querySelectorAll('.proof-tab').forEach(function (t) {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+          activeDemo = tab.getAttribute('data-demo');
+          renderDemo(activeDemo, true);
+        });
+      });
+
+      runCheckBtn.addEventListener('click', function () {
+        renderDemo(activeDemo, false);
+        runCheckBtn.disabled = true;
+        runCheckBtn.textContent = 'Running check...';
+        setTimeout(function () {
+          renderDemo(activeDemo, true);
+          runCheckBtn.disabled = false;
+          runCheckBtn.textContent = 'Run check';
+          showToast('Check complete.');
+        }, 360);
+      });
+
+      renderDemo(activeDemo, true);
+
+      // ---------- Interactive Showcase ----------
+      const STORIES = {
+        ecom: {
+          tag: 'Live web dashboard, Olist public dataset',
+          title: 'Delivery delays drive 7.7× more one-star reviews',
+          desc: 'Interactive dashboard breaking down 99,441 orders by delivery status, review distribution, and repeat-buyer rate so operations teams can prioritize late corridors.',
+          link: 'https://sciencenerd-des.github.io/dashboards/ecommerce.html',
+          linkText: 'Open e-commerce dashboard',
+          kpis: [
+            { num: '99,441', sub: 'Orders analyzed' },
+            { num: '4.29 vs 2.27', sub: 'On-time vs late ★' },
+            { num: '54% vs 7%', sub: '1-star share' }
+          ],
+          svg: '<svg viewBox="0 0 460 220" role="img" aria-label="Comparison chart of on-time vs late delivery ratings and 1-star rates">' +
+            '<text x="14" y="24" font-family="Georgia,serif" font-size="13" font-weight="600" fill="currentColor">On-time vs. late delivery impact (n = 99,441)</text>' +
+            '<text x="14" y="58" font-size="11" fill="#665e53">Average star rating (out of 5)</text>' +
+            '<rect x="14" y="68" width="326" height="26" rx="4" fill="#154734"/>' +
+            '<text x="24" y="85" font-size="11" font-weight="600" fill="#f7f3eb">On-time: 4.29 ★</text>' +
+            '<rect x="14" y="100" width="172" height="26" rx="4" fill="#9e2a2b"/>' +
+            '<text x="24" y="117" font-size="11" font-weight="600" fill="#f7f3eb">Late: 2.27 ★</text>' +
+            '<text x="14" y="152" font-size="11" fill="#665e53">Share of 1-star reviews</text>' +
+            '<rect x="14" y="162" width="46" height="22" rx="4" fill="#423c35"/>' +
+            '<text x="68" y="177" font-size="11" font-weight="600" fill="currentColor">On-time: 7%</text>' +
+            '<rect x="14" y="190" width="296" height="22" rx="4" fill="#8c5a18"/>' +
+            '<text x="24" y="205" font-size="11" font-weight="600" fill="#f7f3eb">Late deliveries: 54% one-star reviews</text>' +
+            '</svg>'
+        },
+        gst: {
+          tag: 'Audit automation, Python and LLM rules',
+          title: 'Automated GST invoice validation and 2B matching',
+          desc: 'Synthetic invoice pipeline pairing AI field extraction with deterministic Python rules—catching GSTIN checksum errors, line-item math variance, and GSTR-2B mismatches.',
+          link: 'https://github.com/sciencenerd-des/openai-ai-deployment-portfolio',
+          linkText: 'View GST pipeline on GitHub',
+          kpis: [
+            { num: '4 rules', sub: 'Automated checks' },
+            { num: 'GSTR-2B', sub: 'Purchase match' },
+            { num: 'Python + AI', sub: 'Auditable logic' }
+          ],
+          svg: '<svg viewBox="0 0 460 220" role="img" aria-label="GST invoice automated validation pipeline diagram">' +
+            '<text x="14" y="24" font-family="Georgia,serif" font-size="13" font-weight="600" fill="currentColor">Invoice audit pipeline (AI extraction + Python rules)</text>' +
+            '<rect x="14" y="46" width="122" height="62" rx="6" fill="#f9f6f0" stroke="#b9ad99"/>' +
+            '<text x="75" y="73" text-anchor="middle" font-size="11" font-weight="700" fill="#1d1a16">1. Raw invoice</text>' +
+            '<text x="75" y="91" text-anchor="middle" font-size="10" fill="#665e53">PDF or Tally export</text>' +
+            '<line x1="136" y1="77" x2="168" y2="77" stroke="#665e53" stroke-width="1.5"/>' +
+            '<rect x="168" y="46" width="124" height="62" rx="6" fill="#f4ead6" stroke="#8c5a18"/>' +
+            '<text x="230" y="73" text-anchor="middle" font-size="11" font-weight="700" fill="#8c5a18">2. Python rules</text>' +
+            '<text x="230" y="91" text-anchor="middle" font-size="10" fill="#423c35">GSTIN, math, tax</text>' +
+            '<line x1="292" y1="77" x2="324" y2="77" stroke="#665e53" stroke-width="1.5"/>' +
+            '<rect x="324" y="46" width="122" height="62" rx="6" fill="#dfece6" stroke="#154734"/>' +
+            '<text x="385" y="73" text-anchor="middle" font-size="11" font-weight="700" fill="#154734">3. 2B exception</text>' +
+            '<text x="385" y="91" text-anchor="middle" font-size="10" fill="#423c35">Clean audit log</text>' +
+            '<rect x="14" y="130" width="432" height="72" rx="6" fill="#f6e4e2" stroke="#9e2a2b" stroke-dasharray="4 3"/>' +
+            '<text x="28" y="155" font-size="11" font-weight="700" fill="#9e2a2b">Caught example: GSTIN 29AAAAA0000A1Z9 checksum failed</text>' +
+            '<text x="28" y="176" font-size="11" fill="#423c35">Line math variance: 2 × 299 = 598 (billed 698) | Tax split verified</text>' +
+            '</svg>'
+        },
+        growth: {
+          tag: 'Power BI and Python, simulated Indian market',
+          title: 'Channel payback, cohort retention, and CAC vs LTV',
+          desc: 'Star-schema analytics pipeline tracking 25,000 sessions and 8,442 customers in Power BI with DAX measures to show which acquisition channels actually pay back.',
+          link: 'https://github.com/sciencenerd-des/Resume_Projects/tree/main/Project_1',
+          linkText: 'Inspect Power BI repo',
+          kpis: [
+            { num: '25,000', sub: 'Sessions modeled' },
+            { num: '8,442', sub: 'Customers' },
+            { num: 'Star schema', sub: 'Power BI + DAX' }
+          ],
+          svg: '<svg viewBox="0 0 460 220" role="img" aria-label="Channel payback and star schema analytics visual">' +
+            '<text x="14" y="24" font-family="Georgia,serif" font-size="13" font-weight="600" fill="currentColor">Star-schema growth model (25,000 sessions)</text>' +
+            '<rect x="14" y="46" width="200" height="154" rx="6" fill="#f9f6f0" stroke="#b9ad99"/>' +
+            '<text x="28" y="72" font-size="11.5" font-weight="700" fill="#1d1a16">Python ETL pipeline</text>' +
+            '<text x="28" y="96" font-size="10.5" fill="#423c35">• Fact_Orders &amp; Fact_Sessions</text>' +
+            '<text x="28" y="117" font-size="10.5" fill="#423c35">• Dim_Customer &amp; Dim_Channel</text>' +
+            '<text x="28" y="138" font-size="10.5" fill="#423c35">• Monthly cohort retention matrix</text>' +
+            '<text x="28" y="159" font-size="10.5" fill="#423c35">• Reconciled revenue totals</text>' +
+            '<rect x="234" y="46" width="212" height="154" rx="6" fill="#dfece6" stroke="#154734"/>' +
+            '<text x="248" y="72" font-size="11.5" font-weight="700" fill="#154734">Power BI DAX decisions</text>' +
+            '<text x="248" y="96" font-size="10.5" fill="#1d1a16">• CAC by acquisition channel</text>' +
+            '<text x="248" y="117" font-size="10.5" fill="#1d1a16">• LTV payback window tracking</text>' +
+            '<text x="248" y="138" font-size="10.5" fill="#1d1a16">• Repeat cohort curve</text>' +
+            '<text x="248" y="159" font-size="10.5" fill="#1d1a16">• Executive filter controls</text>' +
+            '</svg>'
+        },
+        airbnb: {
+          tag: 'Live web dashboard, market exploration',
+          title: 'Airbnb listings and pricing explorer',
+          desc: 'Interactive web dashboard comparing neighborhood pricing, room types, and availability patterns under a unified light and dark analytical design system.',
+          link: 'https://sciencenerd-des.github.io/dashboards/airbnb.html',
+          linkText: 'Open Airbnb dashboard',
+          kpis: [
+            { num: 'Interactive', sub: 'Filterable views' },
+            { num: 'Pricing', sub: 'By neighborhood' },
+            { num: 'Fast load', sub: 'Static HTML/JS' }
+          ],
+          svg: '<svg viewBox="0 0 460 220" role="img" aria-label="Airbnb market dashboard layout preview">' +
+            '<text x="14" y="24" font-family="Georgia,serif" font-size="13" font-weight="600" fill="currentColor">Airbnb market explorer — live interactive dashboard</text>' +
+            '<rect x="14" y="44" width="134" height="54" rx="6" fill="#f9f6f0" stroke="#b9ad99"/>' +
+            '<text x="26" y="66" font-size="10" fill="#665e53">Dimension</text>' +
+            '<text x="26" y="84" font-size="12" font-weight="700" fill="#1d1a16">Room types</text>' +
+            '<rect x="162" y="44" width="134" height="54" rx="6" fill="#f9f6f0" stroke="#b9ad99"/>' +
+            '<text x="174" y="66" font-size="10" fill="#665e53">Metric</text>' +
+            '<text x="174" y="84" font-size="12" font-weight="700" fill="#1d1a16">Nightly rates</text>' +
+            '<rect x="310" y="44" width="136" height="54" rx="6" fill="#f9f6f0" stroke="#b9ad99"/>' +
+            '<text x="322" y="66" font-size="10" fill="#665e53">Focus</text>' +
+            '<text x="322" y="84" font-size="12" font-weight="700" fill="#1d1a16">Availability</text>' +
+            '<rect x="14" y="114" width="432" height="86" rx="6" fill="#dfece6" stroke="#154734"/>' +
+            '<text x="30" y="144" font-size="12" font-weight="700" fill="#154734">Live interactive dashboard ready to explore</text>' +
+            '<text x="30" y="166" font-size="11" fill="#1d1a16">Open the Airbnb dashboard to filter listings, compare</text>' +
+            '<text x="30" y="184" font-size="11" fill="#1d1a16">neighborhood distributions, and inspect pricing tiers.</text>' +
+            '</svg>'
+        },
+        games: {
+          tag: 'Live web dashboard, historical sales',
+          title: 'Video games sales and platform trends',
+          desc: 'Interactive portfolio dashboard tracking global video game sales across genres, publishers, and console generations with instant browser-side filtering.',
+          link: 'https://sciencenerd-des.github.io/dashboards/videogames.html',
+          linkText: 'Open video games dashboard',
+          kpis: [
+            { num: 'Multi-region', sub: 'Global splits' },
+            { num: 'Cross-filter', sub: 'Genre & platform' },
+            { num: 'Zero backend', sub: 'Instant load' }
+          ],
+          svg: '<svg viewBox="0 0 460 220" role="img" aria-label="Video games sales dashboard preview">' +
+            '<text x="14" y="24" font-family="Georgia,serif" font-size="13" font-weight="600" fill="currentColor">Video games sales — platform and genre trends</text>' +
+            '<rect x="22" y="132" width="54" height="66" rx="4" fill="#423c35"/>' +
+            '<rect x="90" y="98" width="54" height="100" rx="4" fill="#665e53"/>' +
+            '<rect x="158" y="70" width="54" height="128" rx="4" fill="#154734"/>' +
+            '<rect x="226" y="108" width="54" height="90" rx="4" fill="#423c35"/>' +
+            '<rect x="294" y="88" width="54" height="110" rx="4" fill="#8c5a18"/>' +
+            '<rect x="362" y="122" width="54" height="76" rx="4" fill="#665e53"/>' +
+            '<text x="14" y="52" font-size="11" fill="#665e53">Explore platform lifecycles, top genres, and regional splits live.</text>' +
+            '</svg>'
+        }
+      };
+
+      const storyVisual = document.getElementById('storyVisual');
+      const storyTag = document.getElementById('storyTag');
+      const storyTitle = document.getElementById('storyTitle');
+      const storyDesc = document.getElementById('storyDesc');
+      const storyKpis = document.getElementById('storyKpis');
+      const storyLink = document.getElementById('storyLink');
+
+      function renderStory(key) {
+        const s = STORIES[key];
+        storyVisual.innerHTML = s.svg;
+        storyTag.textContent = s.tag;
+        storyTitle.textContent = s.title;
+        storyDesc.textContent = s.desc;
+        storyLink.setAttribute('href', s.link);
+        storyLink.textContent = s.linkText;
+        storyKpis.innerHTML = s.kpis.map(function (k) {
+          return '<div class="kpi-cell"><span class="kpi-num num">' + k.num + '</span><span class="kpi-sub">' + k.sub + '</span></div>';
+        }).join('');
+      }
+
+      document.querySelectorAll('#work .tab-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('#work .tab-btn').forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          renderStory(btn.getAttribute('data-story'));
+        });
+      });
+      renderStory('ecom');
+
+      // ---------- Tools Matrix ----------
+      const TOOL_LIST = ['Tableau', 'Power BI', 'Excel', 'SQL', 'Python', 'R'];
+      const SERVICE_MATRIX = [
+        { name: 'Interactive dashboards', sub: 'Dashboards your team can filter and explore', levels: { Tableau: 'main', 'Power BI': 'also', Excel: 'also', SQL: 'also', Python: 'none', R: 'none' } },
+        { name: 'Data cleaning and prep', sub: 'Messy exports turned into tidy, documented tables', levels: { Tableau: 'none', 'Power BI': 'none', Excel: 'main', SQL: 'main', Python: 'main', R: 'also' } },
+        { name: 'Reporting automation', sub: 'Weekly and monthly reports that build themselves', levels: { Tableau: 'none', 'Power BI': 'also', Excel: 'main', SQL: 'also', Python: 'main', R: 'none' } },
+        { name: 'Statistical analysis and A/B tests', sub: 'Clear answers on what changed and whether it matters', levels: { Tableau: 'none', 'Power BI': 'none', Excel: 'also', SQL: 'none', Python: 'main', R: 'main' } },
+        { name: 'Financial and audit analytics', sub: 'Reconciliations, variance checks, and exception reports', levels: { Tableau: 'also', 'Power BI': 'also', Excel: 'main', SQL: 'main', Python: 'also', R: 'none' } },
+        { name: 'KPI design and data modeling', sub: 'Metric definitions and models that stay consistent', levels: { Tableau: 'main', 'Power BI': 'also', Excel: 'also', SQL: 'main', Python: 'none', R: 'none' } }
+      ];
+
+      const toolsTbody = document.getElementById('toolsTbody');
+      function renderTools(filterTool) {
+        const rows = SERVICE_MATRIX.filter(function (s) {
+          return filterTool === 'ALL' || s.levels[filterTool] !== 'none';
+        });
+        toolsTbody.innerHTML = rows.map(function (s) {
+          const cells = TOOL_LIST.map(function (t) {
+            const lvl = s.levels[t];
+            if (lvl === 'main') return '<td class="center"><span class="lvl-main">Main tool</span></td>';
+            if (lvl === 'also') return '<td class="center"><span class="lvl-also">Also used</span></td>';
+            return '<td class="center"><span class="lvl-none">—</span></td>';
+          }).join('');
+          return '<tr><td><strong>' + s.name + '</strong><br><span class="muted" style="font-size:0.8rem;">' + s.sub + '</span></td>' + cells + '</tr>';
+        }).join('');
+      }
+
+      document.querySelectorAll('#toolFilterBar .tab-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('#toolFilterBar .tab-btn').forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          renderTools(btn.getAttribute('data-tool'));
+        });
+      });
+      renderTools('ALL');
+
+      // ---------- Pricing Currency & Quote Builder ----------
+      let currency = 'USD';
+      const PRICES = {
+        USD: {
+          audit: { label: 'From $100', timeline: '2–4 days turnaround' },
+          single: { label: '$200 – $500', timeline: 'Draft by Day 5, about 2 weeks', note: 'End-to-end delivery in about 2 weeks with walkthrough.' },
+          multi: { label: '$500 – $1,000', timeline: '2–4 weeks, full model' },
+          hourly: { label: '$40/hour', timeline: 'Flexible weekly hours', note: ' — Ongoing analysis, report automation, or updates to existing dashboards.' }
+        },
+        INR: {
+          audit: { label: 'From ₹8,000', timeline: '2–4 days turnaround' },
+          single: { label: '~₹35,000 / project', timeline: 'Draft by Day 5, about 2 weeks', note: 'Costing, reconciliation, sales, and stock workbooks; invoiced in INR.' },
+          multi: { label: '₹35,000+ (fixed)', timeline: '2–4 weeks, full model' },
+          hourly: { label: '~₹4,000/hour', timeline: 'Flexible weekly hours', note: ' — Open-ended work, ongoing analysis, or automation; invoiced in rupees.' }
+        }
+      };
+
+      const priceAuditEl = document.getElementById('priceAudit');
+      const priceSingleEl = document.getElementById('priceSingle');
+      const noteSingleEl = document.getElementById('noteSingle');
+      const priceMultiEl = document.getElementById('priceMulti');
+      const priceHourlyEl = document.getElementById('priceHourly');
+      const noteHourlyEl = document.getElementById('noteHourly');
+
+      const qPackage = document.getElementById('qPackage');
+      const qSource = document.getElementById('qSource');
+      const qTool = document.getElementById('qTool');
+      const qNotes = document.getElementById('qNotes');
+      const qEstimateRange = document.getElementById('qEstimateRange');
+      const qTimelineBadge = document.getElementById('qTimelineBadge');
+      const qBriefPreview = document.getElementById('qBriefPreview');
+      const qMailtoBtn = document.getElementById('qMailtoBtn');
+      const qCopyBtn = document.getElementById('qCopyBtn');
+
+      function updatePricingUI() {
+        const p = PRICES[currency];
+        priceAuditEl.textContent = p.audit.label;
+        priceSingleEl.textContent = p.single.label;
+        noteSingleEl.textContent = p.single.note;
+        priceMultiEl.textContent = p.multi.label;
+        priceHourlyEl.textContent = p.hourly.label;
+        noteHourlyEl.textContent = p.hourly.note;
+        updateQuoteBuilder();
+      }
+
+      function updateQuoteBuilder() {
+        const pkgKey = qPackage.value;
+        const pkgText = qPackage.options[qPackage.selectedIndex].text;
+        const srcText = qSource.value;
+        const toolText = qTool.value;
+        const notesText = qNotes.value.trim();
+        const info = PRICES[currency][pkgKey];
+
+        qEstimateRange.textContent = info.label;
+        qTimelineBadge.textContent = info.timeline;
+
+        const briefLines = [
+          'Hi Biswajit,',
+          '',
+          'I would like a fixed-price quote for:',
+          '• Package: ' + pkgText + ' (' + info.label + ')',
+          '• Data source: ' + srcText,
+          '• Preferred tool: ' + toolText,
+          '• Currency: ' + currency
+        ];
+        if (notesText) {
+          briefLines.push('• Project goal: ' + notesText);
+        }
+        briefLines.push('', 'Happy to share an anonymized sample of our data to finalize scope.');
+
+        const brief = briefLines.join('\n');
+        qBriefPreview.textContent = brief;
+
+        const subject = 'Project Quote Request: ' + pkgText + ' (' + srcText + ')';
+        qMailtoBtn.setAttribute('href', 'mailto:bmondal0000@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(brief));
+      }
+
+      document.querySelectorAll('.currency-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.currency-btn').forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-pressed', 'true');
+          currency = btn.getAttribute('data-currency');
+          updatePricingUI();
+        });
+      });
+
+      [qPackage, qSource, qTool].forEach(function (el) {
+        el.addEventListener('change', updateQuoteBuilder);
+      });
+      qNotes.addEventListener('input', updateQuoteBuilder);
+
+      document.querySelectorAll('.prefill-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const pkg = btn.getAttribute('data-pkg');
+          const src = btn.getAttribute('data-source');
+          if (pkg) qPackage.value = pkg;
+          if (src) qSource.value = src;
+          updateQuoteBuilder();
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          setActiveSideLink('contact');
+          showToast('Quote builder pre-filled.');
+        });
+      });
+
+      qCopyBtn.addEventListener('click', function () {
+        const text = qBriefPreview.textContent;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () {
+            showToast('Brief copied.');
+          }).catch(function () {
+            fallbackCopy(text);
+          });
+        } else {
+          fallbackCopy(text);
+        }
+      });
+
+      function fallbackCopy(text) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast('Brief copied.');
+        } catch (e) {
+          showToast('Select the brief text to copy it.');
+        }
+        document.body.removeChild(ta);
+      }
+
+      updatePricingUI();
+    })();
+  </script>
 </body>
 </html>
