@@ -12,7 +12,7 @@ The three interactive web dashboards live in `dashboards/` and are linked from t
 - [Olist e-commerce analysis](dashboards/ecommerce.html)
 - [Video game sales](dashboards/videogames.html)
 
-The homepage showcase also has story tabs for GST 2B audit and channel CAC vs LTV. Those open the related GitHub repositories, not a live web dashboard.
+The homepage showcase also has story tabs for GST 2B audit, channel CAC vs LTV, the India trade and Himalayan expeditions Tableau workbooks, and the staff/ads KPI Excel template. GST and the growth model open their GitHub repositories. The Tableau stories use restored workbook screenshots in `images/` (no Tableau Public URL was listed on the previous site). The KPI template is labelled as sample data.
 
 ## Page structure
 

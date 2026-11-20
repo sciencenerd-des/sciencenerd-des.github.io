@@ -884,7 +884,7 @@
       border: 1px solid var(--rule-strong);
       border-radius: 12px;
       padding: 24px;
-      align-items: center;
+      align-items: start;
     }
     .svg-frame {
       background: var(--bg);
@@ -893,7 +893,11 @@
       padding: 14px;
       width: 100%;
     }
-    .svg-frame svg { width: 100%; height: auto; display: block; }
+    .svg-frame svg, .svg-frame img { width: 100%; height: auto; display: block; }
+    .svg-frame img { border-radius: 4px; }
+    .story-shots { display: grid; gap: 12px; }
+    .story-shots a { display: block; }
+    .shot-cap { font-size: 0.75rem; color: var(--muted); margin: 6px 0 0; }
 
     /* Pricing */
     .currency-toggle {
@@ -1517,8 +1521,8 @@
                   Python star-schema pipeline and Power BI DAX model analyzing a simulated Indian e-commerce market across cohort retention and CAC versus LTV payback.
                 </p>
                 <div class="kpi-strip">
-                  <div class="kpi-cell"><span class="kpi-num num">25,000</span><span class="kpi-sub">Sessions modeled</span></div>
-                  <div class="kpi-cell"><span class="kpi-num num">8,442</span><span class="kpi-sub">Customers tracked</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">25,001</span><span class="kpi-sub">Sessions modeled</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">8,443</span><span class="kpi-sub">Customers tracked</span></div>
                   <div class="kpi-cell"><span class="kpi-num">CAC vs LTV</span><span class="kpi-sub">Cohort DAX model</span></div>
                 </div>
                 <div class="tag-row">
@@ -1528,6 +1532,68 @@
                 </div>
                 <div class="folio-foot">
                   <a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Project_1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Power BI repo</a>
+                </div>
+              </article>
+              <article class="folio-card" id="case-india">
+                <span class="folio-meta">Trade analytics, Tableau, public data</span>
+                <h3>India imported more than it exported in every month from 2022 to 2026</h3>
+                <p class="muted" style="font-size:0.91rem; margin:0;">
+                  Two Tableau dashboards from a public-data workbook: a trade overview of exports, imports and balance, and a partners view of top destinations and sources.
+                </p>
+                <div class="kpi-strip">
+                  <div class="kpi-cell"><span class="kpi-num">Every month</span><span class="kpi-sub">In deficit since January 2022</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">&minus;$274B</span><span class="kpi-sub">2024 balance</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">$443B / $717B</span><span class="kpi-sub">2024 exports / imports</span></div>
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Tableau Desktop</span>
+                  <span class="tag">Two dashboards</span>
+                  <span class="tag">Public data</span>
+                </div>
+                <div class="folio-foot">
+                  <a href="#work" class="btn btn-secondary btn-sm" data-open-story="india">View Tableau dashboards</a>
+                </div>
+              </article>
+
+              <article class="folio-card" id="case-himalaya">
+                <span class="folio-meta">Expedition analysis, Tableau, public data</span>
+                <h3>Himalayan expedition success rose from about 25% to about 70%</h3>
+                <p class="muted" style="font-size:0.91rem; margin:0;">
+                  Two Tableau dashboards joining expeditions, members and peaks tables: expedition history over a century, and a risk view of peak popularity and member fatality.
+                </p>
+                <div class="kpi-strip">
+                  <div class="kpi-cell"><span class="kpi-num num">~70%</span><span class="kpi-sub">Success in the 2020s, up from ~25%</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">3,706</span><span class="kpi-sub">Expeditions in the 2010s</span></div>
+                  <div class="kpi-cell"><span class="kpi-num num">&lt;1%</span><span class="kpi-sub">Member fatality in recent decades</span></div>
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Tableau Desktop</span>
+                  <span class="tag">Two dashboards</span>
+                  <span class="tag">Public data</span>
+                </div>
+                <div class="folio-foot">
+                  <a href="#work" class="btn btn-secondary btn-sm" data-open-story="himalaya">View Tableau dashboards</a>
+                </div>
+              </article>
+
+              <article class="folio-card" id="case-kpi">
+                <span class="folio-meta">Operations reporting, reusable Excel template</span>
+                <h3>Staff and ads KPI tracker template</h3>
+                <p class="muted" style="font-size:0.91rem; margin:0;">
+                  A reusable Excel dashboard and supporting sheets for tracking staff skills, ad performance and client targets. The figures in the workbook are sample data for the template, not results from a client project.
+                </p>
+                <div class="kpi-strip">
+                  <div class="kpi-cell"><span class="kpi-num num">6 sheets</span><span class="kpi-sub">Dashboard and inputs</span></div>
+                  <div class="kpi-cell"><span class="kpi-num">0 macros</span><span class="kpi-sub">Safe standard Excel</span></div>
+                  <div class="kpi-cell"><span class="kpi-num">Sample data</span><span class="kpi-sub">Not a client engagement</span></div>
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Excel modeling</span>
+                  <span class="tag">KPI dashboard</span>
+                  <span class="tag">Sample data</span>
+                </div>
+                <div class="folio-foot">
+                  <a href="https://github.com/sciencenerd-des/Resume_Projects/tree/main/Excel_files" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Excel files</a>
                 </div>
               </article>
             </div>
@@ -1553,6 +1619,9 @@
               <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="growth">Channel CAC vs LTV</button>
               <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="airbnb">Airbnb market</button>
               <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="games">Video games sales</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="india">India trade</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="himalaya">Himalayan expeditions</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-story="kpi">Staff KPI template</button>
             </div>
 
             <div class="showcase-stage" id="showcaseStage" aria-live="polite">
@@ -2180,16 +2249,16 @@
         growth: {
           tag: 'Power BI and Python, simulated Indian market',
           title: 'Channel payback, cohort retention, and CAC vs LTV',
-          desc: 'Star-schema analytics pipeline tracking 25,000 sessions and 8,442 customers in Power BI with DAX measures to show which acquisition channels actually pay back.',
+          desc: 'Star-schema analytics pipeline tracking 25,001 sessions and 8,443 customers in Power BI with DAX measures to show which acquisition channels actually pay back.',
           link: 'https://github.com/sciencenerd-des/Resume_Projects/tree/main/Project_1',
           linkText: 'Inspect Power BI repo',
           kpis: [
-            { num: '25,000', sub: 'Sessions modeled' },
-            { num: '8,442', sub: 'Customers' },
+            { num: '25,001', sub: 'Sessions modeled' },
+            { num: '8,443', sub: 'Customers' },
             { num: 'Star schema', sub: 'Power BI + DAX' }
           ],
           svg: '<svg viewBox="0 0 460 220" role="img" aria-label="Channel payback and star schema analytics visual">' +
-            '<text x="14" y="24" font-family="Georgia,serif" font-size="13" font-weight="600" fill="currentColor">Star-schema growth model (25,000 sessions)</text>' +
+            '<text x="14" y="24" font-family="Georgia,serif" font-size="13" font-weight="600" fill="currentColor">Star-schema growth model (25,001 sessions)</text>' +
             '<rect x="14" y="46" width="200" height="154" rx="6" fill="#f9f6f0" stroke="#b9ad99"/>' +
             '<text x="28" y="72" font-size="11.5" font-weight="700" fill="#1d1a16">Python ETL pipeline</text>' +
             '<text x="28" y="96" font-size="10.5" fill="#423c35">• Fact_Orders &amp; Fact_Sessions</text>' +
@@ -2253,6 +2322,58 @@
             '<rect x="362" y="122" width="54" height="76" rx="4" fill="#665e53"/>' +
             '<text x="14" y="52" font-size="11" fill="#665e53">Explore platform lifecycles, top genres, and regional splits live.</text>' +
             '</svg>'
+        },
+        india: {
+          tag: 'Tableau Desktop, public-data workbook',
+          title: 'India imported more than it exported in every month from 2022 to 2026',
+          desc: 'Two Tableau dashboards: a trade overview with export, import and balance totals, a 2024 monthly line, and monthly balance bars from 2022 to 2026; and a partners view of top destinations and sources. 2024 balance: \u2212$274B, from $443B exports and $717B imports. The US is the top export market, about $80B; China is the top import source, over $100B.',
+          link: '/images/india-d1.jpg',
+          linkText: 'Open full-size dashboards',
+          kpis: [
+            { num: '\u2212$274B', sub: '2024 balance' },
+            { num: 'US ~$80B', sub: 'Top export market' },
+            { num: 'China >$100B', sub: 'Top import source' }
+          ],
+          svg: '<div class="story-shots">' +
+            '<a href="/images/india-d1.jpg"><img src="/images/india-d1.jpg" width="1600" height="1280" alt="India trade overview dashboard: export, import and trade balance totals, a 2024 line of monthly exports and imports, and monthly trade balance bars from 2022 to 2026, all in deficit." loading="lazy"></a>' +
+            '<p class="shot-cap">India trade workbook, dashboard 1 of 2 \u2014 Trade overview</p>' +
+            '<a href="/images/india-d2.jpg"><img src="/images/india-d2.jpg" width="1600" height="1280" alt="India trading partners dashboard: top 10 export destinations led by the United States, top 10 import sources led by China, and a world map sized by trade value." loading="lazy"></a>' +
+            '<p class="shot-cap">India trade workbook, dashboard 2 of 2 \u2014 Trading partners</p>' +
+            '</div>'
+        },
+        himalaya: {
+          tag: 'Tableau Desktop, public-data workbook',
+          title: 'Himalayan expedition success rose from about 25% to about 70%',
+          desc: 'Two Tableau dashboards joining expeditions, members and peaks tables. Success rose from about 25% to about 70% in the 2020s, with 3,706 expeditions in the 2010s, the busiest decade. Member fatality fell below 1% in recent decades, while Everest drew 2,329 expeditions, the most of any peak.',
+          link: '/images/himalaya-d1.jpg',
+          linkText: 'Open full-size dashboards',
+          kpis: [
+            { num: '~70%', sub: 'Success in the 2020s, up from ~25%' },
+            { num: '3,706', sub: 'Expeditions in the 2010s' },
+            { num: '2,329', sub: 'Everest expeditions' }
+          ],
+          svg: '<div class="story-shots">' +
+            '<a href="/images/himalaya-d1.jpg"><img src="/images/himalaya-d1.jpg" width="1600" height="1280" alt="Himalayan expedition history dashboard: expeditions by peak, yearly expedition activity, expeditions per decade peaking at 3,706 in the 2010s, and success rate by decade rising to about 70 percent." loading="lazy"></a>' +
+            '<p class="shot-cap">Himalayan expeditions workbook, dashboard 1 of 2 \u2014 Expedition history</p>' +
+            '<a href="/images/himalaya-d2.jpg"><img src="/images/himalaya-d2.jpg" width="1600" height="1280" alt="Himalayan risk dashboard: member fatality rate by decade falling below 1 percent, a scatter of peak success rate against fatality sized by expedition count, and a peak ranking led by Everest with 2,329 expeditions." loading="lazy"></a>' +
+            '<p class="shot-cap">Himalayan expeditions workbook, dashboard 2 of 2 \u2014 Risk and peak ranking</p>' +
+            '</div>'
+        },
+        kpi: {
+          tag: 'Reusable Excel template, sample data',
+          title: 'Staff and ads KPI tracker template',
+          desc: 'A reusable Excel dashboard for staff skills, ad performance and client targets, with six sheets: Dashboard, Staff Skillset, Ad Performance, Client Accounts, Weekly Trends and Data Input. The numbers visible in the workbook are sample/template values, not results from a client project. A related 11-sheet workbook, KPI_Staff_Ads_Tracker_Template.xlsx, is in the same folder.',
+          link: 'https://github.com/sciencenerd-des/Resume_Projects/tree/main/Excel_files',
+          linkText: 'View Excel files on GitHub',
+          kpis: [
+            { num: '6 sheets', sub: 'Dashboard and inputs' },
+            { num: '0 macros', sub: 'Standard Excel workbook' },
+            { num: 'Sample data', sub: 'Not a client engagement' }
+          ],
+          svg: '<div class="story-shots">' +
+            '<a href="/images/kpi-staff-ads.jpg"><img src="/images/kpi-staff-ads.jpg" width="1600" height="873" alt="Rendered preview of the staff and ads KPI tracker template dashboard, clearly labelled as sample data, showing the Team Overview metrics from staff_kpi_tracker.xlsx." loading="lazy"></a>' +
+            '<p class="shot-cap">Sample data from staff_kpi_tracker.xlsx \u2014 not a client project</p>' +
+            '</div>'
         }
       };
 
@@ -2295,6 +2416,18 @@
         });
       });
       renderStory('ecom');
+
+      document.querySelectorAll('[data-open-story]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          var key = a.getAttribute('data-open-story');
+          var btn = document.querySelector('#work .tab-btn[data-story="' + key + '"]');
+          if (!btn) return;
+          e.preventDefault();
+          btn.click();
+          var work = document.getElementById('work');
+          if (work) work.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
 
       // ---------- Tools Matrix ----------
       const TOOL_LIST = ['Tableau', 'Power BI', 'Excel', 'SQL', 'Python', 'R'];
